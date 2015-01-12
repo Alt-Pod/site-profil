@@ -11,7 +11,7 @@
 	<body>
 		<div id="shadow">
 			<header>
-				<a id='dl_cv' href="javascript:;" target="_blank" ><div class='fa fa-cloud-download icon'></div>Télécharger le CV (.pdf)</a>
+				<a id='dl_cv' class='error' href="javascript:;" target="_blank" ><div class='fa fa-cloud-download icon'></div>Télécharger le CV (.pdf)</a>
 				<a id='old_site' href="SiteV1/accueil.html" target="_blank" >Site v 1.0</a>
 				<div class="socialnetwork">
 					<a href="https://www.facebook.com/michael.dornic" target="_blank" ><div class='fa fa-facebook icon'></div></a>
@@ -48,9 +48,9 @@
 				<div class='menu'>
 					<ul>
 						<li class='current'><a href="javascript:;"><span> </span> <span>Curriculum vitæ</span></a></li>
-						<li><a href="javascript:;"><span> </span> <span>Réalisations</span></a></li>
-						<li><a href="javascript:;"><span> </span> <span>Situation actuelle</span></a></li>
-						<li><a href="javascript:;"><span> </span> <span>Plus</span></a></li>
+						<li><a href="javascript:;" class='error'><span> </span> <span>Réalisations</span></a></li>
+						<li><a href="javascript:;" class='error'><span> </span> <span>Situation actuelle</span></a></li>
+						<li><a href="javascript:;" class='error'><span> </span> <span>Plus</span></a></li>
 					</ul>
 				</div>
 			</header>
@@ -71,7 +71,7 @@
 								<br>
 								<span>effectué à <b  itemprop="Location">Tanger</b>, <b>Maroc</b>.</span>
 								<ul class="task_listing" itemprop="description">
-									<li> Développement web
+									<li> Développement web (Ruby on Rails)
 									<li> Content Management
 									<li> Project Management
 									<li> Marketing stratégique
@@ -186,43 +186,44 @@
 						<h2>Centres d'intérêt</h2>
 							<p>Musique électronique, natation, jeux vidéo, sports maritimes, cuisine italienne, orientale et art culinaire, cinéma, montage vidéo, art contemporain, innovant et street art.</p>
 					</div>
+					<div class="keywords">
+					<h3>Compétences éparses</h3>
+					<div class="each">
+						<label>CSS3</label>
+						<ul>
+							<li> SCSS, SASS
+							<li> Mixins
+							<li> Compass
+							<li> Bootstrap, Foundation	
+							<li> Animations
+							<li> ...
+						</ul>
+					</div>
+					<div class="each">
+						<label>Javascript</label>
+						<ul>
+							<li> Coffeescript
+							<li> Handlebar.js
+							<li> Jquery, JqueryUI
+							<li> Slick
+							<li> ...
+						</ul>
+					</div>
+					<div class="each">
+						<label>Framework, IDE, Modèles ...</label>
+						<ul>
+							<li> Ruby on Rails
+							<li> Sublime
+							<li> MVC
+							<li> FontAwesome
+							<li> Simple_Form
+							<li> ...
+						</ul>
+					</div>
 				</div>
-			</div>
-			<div class="keywords">
-				<h3>Compétences éparses</h3>
-				<div class="each">
-					<label>CSS3</label>
-					<ul>
-						<li> SCSS, SASS
-						<li> Mixins
-						<li> Compass
-						<li> Bootstrap, Foundation	
-						<li> Animations
-						<li> ...
-					</ul>
-				</div>
-				<div class="each">
-					<label>Javascript</label>
-					<ul>
-						<li> Coffeescript
-						<li> Handlebar.js (JSON)
-						<li> Jquery, JqueryUI
-						<li> Slick
-						<li> ...
-					</ul>
-				</div>
-				<div class="each">
-					<label>Framework, IDE, Modèles ...</label>
-					<ul>
-						<li> Ruby on Rails
-						<li> Sublime
-						<li> MVC
-						<li> FontAwesome
-						<li> ...
-					</ul>
-				</div>
-
 			</div>
 		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="js/temp-links.js"></script>
 	</body>
 </html>
