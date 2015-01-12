@@ -1,0 +1,101 @@
+.landing.core .exp_prof, .landing.core .formation{
+	padding: 15px 3%;
+	margin-bottom:20px;
+}
+
+.landing.core h2{
+	margin:0;
+	padding:0;
+	font-family: "OpenSans";
+	color:#579AC5;
+	padding-bottom:7px;
+	border-bottom: 1px dashed #BEBEBE;
+	font-size: 1.6rem;
+}
+
+.landing.core .each_exp_prof, .landing.core .each_exp_form{
+	border-bottom:1px dotted #ccc;
+}
+
+.landing.core .each_exp_prof .date,.landing.core .each_exp_prof .details, .landing.core .each_exp_prof .middle_shape, .landing.core .each_exp_form .middle_shape,  .landing.core .each_exp_form  .form_details,   .landing.core .each_exp_form  .date{
+	display:inline-block;
+	vertical-align: middle;
+	font-size:1rem;
+}
+
+ .landing.core .each_exp_prof .middle_shape, .landing.core .each_exp_form  .middle_shape{
+ 	width:20px;
+ 	height:20px;
+ 	border-radius:20px;
+ 	margin:0 8% 0 4%;
+ 	background:#579AC5;
+ }
+
+ .landing.core .each_exp_prof .middle_shape.darker, .landing.core .each_exp_form .middle_shape.darker{
+	background: #51689A;
+ }
+
+.landing.core .each_exp_prof .date, .landing.core .each_exp_form .date{
+	width:15%;
+}
+
+.landing.core .each_exp_prof h3, .landing.core .each_exp_form h3{
+	font-size:1.3rem;
+	font-family: "OpenSans";
+	margin:12px 0;
+}
+
+.landing.core .each_exp_prof .details h3:before, .landing.core .each_exp_form .form_details h3:before{
+	content:"\f054";
+	display:inline-block;
+	vertical-align: middle;
+	margin:0 7px;
+	font-family: "FontAwesome";
+	font-size:1rem;
+	color: #919191;
+}
+
+.landing.core .each_exp_prof ul li{
+	font-size:0.9rem;
+}
+
+.landing.core .each_exp_form .form_details{
+	padding:15px 0;
+	max-width: 65%;
+}
+
+.landing.core .each_exp_form .middle_shape{
+	width:15px;
+	height:15px;
+	border-radius: 3px;
+}
+
+.landing.core .abilities, .landing.core .interest{
+	display:inline-block;
+	vertical-align: top;
+	font-size:1rem;
+}
+
+.landing.core .abilities{
+	width:60%;
+	margin-left: 3%;
+}
+
+.landing.core .interest{
+	width:30%;
+	float:right;
+	margin-right: 3%;
+}
+
+.landing.core .abilities .abilities_container {
+	padding:10px 0;
+}
+
+.landing.core .abilities .abilities_container label{
+	font-weight:bold;
+	font-size:1.2rem;
+}
+
+.landing.core .keywords{
+	width:100%;
+}

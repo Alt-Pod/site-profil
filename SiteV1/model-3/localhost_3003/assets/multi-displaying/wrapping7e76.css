@@ -1,0 +1,96 @@
+@media only screen and (max-width: 830px) {
+  /* line 2, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  .title_container {
+    padding-top: 7%;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* line 8, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  .core_left, .core_right {
+    width: 100%;
+  }
+
+  /* line 11, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  .shape_for_h1_1, .shape_for_h1_2 {
+    border: none;
+  }
+}
+@media only screen and (max-width: 761px) {
+  /* line 16, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  .menu_header .menu_lvl1 li .first_link a {
+    padding-right: 0px;
+  }
+
+  /* line 19, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  .menu_lvl1 {
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* line 25, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  .menu_header ul li {
+    display: block;
+  }
+  /* line 27, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  .menu_header ul li .shape_for_li_1, .menu_header ul li .shape_for_li_2 {
+    background: transparent;
+  }
+
+  /* line 31, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  .title_container {
+    padding-top: 3%;
+    margin-left: -150px;
+  }
+
+  /* line 35, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  .menu_header {
+    margin-top: -130px;
+  }
+}
+@media only screen and (max-width: 594px) {
+  /* line 40, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  body {
+    width: 100%;
+  }
+
+  /* line 43, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  .header_container_2 .title_container {
+    padding-top: 34px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* line 48, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  .menu_lvl1 {
+    margin-top: -5px;
+  }
+
+  /* line 51, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  .menu_lvl1 .documentations .menu_lvl2 {
+    margin-left: -176px;
+  }
+}
+@media only screen and (max-width: 469px) {
+  /* line 56, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  .header_container_2 .title_container {
+    margin-left: 45%;
+  }
+
+  /* line 59, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  .menu_lvl1 .documentations .menu_lvl2 {
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 1446px) {
+  /* line 64, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  body {
+    width: 976px;
+  }
+}
+@media only screen and (max-width: 925px) {
+  /* line 69, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/multi-displaying/wrapping.css.scss */
+  .core_menu .shape {
+    display: none;
+  }
+}

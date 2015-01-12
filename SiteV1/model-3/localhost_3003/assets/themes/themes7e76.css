@@ -1,0 +1,165 @@
+/* line 1, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes {
+  height: 23px;
+  background: white;
+  font-family: "Century Gothic";
+  /* ASIGN THE BACKGROUND'S COLORS HERE*/
+}
+/* line 5, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .select_palette_container {
+  margin-top: -1px;
+  margin-left: 5px;
+  position: absolute;
+  display: none;
+  vertical-align: top;
+  width: 101px;
+  z-index: 5;
+}
+/* line 13, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .select_palette_container .select_palette1, .themes .select_palette_container .select_palette2 {
+  position: relative;
+  width: 101px;
+  height: 16px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  border: 1px solid grey;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 22, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .select_palette_container .select_palette1 div, .themes .select_palette_container .select_palette2 div {
+  display: inline-block;
+  vertical-align: top;
+  width: 33px;
+  height: 16px;
+}
+/* line 30, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .select_palette {
+  display: inline-block;
+  vertical-align: top;
+  height: 16px;
+  width: 101px;
+  margin-top: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid grey;
+}
+/* line 39, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .select_palette .color1, .themes .select_palette .color2, .themes .select_palette .color3 {
+  display: inline-block;
+  vertical-align: top;
+  width: 33px;
+  height: 16px;
+}
+/* line 45, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .select_palette .color1, .themes .select_palette .color2 {
+  border-right: 1px solid white;
+}
+/* line 48, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .select_palette .color1 {
+  background: #91A9A1;
+}
+/* line 51, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .select_palette .color2 {
+  background: #74958A;
+}
+/* line 54, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .select_palette .color3 {
+  background: #ddd;
+}
+/* line 58, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .square1, .themes .square2, .themes .square3, .themes .square4 {
+  margin-top: 2px;
+  display: inline-block;
+  margin-left: 7px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid grey;
+}
+/* line 66, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .square4 {
+  margin-left: 70px;
+}
+/* line 70, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .square1 {
+  background: white;
+}
+/* line 73, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .square2 {
+  background: #ddd;
+}
+/* line 76, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .square3 {
+  background: black;
+}
+/* line 80, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .show_or_hide {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -15px;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+/* line 83, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .show_or_hide a {
+  color: black;
+}
+/* line 93, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .palette1, .themes .palette2 {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 97, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes label {
+  margin-left: 10%;
+  font-size: 15px;
+}
+/* line 101, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes a {
+  text-decoration: none;
+}
+/* line 104, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .click_to_hide {
+  display: block;
+  float: right;
+  vertical-align: top;
+  width: 10px;
+  height: 10px;
+  font-size: 12px;
+}
+/* line 111, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .click_to_hide p {
+  margin-top: -13px;
+  margin-left: -4px;
+  font-weight: bold;
+  font-size: 26px;
+  color: grey;
+}
+/* line 118, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.themes .click_to_hide p:hover {
+  color: black;
+}
+
+/* line 124, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.show_themes {
+  display: none;
+}
+/* line 126, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.show_themes a {
+  text-decoration: none;
+}
+/* line 130, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.show_themes .click_to_show p {
+  float: right;
+  margin-right: -20px;
+  margin-top: -5px;
+  color: grey;
+  font-size: 19px;
+}
+/* line 137, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/themes/themes.css.scss */
+.show_themes .click_to_show p:hover {
+  color: black;
+}

@@ -1,0 +1,22 @@
+/* line 1, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/sitemap.css.scss */
+.index_container {
+  margin-top: -19px;
+  padding-left: 20px;
+  font-family: "Century Gothic";
+}
+/* line 5, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/sitemap.css.scss */
+.index_container h2, .index_container h3 {
+  color: #32B3BA;
+}
+/* line 8, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/sitemap.css.scss */
+.index_container h2 {
+  padding-top: 15px;
+}
+/* line 11, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/sitemap.css.scss */
+.index_container h3 {
+  padding-left: 15px;
+}
+/* line 14, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/sitemap.css.scss */
+.index_container ul {
+  padding-left: 45px;
+}

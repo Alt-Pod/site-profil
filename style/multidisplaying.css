@@ -1,0 +1,26 @@
+@media only screen and (max-width:1150px){
+	header .menu ul {
+		width:99%;
+	}
+}
+@media only screen and (max-width:1050px){
+	#old_site{
+		display:none;
+	}
+	body{
+		width:90%;
+	}
+}
+@media only screen and (max-width:950px){
+	body{
+		width:99%;
+	}
+	html{
+		font-size:13px;
+	}
+}
+@media only screen and (max-width:800px){
+	body{
+		min-width:800px;
+	}
+}

@@ -1,0 +1,151 @@
+/* line 1, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.core_and_sidebar {
+  display: flex;
+  margin-top: -16px;
+  background: white;
+}
+/* line 5, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.core_and_sidebar h1, .core_and_sidebar h2, .core_and_sidebar h3 {
+  color: #3E5A51;
+  text-shadow: none;
+}
+/* line 9, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.core_and_sidebar h1 {
+  font-size: 20px;
+}
+
+/* line 14, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar {
+  margin-right: 10px;
+  font-family: "Century Gothic";
+  min-height: 400px;
+  width: 25%;
+  display: inline-block;
+  margin-left: auto;
+  padding-bottom: 1px;
+  vertical-align: top;
+  margin-top: 35px;
+}
+/* line 24, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block {
+  box-shadow: 0px 0px 10px;
+  margin-bottom: 10px;
+}
+/* line 27, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block h4 {
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 1px solid #DDDDDD;
+  margin: 0;
+  color: white;
+}
+/* line 34, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .actualite {
+  background-color: #3e4744;
+}
+/* line 37, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .h4_sondage {
+  background-color: #325247;
+}
+/* line 40, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .links {
+  background-color: #3e4744;
+}
+/* line 43, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .h4_newsletter {
+  background-color: #325247;
+}
+/* line 47, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_sondage {
+  min-height: 100px;
+}
+/* line 49, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_sondage label {
+  padding-left: 13px;
+  display: inline-block;
+  font-size: 13px;
+}
+/* line 54, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_sondage .string {
+  width: 20px;
+  display: inline-block;
+}
+/* line 58, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_sondage p {
+  padding-left: 10px;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+/* line 63, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_sondage .button {
+  margin-left: 35%;
+  margin-top: 5px;
+}
+/* line 69, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_actualite .news_block {
+  padding: 5px;
+}
+/* line 71, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_actualite .news_block .date {
+  display: inline-block;
+  font-size: 12px;
+}
+/* line 75, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_actualite .news_block .title {
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 10px;
+}
+/* line 80, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_actualite .news_block p {
+  border-top: 1px solid #91A9A1;
+  font-size: 10px;
+  text-align: justify;
+  padding: 0;
+  margin-bottom: -5px;
+}
+/* line 87, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_actualite .news_block a {
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-left: 45%;
+  color: black;
+}
+/* line 96, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_newsletter {
+  padding: 6px;
+  line-height: 75%;
+}
+/* line 99, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_newsletter .string {
+  width: 100%;
+}
+/* line 102, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_newsletter label {
+  font-size: 11px;
+}
+/* line 105, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_newsletter .button {
+  font-size: 11px;
+}
+/* line 109, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_links {
+  padding-bottom: 10px;
+}
+/* line 111, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_links p {
+  font-size: 12px;
+  padding: 5px;
+  margin: 0;
+}
+/* line 116, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_links ul {
+  margin-top: 0px;
+  list-style: none;
+  padding-left: 20px;
+}
+/* line 120, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/sidebar/sidebar.css.scss */
+.sidebar .block .container_links ul li {
+  font-size: 12px;
+}

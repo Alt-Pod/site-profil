@@ -1,0 +1,19 @@
+/*CORE*/
+/* line 4, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/core/core.css.scss */
+.core {
+  background: white;
+  display: block;
+}
+
+/* line 9, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/core/core.css.scss */
+.core_container {
+  width: 74%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+}
+/* line 14, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/core/core.css.scss */
+.core_container h2 {
+  font-size: 23px;
+  text-shadow: 4px 4px 5px #CCC;
+}

@@ -1,0 +1,15 @@
+HTTrack3.47-21+libhtsjava.so.2 launched on Thu, 29 May 2014 12:09:28 at http://localhost:3003/
+(winhttrack http://localhost:3003/ -O "/home/michael/websites/AUB" -Y -%v )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:12:15	Error: 	"Connect Time Out" (-2) after 2 retries at link https://www.facebook.com/robots.txt (from localhost:3003/)
+12:16:16	Error: 	"Connect Time Out" (-2) after 2 retries at link https://www.facebook.com/ (from localhost:3003/)
+12:16:16	Error: 	"Not Found" (404) at link https://accounts.google.com/POST (from https://accounts.google.com/SignUp?service=oz&continue=https%3A%2F%2Fplus.google.com%2Fgetstarted%3Ffww%3D1%26gpsrc%3Dgplp0)
+12:16:16	Error: 	"Not Found" (404) at link https://accounts.google.com/GET (from https://accounts.google.com/SignUp?service=oz&continue=https%3A%2F%2Fplus.google.com%2Fgetstarted%3Ffww%3D1%26gpsrc%3Dgplp0)
+
+HTTrack Website Copier/3.47-21 mirror complete in 6 minutes 48 seconds : 80 links scanned, 71 files written (2010265 bytes overall) [1488701 bytes received at 3648 bytes/sec], 824042 bytes transferred using HTTP compression in 11 files, ratio 25%, 1.0 requests per connection
+(4 errors, 0 warnings, 0 messages)

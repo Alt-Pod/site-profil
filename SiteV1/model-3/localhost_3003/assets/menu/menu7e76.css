@@ -1,0 +1,105 @@
+/* MENU */
+/* line 4, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/menu/menu.css.scss */
+.black_line {
+  height: 3px;
+  background: #2B2E34;
+}
+
+/* line 9, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/menu/menu.css.scss */
+.core_menu {
+  list-style: none;
+  background: #91A9A1;
+  min-height: 50px;
+  margin-top: 0px;
+}
+/* line 14, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/menu/menu.css.scss */
+.core_menu li {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 200px;
+  min-width: 140px;
+  margin-right: 5px;
+  min-height: 50px;
+  color: #257B80;
+  font-family: "Century Gothic";
+}
+/* line 23, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/menu/menu.css.scss */
+.core_menu li:hover {
+  background: #96B6AB;
+  font-weight: bold;
+}
+/* line 27, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/menu/menu.css.scss */
+.core_menu li a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  min-height: 50px;
+  text-align: center;
+  font-size: 14px;
+  /* Internet Explorer 10 */
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  /* Firefox */
+  display: -moz-box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  /* Safari, Opera, and Chrome */
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  /* W3C */
+  display: box;
+  box-pack: center;
+  box-align: center;
+}
+/* line 51, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/menu/menu.css.scss */
+.core_menu li a:hover {
+  color: black;
+}
+
+/* line 56, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/menu/menu.css.scss */
+.core_menu_lvl2 {
+  display: none;
+  list-style: none;
+  background: #ddd;
+  min-height: 50px;
+  padding-top: 10px;
+  margin-top: -16px;
+}
+/* line 63, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/menu/menu.css.scss */
+.core_menu_lvl2 .current a {
+  color: #3E5A51;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 68, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/menu/menu.css.scss */
+.core_menu_lvl2 li {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100px;
+  min-width: 50px;
+  margin-right: 20px;
+  min-height: 50px;
+  color: #3E5A51;
+  font-family: "Century Gothic";
+}
+/* line 77, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/menu/menu.css.scss */
+.core_menu_lvl2 li:hover {
+  font-weight: bold;
+}
+/* line 80, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/menu/menu.css.scss */
+.core_menu_lvl2 li a {
+  text-decoration: none;
+  color: #3E5A51;
+  white-space: pre-wrap;
+  min-height: 50px;
+  max-width: 100px;
+  min-width: 50px;
+  text-align: center;
+  font-size: 12px;
+}
+/* line 90, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/menu/menu.css.scss */
+.core_menu_lvl2 li a:hover {
+  color: #3E5A51;
+}

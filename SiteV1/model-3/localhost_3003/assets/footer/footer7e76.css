@@ -1,0 +1,54 @@
+/* FOOTER */
+/* line 4, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/footer/footer.css.scss */
+footer {
+  height: 100px;
+  background: #91A9A1;
+  margin-top: -12px;
+}
+
+/* line 10, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/footer/footer.css.scss */
+.menu_footer {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-left: -30px;
+  list-style: none;
+  font-family: "century gothic";
+  font-size: 12px;
+}
+/* line 19, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/footer/footer.css.scss */
+.menu_footer li {
+  display: inline;
+}
+/* line 22, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/footer/footer.css.scss */
+.menu_footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 28, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/footer/footer.css.scss */
+.footer_container {
+  display: block;
+  width: 236px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* line 29, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/footer/footer.css.scss */
+.footer_container p {
+  font-family: "century gothic";
+  font-size: 11px;
+  color: #74958A;
+  margin-top: -8px;
+}
+
+/* line 43, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/footer/footer.css.scss */
+.social_networks_footer img {
+  opacity: 0.7;
+}
+/* line 45, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/footer/footer.css.scss */
+.social_networks_footer img:hover {
+  opacity: 1;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html><html dir="ltr" lang="fr">
+<!-- Mirrored from localhost:3000/directories by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 29 May 2014 14:19:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><meta charset="utf-8" /><meta content="width=(device-width)initial-scale=1.0" name="viewport" /><title>Agence urbaine : Berrechid</title><link href="assets/jquery.ui.core7e76.css?body=1" media="screen" rel="stylesheet" />
+<link href="assets/jquery.ui.theme7e76.css?body=1" media="screen" rel="stylesheet" />
+<link href="assets/jquery.ui.accordion7e76.css?body=1" media="screen" rel="stylesheet" />
+<link href="assets/jquery.ui.menu7e76.css?body=1" media="screen" rel="stylesheet" />
+<link href="assets/jquery.ui.autocomplete7e76.css?body=1" media="screen" rel="stylesheet" />
+<link href="assets/jquery.ui.button7e76.css?body=1" media="screen" rel="stylesheet" />
+<link href="assets/jquery.ui.datepicker7e76.css?body=1" media="screen" rel="stylesheet" />
+<link href="assets/jquery.ui.resizable7e76.css?body=1" media="screen" rel="stylesheet" />
+<link href="assets/jquery.ui.dialog7e76.css?body=1" media="screen" rel="stylesheet" />
+<link href="assets/jquery.ui.progressbar7e76.css?body=1" media="screen" rel="stylesheet" />
+<link href="assets/jquery.ui.selectable7e76.css?body=1" media="screen" rel="stylesheet" />
+<link href="assets/jquery.ui.slider7e76.css?body=1" media="screen" rel="stylesheet" />
+<link href="assets/jquery.ui.spinner7e76.css?body=1" media="screen" rel="stylesheet" />
+<link href="assets/jquery.ui.tabs7e76.css?body=1" media="screen" rel="stylesheet" />
+<link href="assets/jquery.ui.tooltip7e76.css?body=1" media="screen" rel="stylesheet" />
+<link href="assets/jquery.ui.base7e76.css?body=1" media="screen" rel="stylesheet" />
+<link href="assets/admin7e76.css?body=1" media="screen" rel="stylesheet" />    <link href="assets/directory_xys/application7e76.css?body=1" media="screen" rel="stylesheet" />
+<script src="assets/vendor/modernizr7e76.js?body=1"></script><meta content="authenticity_token" name="csrf-param" />
+<meta content="moFQ790ZKxZ8JzM5j59TOAXoHf3SqAwGUMRH9TxJ/v8=" name="csrf-token" /></head><body><div class="wrap"><div class="head"><div class="tool"><div class="logo"></div></div><div style="height: 0px;clear:both"></div></div><div class="page">
+<div class="action">
+  <input type="button" class="btn" value="Ajouter" onclick="window.xys.directory_xys.directories.openPopup('new','/directories/new')"/>
+</div>
+
+<div class="directory_xys_directories">
+  <div class="TabbedPanels" id="tpl">
+    <ul class="TabbedPanelsTabGroup">
+      <li class="TabbedPanelsTab"></li>
+    </ul>
+
+    <div class="TabbedPanelsContentGroup">
+      <div class="TabbedPanelsContent tab_content">
+        <div class="directory_xys_directories_content">
+  <table style='width:100%'>
+    <tr>
+      <td class="left_content" valign="top"><div id="accordion" class="accordion">
+  <h3> :</h3>
+
+  <div>
+    <ul>
+          <li data-state="directory">{:new=&gt;&quot;Annuaires en cours&quot;, :validated=&gt;&quot;Annuaires valides&quot;, :expired=&gt;&quot;Annuaires expirés&quot;}</li>
+          <li data-state="useful_address">{:new=&gt;&quot;Adresses utiles en cours&quot;, :validated=&gt;&quot;Adresses utiles valides&quot;, :expired=&gt;&quot;Adresses utiles expirés&quot;}</li>
+    </ul>
+  </div>
+</div>
+
+</td>
+      <td class="right_content" valign="top"><legend> :</legend>
+<div class="content_bar">
+  <div class="bar">
+  <form accept-charset="UTF-8" action="#" data-remote="true" id="form_search" method="get"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="search_state" name="search[state]" type="hidden" value="new" />
+    <input id="search_kind" name="search[kind]" type="hidden" />
+    <table cellpadding="0" cellspacing="0">
+      <tr>
+        <th>Nom</th>
+        <th colspan="2">Slogan</th>
+      </tr>
+      <tr>
+        <td><input class="zonetext" id="search_name" name="search[name]" type="text" /></td>
+        <td><input class="zonetext" id="search_slogan" name="search[slogan]" type="text" /></td>
+        <td><input name="commit" type="submit" value="Chercher" /></td>
+      </tr>
+    </table>
+</form>
+</div>
+
+<div class="content">
+  <table cellpadding="0" cellspacing="0">
+    <tr>
+      <th>Nom</th>
+      <th>Slogan</th>
+      <th style="width:100px">Status</th>
+      <th style="width:100px">Action</th>
+    </tr>
+    <tbody id="list_directories">
+        <tr>
+      <td>Aaaaaaaaaaa</td>
+      <td>Bbbbbbbbbbb</td>
+      <td>S.A.R.L</td>
+      <td>
+        <ul>
+          <li><img alt="Show" onclick="window.xys.directory_xys.directories.openPopup(&#39;show&#39;,&#39;/directories/2&#39;)" src="assets/common/icons/show.png" title="Consultation" /></li>
+          <li><img alt="Edit" onclick="window.xys.directory_xys.directories.openPopup(&#39;edit&#39;,&#39;/directories/2/edit&#39;)" src="assets/common/icons/edit.png" title="Mis à jour" /></li>
+              <li><a data-confirm="Vous voulez vraiment valider ?" data-method="get" data-remote="true" href="directories/2/validate"><img alt="Validate" src="assets/common/icons/validate.png" title="Validation" /></a></li>
+              <li><a data-confirm="Vous voulez vraiment supprimer ?" data-method="delete" data-remote="true" href="directories/2.html" rel="nofollow"><img alt="Delete" src="assets/common/icons/delete.png" title="Suppression" /></a></li>
+        </ul>
+      </td>
+    </tr>
+
+
+    </tbody>
+  </table>
+
+  <div class="pg" id="directories_paginator">
+    
+  </div>
+</div>
+</div></td>
+    </tr>
+  </table>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div class="foot"></div></div><script src="assets/jquery/jquery7e76.js?body=1"></script>
+<script src="assets/jquery7e76.js?body=1"></script>
+<script src="assets/jquery_ujs7e76.js?body=1"></script>
+<script src="assets/jquery.ui.core7e76.js?body=1"></script>
+<script src="assets/jquery.ui.widget7e76.js?body=1"></script>
+<script src="assets/jquery.ui.accordion7e76.js?body=1"></script>
+<script src="assets/jquery.ui.position7e76.js?body=1"></script>
+<script src="assets/jquery.ui.menu7e76.js?body=1"></script>
+<script src="assets/jquery.ui.autocomplete7e76.js?body=1"></script>
+<script src="assets/jquery.ui.button7e76.js?body=1"></script>
+<script src="assets/jquery.ui.datepicker7e76.js?body=1"></script>
+<script src="assets/jquery.ui.mouse7e76.js?body=1"></script>
+<script src="assets/jquery.ui.draggable7e76.js?body=1"></script>
+<script src="assets/jquery.ui.resizable7e76.js?body=1"></script>
+<script src="assets/jquery.ui.dialog7e76.js?body=1"></script>
+<script src="assets/jquery.ui.droppable7e76.js?body=1"></script>
+<script src="assets/jquery.ui.effect7e76.js?body=1"></script>
+<script src="assets/jquery.ui.effect-blind7e76.js?body=1"></script>
+<script src="assets/jquery.ui.effect-bounce7e76.js?body=1"></script>
+<script src="assets/jquery.ui.effect-clip7e76.js?body=1"></script>
+<script src="assets/jquery.ui.effect-drop7e76.js?body=1"></script>
+<script src="assets/jquery.ui.effect-explode7e76.js?body=1"></script>
+<script src="assets/jquery.ui.effect-fade7e76.js?body=1"></script>
+<script src="assets/jquery.ui.effect-fold7e76.js?body=1"></script>
+<script src="assets/jquery.ui.effect-highlight7e76.js?body=1"></script>
+<script src="assets/jquery.ui.effect-pulsate7e76.js?body=1"></script>
+<script src="assets/jquery.ui.effect-scale7e76.js?body=1"></script>
+<script src="assets/jquery.ui.effect-shake7e76.js?body=1"></script>
+<script src="assets/jquery.ui.effect-slide7e76.js?body=1"></script>
+<script src="assets/jquery.ui.effect-transfer7e76.js?body=1"></script>
+<script src="assets/jquery.ui.progressbar7e76.js?body=1"></script>
+<script src="assets/jquery.ui.selectable7e76.js?body=1"></script>
+<script src="assets/jquery.ui.slider7e76.js?body=1"></script>
+<script src="assets/jquery.ui.sortable7e76.js?body=1"></script>
+<script src="assets/jquery.ui.spinner7e76.js?body=1"></script>
+<script src="assets/jquery.ui.tabs7e76.js?body=1"></script>
+<script src="assets/jquery.ui.tooltip7e76.js?body=1"></script>
+<script src="assets/jquery.ui.all7e76.js?body=1"></script>
+<script src="assets/jquery.iframe-transport7e76.js?body=1"></script>
+<script src="assets/jquery.remotipart7e76.js?body=1"></script>
+<script src="assets/admin/libs/SpryTabbedPanels7e76.js?body=1"></script>
+<script src="assets/admin/libs/SpryValidationTextField7e76.js?body=1"></script>
+<script src="assets/admin/libs/ajaxupload7e76.js?body=1"></script>
+<script src="assets/admin/libs/calendar7e76.js?body=1"></script>
+<script src="assets/admin/libs/jquery.form7e76.js?body=1"></script>
+<script src="assets/admin/libs/multiAccordion7e76.js?body=1"></script>
+<script src="assets/admin/libs/popup7e76.js?body=1"></script>
+<script src="assets/admin/libs/timepicker7e76.js?body=1"></script>
+<script src="assets/admin/system/general7e76.js?body=1"></script>
+<script src="assets/classification_xys/xys7e76.js?body=1"></script>
+<script src="assets/multimedias_xys/attachments7e76.js?body=1"></script>
+<script src="assets/multimedias_xys/instances7e76.js?body=1"></script>
+<script src="assets/multimedias_xys/application7e76.js?body=1"></script>
+<script src="assets/geographic_coordinates_xys/xys7e76.js?body=1"></script>
+<script src="assets/comment_xys/comments7e76.js?body=1"></script>
+<script src="assets/comment_xys/application7e76.js?body=1"></script>
+<script src="assets/admin7e76.js?body=1"></script>    <script src="assets/directory_xys/demands7e76.js?body=1"></script>
+<script src="assets/directory_xys/directories7e76.js?body=1"></script>
+<script src="assets/directory_xys/marks7e76.js?body=1"></script>
+<script src="assets/directory_xys/sectors7e76.js?body=1"></script>
+<script src="assets/multimedias_xys/attachments7e76.js?body=1"></script>
+<script src="assets/multimedias_xys/instances7e76.js?body=1"></script>
+<script src="assets/multimedias_xys/application7e76.js?body=1"></script>
+<script src="assets/coordinate_xys/contact_instances7e76.js?body=1"></script>
+<script src="assets/coordinate_xys/coordinate_instances7e76.js?body=1"></script>
+<script src="assets/coordinate_xys/application7e76.js?body=1"></script>
+<script src="assets/classification_xys/xys7e76.js?body=1"></script>
+<script src="assets/tinymce/preinit7e76.js?body=1"></script>
+<script src="assets/tinymce/tinymce7e76.js?body=1"></script>
+<script src="assets/tinymce7e76.js?body=1"></script>
+<script src="assets/directory_xys/application7e76.js?body=1"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#accordion").multiAccordion({active: [0]})
+        });
+    </script>
+    <script type="text/javascript">
+        $('.directory_xys_directories_content').ready(function () {
+            window.xys.directory_xys.directories.load_links();
+        })
+    </script>
+    <script type="text/javascript">
+        $('.directory_xys_directories').ready(function () {
+            new Spry.Widget.TabbedPanels("tpl");
+        })
+    </script>
+</body>
+<!-- Mirrored from localhost:3000/directories by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 29 May 2014 14:20:00 GMT -->
+</html>

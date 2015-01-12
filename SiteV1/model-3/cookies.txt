@@ -1,0 +1,9 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.google.com	TRUE	/	FALSE	1999999999	NID	67=TGq0fULLqnmxk3cD7sKKMfdZ18cWymXS_hzuK-utHED861axoamqyQL_HefMkhAvBCuD4KwA-tP2WXoHAbkw8qOEvQtEpswk0wrhcV45gObjQAdrRyQDQMj3SyULQT_M
+accounts.google.com	TRUE	/	FALSE	1999999999	GALX	-1mcidRws_0
+localhost:3003	TRUE	/	FALSE	1999999999	_AU+Berrechid_session	SlI4RU50aXdGaEdST29NaEdZVHF0c1plYm5WWlBmTmF5ckw2YXpvVkFwOHpWcklJalJUSG1FNTNZaVNwREpHOUs0NXdGRVhta0JkUE5OeUxKaTFXN1pPRjhqQm5uQ1dIUjhwVk9IaVhlQzJYOHBudDJIUG1IMStwTTBqYnE2cXFjaEZlUmVMTWJwa2xTTkNSZVpUUUxnPT0tLVRuckJoMXUrbm9SZ0luODFyU2JnNHc9PQ%3D%3D--ce4d127460831032034373f3db84852750c8e837
+accounts.google.com	TRUE	/	FALSE	1999999999	GoogleAccountsLocale_session	en
+accounts.google.com	TRUE	/	FALSE	1999999999	GAPS	1:rs7Q4w7Jo31mAJU_Bsa9N_3b1-TAog:92yWjl3nWJ-C7fQS
+accounts.google.com	TRUE	/	FALSE	1999999999	Priority	High
+

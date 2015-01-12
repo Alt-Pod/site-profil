@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+	<head>
+		<title>Michaël Dornic - Découvrez mon profil en ligne !</title>
+		<link rel="stylesheet" type="text/css" href="style_CV.css">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta property="og:title" content="Michaël Dornic" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://www.michael-dornic.com/accueil.html" />
+		<meta property="og:image" content="http://www.michael-dornic.com/img/social.png" />
+		<meta property="og:description" content="Site internet de Michael Dornic, chef de projet en marketing Internet et conception de site." />
+	</head>
+	<body class="multi_about">
+		<header>
+			<div class="graph_top_left"></div>
+			<div class="graph_bottom_left"></div>
+			<div class="fill_the_gap"></div>
+			<div class="content_header" itemscope itemtype="http://schema.org/Person">
+				<h1 itemprop="name">Michaël Dornic</H1>
+				<h2 itemprop="jobtitle">Chef de projet en marketing Internet et conception de site</h2>
+			<div class="line_header"></div>
+				<p class="first_p">
+					Tel. : <span itemprop="telephone">06 77 16 16 36</span>
+					Courriel : <span itemprop="email">michael.dornic@gmail.com</span>
+				</p>
+				<p class="second_p" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<span itemprop="streetAddress">Adresse : 54, avenue du général Leclerc</span> - 
+					<span itemprop="postalCode">94240</span> <span itemprop="addressLocality">Paris</span>
+				</p>
+			</div>
+			<div class="graph_top_right"></div>
+			<div class="graph_bottom_right"></div>
+		</header>
+		<div class="socialnetwork">
+			<div class="socialnetwork_container">
+				<a href="https://www.facebook.com/michael.dornic" target="_blank" ><img src="reseauxsociaux_fb.jpg" alt="M. Dornic on Facebook" title="M. Dornic on Facebook"/></a>
+				<a href="https://plus.google.com/102238183196160009735" target="_blank" ><img src="reseauxsociaux_gp.jpg" alt="M. Dornic on Google +" title="M. Dornic on Google +"/></a>
+				<a href="http://fr.linkedin.com/pub/michael-dornic/55/259/79b" target="_blank" ><img src="reseauxsociaux_li.jpg" alt="M. Dornic on LinkedIn" title="M. Dornic on LinkedIn"/></a>
+			</div>
+		</div>
+		<div class="main_menu_container">
+		</div>
+		<div class="main_menu">
+			<ul>
+				<li class="first_li"> <a href="accueil.html"><span> Accueil</span></a>
+				<li> <a href="sit_actuelle.html"><span> Ma situation</span></a>
+				<li id="current"> <a href="about_fr.html"><span> A propos de ce site</span></a>
+				<li class="last_li"> <a href="realisation.html"><span> Mes réalisations</span></a>
+			</ul>
+		</div>
+		<div class="about_container">
+			<div class="about">
+				<h2>Introduction</h2>
+				<p>Ce site, à l'exception des couleurs, a entièrement été conçu par moi-même.</p>
+				<p>Il est :</p>
+				<ul>
+					<li> Entièrement statique</li> 
+					<li> Référencé via <a href="http://schema.org/" target="_blank">schema.org</a> et <a href="http://opengraphprotocol.org/" target="_blank">opengraphprotocol.org</a></li>
+					<li>Universellement responsive (smartphone, tablette, ordinateur)</li>
+					<li>Génial</li>
+				</ul>
+				<p>Il a entièrement été développé depuis <span itemscope itemtype="http://schema.org/ItemList"><a href="http://notepad-plus-plus.org/fr/" target="_blank" itemprop="itemListElement">Notepad++</a> et <a href="http://www.sublimetext.com/" target="_blank" itemprop="itemListElement">sublime Text</a>. </p></span>
+				<h2>Dans les détails</h2>
+				<p>Mon objectif a été de faire un site très simple avec une mise en forme légèrement poussée (surtout vis à vis du multi display). Tout a été fait pour réduire le temps de chargement du site au niveau des images : il y en a le moins possible, sans redimensionnement par le navigateur. </p>
+				<p>Le site n'est cependant pas optimisé et fait preuve de redondance au niveau du code (surtout css). La relecture à été sommaire et les méthodes utilisée ont été très simple, sans reflexion particulière au niveau d'un modèle très structuré.</p>
+				<p>La plupart des formes que vous voyez sont entièrement construite en css. Exemples présents sur ce site :</p> 
+				<div class="code_block">
+					<code> 
+						<div class="code_line">width:0px;</div><br>
+						<div class="code_line">height:0px;</div><br>
+						<div class="code_line">border-top:6px solid transparent;</div><br>
+						<div class="code_line">border-bottom:6px solid transparent;</div><br>
+						<div class="code_line">border-right:6px solid transparent;</div><br>
+						<div class="code_line">border-left:6px solid #94AAB9;</div><br>
+					</code>
+					<code> 
+						<div class="code_line">-webkit-transform:skew(-30deg);</div><br>
+						<div class="code_line">-moz-transform:skew(-30deg);</div><br>
+						<div class="code_line">-o-transform:skew(-30deg);</div><br>
+						<div class="code_line">tranform:skew(-30deg);</div><br>
+					</code>
+				</div>
+				<p>Le multi display se fait en css essentiellement grâce à :</p><code><div class="code_line">@media only screen and (max-width:<i>la largeur maximale</i>)</div></code>
+				<code></code>
+				<p>Dont voici quelques exemples :</p>
+				<code> 
+				<div class="code_line">@media only screen and (max-width:747px){</div><br>
+				<div class="code_line">&nbsp	.content_header{</div><br>
+				<div class="code_line">&nbsp&nbsp&nbsp		width:59%</div><br>
+				<div class="code_line">&nbsp	}</div><br>
+				<div class="code_line">&nbsp	.arrow_4{</div><br>
+				<div class="code_line">&nbsp&nbsp&nbsp		display:block;</div><br>
+				<div class="code_line">&nbsp&nbsp&nbsp		border-top:6px solid #94AAB9;</div><br>
+				<div class="code_line">&nbsp&nbsp&nbsp		border-left:6px solid transparent;</div><br>
+				<div class="code_line">&nbsp&nbsp&nbsp		margin-left:5px;</div><br>
+				<div class="code_line">&nbsp&nbsp&nbsp		margin-bottom:-10px;</div><br>
+				<div class="code_line">&nbsp	}</div><br>
+				<div class="code_line">&nbsp	.socialnetwork{</div><br>
+				<div class="code_line">&nbsp&nbsp&nbsp		margin-top:380px;</div><br>
+				<div class="code_line">&nbsp	}</div><br>
+				<div class="code_line">}</div><br>
+				</code>
+				<code>
+				<div class="code_line">@media only screen and (max-width:688px){</div><br>
+				<div class="code_line">&nbsp	.content_header h1{</div><br>
+				<div class="code_line">&nbsp&nbsp&nbsp		margin-left:5px;</div><br>
+				<div class="code_line">&nbsp	}</div><br>
+				<div class="code_line">&nbsp	.content_header h2{</div><br>
+				<div class="code_line">&nbsp&nbsp&nbsp		font-size:20px;</div><br>
+				<div class="code_line">&nbsp	}</div><br>
+				<div class="code_line">&nbsp	.main_menu ul{</div><br>
+				<div class="code_line">&nbsp&nbsp&nbsp		margin-left:-1%;</div><br>
+				<div class="code_line">&nbsp	}</div><br>
+				<div class="code_line">}</div><br>
+				</code>
+				<p>J'ai travaillé principalement ici en terme d'horizontalité (et avec des pixels), ce qui est peu commun. Il y a néanmoins certains éléments réagissant de manières verticale (comme par exemple les deux block de bas de page dans <a href="accueil.html" target="_blank">Accueil</a>). </p>
+				<p>Si vous souhaitez exploiter quoique ce soit de ce site, tout est disponible gratuitement. Libre à vous de vous en servir comme vous le souhaitez (copier/coller, modification, etc). Je vous demanderai juste une petite référence à mon nom.</p>
+				<p>Juste un petit commentaire à inclure dans votre code html, n'importe où :</p>
+				<code><div class="code_line"><span><</span>! Une partie de ce contenu a été développé par Michael Dornic <span>></span></div></code>
+				<! et si vous êtes vraiment cool, vous m'envoyez un petit mail pour me dire ce que vous comptez faire avec mon code :D>
+				<p>Merci!</p>
+				<h2>A venir</h2>
+				<ul class="about-last-list">
+					<li>Traduction du site en divers langages (Anglais, Espagnol, éventuellement italien).</li>
+					<li>Une refonte du site partiel sous l'objectif d'un changement de template html est la priorité.</li>
+					<li>Création d'un .js pour apporter une mise à niveau ergonomique et permettre la création d'un module destiné à l'utilisateur. Ce dernier aura alors la possibilité de changer le template du site.</li>
+					<li>Révision de la construction du site (optimisation)</li>
+					<li>Incorporation d'une base de donnée en vue de rendre le site plus dynamique et normalisé.</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

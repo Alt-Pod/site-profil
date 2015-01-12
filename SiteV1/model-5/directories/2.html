@@ -1,0 +1,135 @@
+<script type="text/javascript">
+    setPopupTitle('directories', "Consultation");
+</script>
+
+<div class="directory_xys_directories_menu_form">
+  <div class="menu">
+    <ul class="items">
+          <li class="item">
+            <div id="tag_1"><span class="ico"></span>Infos. Adresse utile</div>
+          </li>
+          <li class="item">
+            <div id="tag_2"><span class="ico"></span>Coordonnées</div>
+          </li>
+          <li class="item">
+            <div id="tag_3"><span class="ico"></span>Image de représentation</div>
+          </li>
+          <li class="item">
+            <div id="tag_4"><span class="ico"></span>Secteurs d&#39;activités</div>
+          </li>
+          <li class="item">
+            <div id="tag_5"><span class="ico"></span>Description de l&#39;adresse utile</div>
+          </li>
+          <li class="item">
+            <div id="tag_6"><span class="ico"></span>Marques</div>
+          </li>
+          <li class="item">
+            <div id="tag_7"><span class="ico"></span>Show-Room</div>
+          </li>
+          <li class="item">
+            <div id="tag_8"><span class="ico"></span>Commentaires interne</div>
+          </li>
+    </ul>
+  </div>
+  <div class="detail"><div class="form">
+  <table cellpadding="7" cellspacing="0" style="float:left">
+    <tr>
+      <th>Classification :</th>
+      <td><input class="zonetext" id="directory_classification_key" name="directory[classification_key]" readonly="readonly" type="text" value="Administrations de police" /></td>
+    </tr>
+    <tr>
+      <th>Nom :</th>
+      <td><div class="TabbedPanels" id="tp-mlang-directory-name" style="width:100%"><ul class="TabbedPanelsTabGroup"><li class="TabbedPanelsTab">fr</li><li class="TabbedPanelsTab">ar</li></ul><div class="TabbedPanelsContentGroup"><div class="TabbedPanelsContent tab_content" style="height:auto"><input class="zonetext" dir="ltr" id="directory_name_fr" name="directory[name][fr]" readonly="readonly" style="width: 97%; height: 92%" type="text" value="Aaaaaaaaaaa" /></div><div class="TabbedPanelsContent tab_content" style="height:auto"><input class="zonetext" dir="rtl" id="directory_name_ar" name="directory[name][ar]" readonly="readonly" style="width: 97%; height: 92%" type="text" value="" /></div></div><script>
+//<![CDATA[
+new Spry.Widget.TabbedPanels('tp-mlang-directory-name')
+//]]>
+</script></div></td>
+    </tr>
+    <tr>
+      <th>Slogan :</th>
+      <td><div class="TabbedPanels" id="tp-mlang-directory-slogan" style="width:100%"><ul class="TabbedPanelsTabGroup"><li class="TabbedPanelsTab">fr</li><li class="TabbedPanelsTab">ar</li></ul><div class="TabbedPanelsContentGroup"><div class="TabbedPanelsContent tab_content" style="height:auto"><textarea class="zonetext" dir="ltr" id="directory_slogan_fr" name="directory[slogan][fr]" readonly="readonly" style="height: 80px">
+Bbbbbbbbbbb</textarea></div><div class="TabbedPanelsContent tab_content" style="height:auto"><textarea class="zonetext" dir="rtl" id="directory_slogan_ar" name="directory[slogan][ar]" readonly="readonly" style="height: 80px">
+</textarea></div></div><script>
+//<![CDATA[
+new Spry.Widget.TabbedPanels('tp-mlang-directory-slogan')
+//]]>
+</script></div></td>
+    </tr>
+  </table>
+
+  <table cellpadding="7" cellspacing="0" style="float:right">
+    <tr>
+      <th>Membre :</th>
+      <td><input class="zonetext" id="directory_member_id" name="directory[member_id]" readonly="readonly" type="text" value="Cccc" /></td>
+    </tr>
+    <tr>
+      <th>Status :</th>
+      <td><input class="zonetext" id="directory_status" name="directory[status]" readonly="readonly" type="text" value="S.A.R.L" /></td>
+    </tr>
+    <tr>
+      <th>Email :</th>
+      <td><input class="zonetext" id="directory_email" name="directory[email]" readonly="readonly" type="text" value="Dddddddd@ddd.ddd" /></td>
+    </tr>
+    <tr>
+      <th valign="top"><span class="translation_missing" title="translation missing: fr.directory_xys.directories.labels.image">Image</span> :</th>
+      <td><img alt="Thumb to stopped" src="../system/directory_xys/directories/files/2/thumb_to_stopped14d9.html?1400666541" style="width:100px;height:100px" /></td>
+    </tr>
+  </table>
+
+  <div class="act">
+    <input type="button" value="Fermer" class="btn" onclick="closePopup('directories')"/>
+  </div>
+</div>
+
+</div>
+  <div class="detail" id="bk_coordinates" style="display:none"></div>
+  <div class="detail" id="bk_showing_pictures" style="display:none"></div>
+  <div class="detail" id="bk_sectors" style="display:none"></div>
+  <div class="detail" id="bk_description" style="display:none"><div class="form">
+  <h3>Description :</h3>
+
+  <div class="zone_description">
+    
+  </div>
+
+  <div class="act">
+    <input type="button" value="Fermer" class="btn" onclick="closePopup('directories')"/>
+  </div>
+</div>
+</div>
+  <div class="detail" id="bk_marks" style="display:none"></div>
+  <div class="detail" id="bk_showrooms" style="display:none"></div>
+  <div class="detail" id="bk_comments" style="display:none"><div class="form">
+  <div style="float:right">
+    <input type="button" class="btn" value="Ajouter" onclick="window.xys.comment_xys.openPopup('new','/comments/new?details%5Bcommentable_id%5D=2&amp;details%5Bcommentable_type%5D=DirectoryXys%3A%3ADirectory')"/>
+  </div>
+
+  <h3>Liste des commentaires :</h3>
+
+  <div id="list_comments">
+        <div class="msg">Aucune commentaire trouvée</div>
+
+  </div>
+</div></div>
+</div>
+
+<script type="text/javascript">
+    $('.directory_xys_directories_menu_form').ready(function () {
+        window.xys.directory_xys.directories.observe_menu_form();
+        $.get('/coordinate/coordinate_instances/2?localisable_id=2&localisable_type=DirectoryXys%3A%3ADirectory', function (data) {
+            $('#bk_coordinates').html(data);
+        });
+        $.get('/multimedias/instances/2?attachable_id=2&attachable_kind=showingPicture&attachable_type=DirectoryXys%3A%3ADirectory&kind=MultimediasXys%3A%3APhoto', function (data) {
+            $('#bk_showing_pictures').html(data);
+        });
+        $.get('/multimedias/instances/2?attachable_id=2&attachable_kind=showroom&attachable_type=DirectoryXys%3A%3ADirectory', function (data) {
+            $('#bk_showrooms').html(data);
+        });
+        $.get('/directories/2/sectors/2', function (data) {
+            $('#bk_sectors').html(data)
+        });
+        $.get('/directories/2/marks/2', function (data) {
+            $('#bk_marks').html(data)
+        });
+    })
+</script>

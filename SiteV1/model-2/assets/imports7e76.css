@@ -1,0 +1,4552 @@
+@font-face {
+  font-family: 'gothic';
+  src: url(gothic.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+@font-face {
+  font-family: 'impact';
+  src: font-url("Impact.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+/*
+ * Foundation Icons v 3.0
+ * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
+ * MIT License
+ */
+@font-face {
+  font-family: "foundation-icons";
+  src: url(foundation-icons.eot);
+  src: url(foundation-iconsd41d.eot?#iefix) format("embedded-opentype"), url(foundation-icons.woff) format("woff"), url(foundation-icons.ttf) format("truetype"), url(foundation-icons.svg#fontcustom) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 301, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-address-book:before,
+.fi-alert:before,
+.fi-align-center:before,
+.fi-align-justify:before,
+.fi-align-left:before,
+.fi-align-right:before,
+.fi-anchor:before,
+.fi-annotate:before,
+.fi-archive:before,
+.fi-arrow-down:before,
+.fi-arrow-left:before,
+.fi-arrow-right:before,
+.fi-arrow-up:before,
+.fi-arrows-compress:before,
+.fi-arrows-expand:before,
+.fi-arrows-in:before,
+.fi-arrows-out:before,
+.fi-asl:before,
+.fi-asterisk:before,
+.fi-at-sign:before,
+.fi-background-color:before,
+.fi-battery-empty:before,
+.fi-battery-full:before,
+.fi-battery-half:before,
+.fi-bitcoin-circle:before,
+.fi-bitcoin:before,
+.fi-blind:before,
+.fi-bluetooth:before,
+.fi-bold:before,
+.fi-book-bookmark:before,
+.fi-book:before,
+.fi-bookmark:before,
+.fi-braille:before,
+.fi-burst-new:before,
+.fi-burst-sale:before,
+.fi-burst:before,
+.fi-calendar:before,
+.fi-camera:before,
+.fi-check:before,
+.fi-checkbox:before,
+.fi-clipboard-notes:before,
+.fi-clipboard-pencil:before,
+.fi-clipboard:before,
+.fi-clock:before,
+.fi-closed-caption:before,
+.fi-cloud:before,
+.fi-comment-minus:before,
+.fi-comment-quotes:before,
+.fi-comment-video:before,
+.fi-comment:before,
+.fi-comments:before,
+.fi-compass:before,
+.fi-contrast:before,
+.fi-credit-card:before,
+.fi-crop:before,
+.fi-crown:before,
+.fi-css3:before,
+.fi-database:before,
+.fi-die-five:before,
+.fi-die-four:before,
+.fi-die-one:before,
+.fi-die-six:before,
+.fi-die-three:before,
+.fi-die-two:before,
+.fi-dislike:before,
+.fi-dollar-bill:before,
+.fi-dollar:before,
+.fi-download:before,
+.fi-eject:before,
+.fi-elevator:before,
+.fi-euro:before,
+.fi-eye:before,
+.fi-fast-forward:before,
+.fi-female-symbol:before,
+.fi-female:before,
+.fi-filter:before,
+.fi-first-aid:before,
+.fi-flag:before,
+.fi-folder-add:before,
+.fi-folder-lock:before,
+.fi-folder:before,
+.fi-foot:before,
+.fi-foundation:before,
+.fi-graph-bar:before,
+.fi-graph-horizontal:before,
+.fi-graph-pie:before,
+.fi-graph-trend:before,
+.fi-guide-dog:before,
+.fi-hearing-aid:before,
+.fi-heart:before,
+.fi-home:before,
+.fi-html5:before,
+.fi-indent-less:before,
+.fi-indent-more:before,
+.fi-info:before,
+.fi-italic:before,
+.fi-key:before,
+.fi-laptop:before,
+.fi-layout:before,
+.fi-lightbulb:before,
+.fi-like:before,
+.fi-link:before,
+.fi-list-bullet:before,
+.fi-list-number:before,
+.fi-list-thumbnails:before,
+.fi-list:before,
+.fi-lock:before,
+.fi-loop:before,
+.fi-magnifying-glass:before,
+.fi-mail:before,
+.fi-male-female:before,
+.fi-male-symbol:before,
+.fi-male:before,
+.fi-map:before,
+.fi-marker:before,
+.fi-megaphone:before,
+.fi-microphone:before,
+.fi-minus-circle:before,
+.fi-minus:before,
+.fi-mobile-signal:before,
+.fi-mobile:before,
+.fi-monitor:before,
+.fi-mountains:before,
+.fi-music:before,
+.fi-next:before,
+.fi-no-dogs:before,
+.fi-no-smoking:before,
+.fi-page-add:before,
+.fi-page-copy:before,
+.fi-page-csv:before,
+.fi-page-delete:before,
+.fi-page-doc:before,
+.fi-page-edit:before,
+.fi-page-export-csv:before,
+.fi-page-export-doc:before,
+.fi-page-export-pdf:before,
+.fi-page-export:before,
+.fi-page-filled:before,
+.fi-page-multiple:before,
+.fi-page-pdf:before,
+.fi-page-remove:before,
+.fi-page-search:before,
+.fi-page:before,
+.fi-paint-bucket:before,
+.fi-paperclip:before,
+.fi-pause:before,
+.fi-paw:before,
+.fi-paypal:before,
+.fi-pencil:before,
+.fi-photo:before,
+.fi-play-circle:before,
+.fi-play-video:before,
+.fi-play:before,
+.fi-plus:before,
+.fi-pound:before,
+.fi-power:before,
+.fi-previous:before,
+.fi-price-tag:before,
+.fi-pricetag-multiple:before,
+.fi-print:before,
+.fi-prohibited:before,
+.fi-projection-screen:before,
+.fi-puzzle:before,
+.fi-quote:before,
+.fi-record:before,
+.fi-refresh:before,
+.fi-results-demographics:before,
+.fi-results:before,
+.fi-rewind-ten:before,
+.fi-rewind:before,
+.fi-rss:before,
+.fi-safety-cone:before,
+.fi-save:before,
+.fi-share:before,
+.fi-sheriff-badge:before,
+.fi-shield:before,
+.fi-shopping-bag:before,
+.fi-shopping-cart:before,
+.fi-shuffle:before,
+.fi-skull:before,
+.fi-social-500px:before,
+.fi-social-adobe:before,
+.fi-social-amazon:before,
+.fi-social-android:before,
+.fi-social-apple:before,
+.fi-social-behance:before,
+.fi-social-bing:before,
+.fi-social-blogger:before,
+.fi-social-delicious:before,
+.fi-social-designer-news:before,
+.fi-social-deviant-art:before,
+.fi-social-digg:before,
+.fi-social-dribbble:before,
+.fi-social-drive:before,
+.fi-social-dropbox:before,
+.fi-social-evernote:before,
+.fi-social-facebook:before,
+.fi-social-flickr:before,
+.fi-social-forrst:before,
+.fi-social-foursquare:before,
+.fi-social-game-center:before,
+.fi-social-github:before,
+.fi-social-google-plus:before,
+.fi-social-hacker-news:before,
+.fi-social-hi5:before,
+.fi-social-instagram:before,
+.fi-social-joomla:before,
+.fi-social-lastfm:before,
+.fi-social-linkedin:before,
+.fi-social-medium:before,
+.fi-social-myspace:before,
+.fi-social-orkut:before,
+.fi-social-path:before,
+.fi-social-picasa:before,
+.fi-social-pinterest:before,
+.fi-social-rdio:before,
+.fi-social-reddit:before,
+.fi-social-skillshare:before,
+.fi-social-skype:before,
+.fi-social-smashing-mag:before,
+.fi-social-snapchat:before,
+.fi-social-spotify:before,
+.fi-social-squidoo:before,
+.fi-social-stack-overflow:before,
+.fi-social-steam:before,
+.fi-social-stumbleupon:before,
+.fi-social-treehouse:before,
+.fi-social-tumblr:before,
+.fi-social-twitter:before,
+.fi-social-vimeo:before,
+.fi-social-windows:before,
+.fi-social-xbox:before,
+.fi-social-yahoo:before,
+.fi-social-yelp:before,
+.fi-social-youtube:before,
+.fi-social-zerply:before,
+.fi-social-zurb:before,
+.fi-sound:before,
+.fi-star:before,
+.fi-stop:before,
+.fi-strikethrough:before,
+.fi-subscript:before,
+.fi-superscript:before,
+.fi-tablet-landscape:before,
+.fi-tablet-portrait:before,
+.fi-target-two:before,
+.fi-target:before,
+.fi-telephone-accessible:before,
+.fi-telephone:before,
+.fi-text-color:before,
+.fi-thumbnails:before,
+.fi-ticket:before,
+.fi-torso-business:before,
+.fi-torso-female:before,
+.fi-torso:before,
+.fi-torsos-all-female:before,
+.fi-torsos-all:before,
+.fi-torsos-female-male:before,
+.fi-torsos-male-female:before,
+.fi-torsos:before,
+.fi-trash:before,
+.fi-trees:before,
+.fi-trophy:before,
+.fi-underline:before,
+.fi-universal-access:before,
+.fi-unlink:before,
+.fi-unlock:before,
+.fi-upload-cloud:before,
+.fi-upload:before,
+.fi-usb:before,
+.fi-video:before,
+.fi-volume-none:before,
+.fi-volume-strike:before,
+.fi-volume:before,
+.fi-web:before,
+.fi-wheelchair:before,
+.fi-widget:before,
+.fi-wrench:before,
+.fi-x-circle:before,
+.fi-x:before,
+.fi-yen:before,
+.fi-zoom-in:before,
+.fi-zoom-out:before {
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+/* line 313, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-address-book:before {
+  content: "\f100";
+}
+
+/* line 314, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-alert:before {
+  content: "\f101";
+}
+
+/* line 315, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-align-center:before {
+  content: "\f102";
+}
+
+/* line 316, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-align-justify:before {
+  content: "\f103";
+}
+
+/* line 317, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-align-left:before {
+  content: "\f104";
+}
+
+/* line 318, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-align-right:before {
+  content: "\f105";
+}
+
+/* line 319, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-anchor:before {
+  content: "\f106";
+}
+
+/* line 320, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-annotate:before {
+  content: "\f107";
+}
+
+/* line 321, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-archive:before {
+  content: "\f108";
+}
+
+/* line 322, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-arrow-down:before {
+  content: "\f109";
+}
+
+/* line 323, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-arrow-left:before {
+  content: "\f10a";
+}
+
+/* line 324, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-arrow-right:before {
+  content: "\f10b";
+}
+
+/* line 325, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-arrow-up:before {
+  content: "\f10c";
+}
+
+/* line 326, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-arrows-compress:before {
+  content: "\f10d";
+}
+
+/* line 327, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-arrows-expand:before {
+  content: "\f10e";
+}
+
+/* line 328, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-arrows-in:before {
+  content: "\f10f";
+}
+
+/* line 329, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-arrows-out:before {
+  content: "\f110";
+}
+
+/* line 330, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-asl:before {
+  content: "\f111";
+}
+
+/* line 331, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-asterisk:before {
+  content: "\f112";
+}
+
+/* line 332, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-at-sign:before {
+  content: "\f113";
+}
+
+/* line 333, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-background-color:before {
+  content: "\f114";
+}
+
+/* line 334, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-battery-empty:before {
+  content: "\f115";
+}
+
+/* line 335, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-battery-full:before {
+  content: "\f116";
+}
+
+/* line 336, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-battery-half:before {
+  content: "\f117";
+}
+
+/* line 337, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-bitcoin-circle:before {
+  content: "\f118";
+}
+
+/* line 338, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-bitcoin:before {
+  content: "\f119";
+}
+
+/* line 339, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-blind:before {
+  content: "\f11a";
+}
+
+/* line 340, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-bluetooth:before {
+  content: "\f11b";
+}
+
+/* line 341, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-bold:before {
+  content: "\f11c";
+}
+
+/* line 342, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-book-bookmark:before {
+  content: "\f11d";
+}
+
+/* line 343, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-book:before {
+  content: "\f11e";
+}
+
+/* line 344, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-bookmark:before {
+  content: "\f11f";
+}
+
+/* line 345, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-braille:before {
+  content: "\f120";
+}
+
+/* line 346, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-burst-new:before {
+  content: "\f121";
+}
+
+/* line 347, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-burst-sale:before {
+  content: "\f122";
+}
+
+/* line 348, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-burst:before {
+  content: "\f123";
+}
+
+/* line 349, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-calendar:before {
+  content: "\f124";
+}
+
+/* line 350, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-camera:before {
+  content: "\f125";
+}
+
+/* line 351, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-check:before {
+  content: "\f126";
+}
+
+/* line 352, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-checkbox:before {
+  content: "\f127";
+}
+
+/* line 353, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-clipboard-notes:before {
+  content: "\f128";
+}
+
+/* line 354, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-clipboard-pencil:before {
+  content: "\f129";
+}
+
+/* line 355, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-clipboard:before {
+  content: "\f12a";
+}
+
+/* line 356, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-clock:before {
+  content: "\f12b";
+}
+
+/* line 357, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-closed-caption:before {
+  content: "\f12c";
+}
+
+/* line 358, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-cloud:before {
+  content: "\f12d";
+}
+
+/* line 359, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-comment-minus:before {
+  content: "\f12e";
+}
+
+/* line 360, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-comment-quotes:before {
+  content: "\f12f";
+}
+
+/* line 361, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-comment-video:before {
+  content: "\f130";
+}
+
+/* line 362, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-comment:before {
+  content: "\f131";
+}
+
+/* line 363, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-comments:before {
+  content: "\f132";
+}
+
+/* line 364, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-compass:before {
+  content: "\f133";
+}
+
+/* line 365, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-contrast:before {
+  content: "\f134";
+}
+
+/* line 366, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-credit-card:before {
+  content: "\f135";
+}
+
+/* line 367, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-crop:before {
+  content: "\f136";
+}
+
+/* line 368, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-crown:before {
+  content: "\f137";
+}
+
+/* line 369, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-css3:before {
+  content: "\f138";
+}
+
+/* line 370, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-database:before {
+  content: "\f139";
+}
+
+/* line 371, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-die-five:before {
+  content: "\f13a";
+}
+
+/* line 372, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-die-four:before {
+  content: "\f13b";
+}
+
+/* line 373, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-die-one:before {
+  content: "\f13c";
+}
+
+/* line 374, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-die-six:before {
+  content: "\f13d";
+}
+
+/* line 375, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-die-three:before {
+  content: "\f13e";
+}
+
+/* line 376, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-die-two:before {
+  content: "\f13f";
+}
+
+/* line 377, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-dislike:before {
+  content: "\f140";
+}
+
+/* line 378, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-dollar-bill:before {
+  content: "\f141";
+}
+
+/* line 379, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-dollar:before {
+  content: "\f142";
+}
+
+/* line 380, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-download:before {
+  content: "\f143";
+}
+
+/* line 381, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-eject:before {
+  content: "\f144";
+}
+
+/* line 382, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-elevator:before {
+  content: "\f145";
+}
+
+/* line 383, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-euro:before {
+  content: "\f146";
+}
+
+/* line 384, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-eye:before {
+  content: "\f147";
+}
+
+/* line 385, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-fast-forward:before {
+  content: "\f148";
+}
+
+/* line 386, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-female-symbol:before {
+  content: "\f149";
+}
+
+/* line 387, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-female:before {
+  content: "\f14a";
+}
+
+/* line 388, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-filter:before {
+  content: "\f14b";
+}
+
+/* line 389, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-first-aid:before {
+  content: "\f14c";
+}
+
+/* line 390, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-flag:before {
+  content: "\f14d";
+}
+
+/* line 391, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-folder-add:before {
+  content: "\f14e";
+}
+
+/* line 392, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-folder-lock:before {
+  content: "\f14f";
+}
+
+/* line 393, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-folder:before {
+  content: "\f150";
+}
+
+/* line 394, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-foot:before {
+  content: "\f151";
+}
+
+/* line 395, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-foundation:before {
+  content: "\f152";
+}
+
+/* line 396, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-graph-bar:before {
+  content: "\f153";
+}
+
+/* line 397, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-graph-horizontal:before {
+  content: "\f154";
+}
+
+/* line 398, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-graph-pie:before {
+  content: "\f155";
+}
+
+/* line 399, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-graph-trend:before {
+  content: "\f156";
+}
+
+/* line 400, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-guide-dog:before {
+  content: "\f157";
+}
+
+/* line 401, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-hearing-aid:before {
+  content: "\f158";
+}
+
+/* line 402, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-heart:before {
+  content: "\f159";
+}
+
+/* line 403, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-home:before {
+  content: "\f15a";
+}
+
+/* line 404, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-html5:before {
+  content: "\f15b";
+}
+
+/* line 405, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-indent-less:before {
+  content: "\f15c";
+}
+
+/* line 406, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-indent-more:before {
+  content: "\f15d";
+}
+
+/* line 407, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-info:before {
+  content: "\f15e";
+}
+
+/* line 408, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-italic:before {
+  content: "\f15f";
+}
+
+/* line 409, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-key:before {
+  content: "\f160";
+}
+
+/* line 410, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-laptop:before {
+  content: "\f161";
+}
+
+/* line 411, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-layout:before {
+  content: "\f162";
+}
+
+/* line 412, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-lightbulb:before {
+  content: "\f163";
+}
+
+/* line 413, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-like:before {
+  content: "\f164";
+}
+
+/* line 414, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-link:before {
+  content: "\f165";
+}
+
+/* line 415, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-list-bullet:before {
+  content: "\f166";
+}
+
+/* line 416, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-list-number:before {
+  content: "\f167";
+}
+
+/* line 417, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-list-thumbnails:before {
+  content: "\f168";
+}
+
+/* line 418, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-list:before {
+  content: "\f169";
+}
+
+/* line 419, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-lock:before {
+  content: "\f16a";
+}
+
+/* line 420, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-loop:before {
+  content: "\f16b";
+}
+
+/* line 421, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-magnifying-glass:before {
+  content: "\f16c";
+}
+
+/* line 422, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-mail:before {
+  content: "\f16d";
+}
+
+/* line 423, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-male-female:before {
+  content: "\f16e";
+}
+
+/* line 424, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-male-symbol:before {
+  content: "\f16f";
+}
+
+/* line 425, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-male:before {
+  content: "\f170";
+}
+
+/* line 426, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-map:before {
+  content: "\f171";
+}
+
+/* line 427, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-marker:before {
+  content: "\f172";
+}
+
+/* line 428, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-megaphone:before {
+  content: "\f173";
+}
+
+/* line 429, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-microphone:before {
+  content: "\f174";
+}
+
+/* line 430, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-minus-circle:before {
+  content: "\f175";
+}
+
+/* line 431, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-minus:before {
+  content: "\f176";
+}
+
+/* line 432, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-mobile-signal:before {
+  content: "\f177";
+}
+
+/* line 433, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-mobile:before {
+  content: "\f178";
+}
+
+/* line 434, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-monitor:before {
+  content: "\f179";
+}
+
+/* line 435, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-mountains:before {
+  content: "\f17a";
+}
+
+/* line 436, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-music:before {
+  content: "\f17b";
+}
+
+/* line 437, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-next:before {
+  content: "\f17c";
+}
+
+/* line 438, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-no-dogs:before {
+  content: "\f17d";
+}
+
+/* line 439, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-no-smoking:before {
+  content: "\f17e";
+}
+
+/* line 440, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-add:before {
+  content: "\f17f";
+}
+
+/* line 441, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-copy:before {
+  content: "\f180";
+}
+
+/* line 442, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-csv:before {
+  content: "\f181";
+}
+
+/* line 443, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-delete:before {
+  content: "\f182";
+}
+
+/* line 444, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-doc:before {
+  content: "\f183";
+}
+
+/* line 445, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-edit:before {
+  content: "\f184";
+}
+
+/* line 446, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-export-csv:before {
+  content: "\f185";
+}
+
+/* line 447, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-export-doc:before {
+  content: "\f186";
+}
+
+/* line 448, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-export-pdf:before {
+  content: "\f187";
+}
+
+/* line 449, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-export:before {
+  content: "\f188";
+}
+
+/* line 450, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-filled:before {
+  content: "\f189";
+}
+
+/* line 451, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-multiple:before {
+  content: "\f18a";
+}
+
+/* line 452, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-pdf:before {
+  content: "\f18b";
+}
+
+/* line 453, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-remove:before {
+  content: "\f18c";
+}
+
+/* line 454, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-search:before {
+  content: "\f18d";
+}
+
+/* line 455, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-page:before {
+  content: "\f18e";
+}
+
+/* line 456, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-paint-bucket:before {
+  content: "\f18f";
+}
+
+/* line 457, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-paperclip:before {
+  content: "\f190";
+}
+
+/* line 458, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-pause:before {
+  content: "\f191";
+}
+
+/* line 459, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-paw:before {
+  content: "\f192";
+}
+
+/* line 460, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-paypal:before {
+  content: "\f193";
+}
+
+/* line 461, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-pencil:before {
+  content: "\f194";
+}
+
+/* line 462, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-photo:before {
+  content: "\f195";
+}
+
+/* line 463, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-play-circle:before {
+  content: "\f196";
+}
+
+/* line 464, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-play-video:before {
+  content: "\f197";
+}
+
+/* line 465, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-play:before {
+  content: "\f198";
+}
+
+/* line 466, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-plus:before {
+  content: "\f199";
+}
+
+/* line 467, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-pound:before {
+  content: "\f19a";
+}
+
+/* line 468, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-power:before {
+  content: "\f19b";
+}
+
+/* line 469, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-previous:before {
+  content: "\f19c";
+}
+
+/* line 470, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-price-tag:before {
+  content: "\f19d";
+}
+
+/* line 471, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-pricetag-multiple:before {
+  content: "\f19e";
+}
+
+/* line 472, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-print:before {
+  content: "\f19f";
+}
+
+/* line 473, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-prohibited:before {
+  content: "\f1a0";
+}
+
+/* line 474, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-projection-screen:before {
+  content: "\f1a1";
+}
+
+/* line 475, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-puzzle:before {
+  content: "\f1a2";
+}
+
+/* line 476, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-quote:before {
+  content: "\f1a3";
+}
+
+/* line 477, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-record:before {
+  content: "\f1a4";
+}
+
+/* line 478, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-refresh:before {
+  content: "\f1a5";
+}
+
+/* line 479, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-results-demographics:before {
+  content: "\f1a6";
+}
+
+/* line 480, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-results:before {
+  content: "\f1a7";
+}
+
+/* line 481, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-rewind-ten:before {
+  content: "\f1a8";
+}
+
+/* line 482, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-rewind:before {
+  content: "\f1a9";
+}
+
+/* line 483, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-rss:before {
+  content: "\f1aa";
+}
+
+/* line 484, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-safety-cone:before {
+  content: "\f1ab";
+}
+
+/* line 485, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-save:before {
+  content: "\f1ac";
+}
+
+/* line 486, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-share:before {
+  content: "\f1ad";
+}
+
+/* line 487, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-sheriff-badge:before {
+  content: "\f1ae";
+}
+
+/* line 488, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-shield:before {
+  content: "\f1af";
+}
+
+/* line 489, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-shopping-bag:before {
+  content: "\f1b0";
+}
+
+/* line 490, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-shopping-cart:before {
+  content: "\f1b1";
+}
+
+/* line 491, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-shuffle:before {
+  content: "\f1b2";
+}
+
+/* line 492, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-skull:before {
+  content: "\f1b3";
+}
+
+/* line 493, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-500px:before {
+  content: "\f1b4";
+}
+
+/* line 494, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-adobe:before {
+  content: "\f1b5";
+}
+
+/* line 495, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-amazon:before {
+  content: "\f1b6";
+}
+
+/* line 496, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-android:before {
+  content: "\f1b7";
+}
+
+/* line 497, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-apple:before {
+  content: "\f1b8";
+}
+
+/* line 498, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-behance:before {
+  content: "\f1b9";
+}
+
+/* line 499, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-bing:before {
+  content: "\f1ba";
+}
+
+/* line 500, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-blogger:before {
+  content: "\f1bb";
+}
+
+/* line 501, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-delicious:before {
+  content: "\f1bc";
+}
+
+/* line 502, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-designer-news:before {
+  content: "\f1bd";
+}
+
+/* line 503, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-deviant-art:before {
+  content: "\f1be";
+}
+
+/* line 504, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-digg:before {
+  content: "\f1bf";
+}
+
+/* line 505, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-dribbble:before {
+  content: "\f1c0";
+}
+
+/* line 506, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-drive:before {
+  content: "\f1c1";
+}
+
+/* line 507, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-dropbox:before {
+  content: "\f1c2";
+}
+
+/* line 508, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-evernote:before {
+  content: "\f1c3";
+}
+
+/* line 509, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-facebook:before {
+  content: "\f1c4";
+}
+
+/* line 510, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-flickr:before {
+  content: "\f1c5";
+}
+
+/* line 511, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-forrst:before {
+  content: "\f1c6";
+}
+
+/* line 512, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-foursquare:before {
+  content: "\f1c7";
+}
+
+/* line 513, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-game-center:before {
+  content: "\f1c8";
+}
+
+/* line 514, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-github:before {
+  content: "\f1c9";
+}
+
+/* line 515, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-google-plus:before {
+  content: "\f1ca";
+}
+
+/* line 516, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-hacker-news:before {
+  content: "\f1cb";
+}
+
+/* line 517, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-hi5:before {
+  content: "\f1cc";
+}
+
+/* line 518, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-instagram:before {
+  content: "\f1cd";
+}
+
+/* line 519, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-joomla:before {
+  content: "\f1ce";
+}
+
+/* line 520, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-lastfm:before {
+  content: "\f1cf";
+}
+
+/* line 521, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-linkedin:before {
+  content: "\f1d0";
+}
+
+/* line 522, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-medium:before {
+  content: "\f1d1";
+}
+
+/* line 523, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-myspace:before {
+  content: "\f1d2";
+}
+
+/* line 524, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-orkut:before {
+  content: "\f1d3";
+}
+
+/* line 525, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-path:before {
+  content: "\f1d4";
+}
+
+/* line 526, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-picasa:before {
+  content: "\f1d5";
+}
+
+/* line 527, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-pinterest:before {
+  content: "\f1d6";
+}
+
+/* line 528, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-rdio:before {
+  content: "\f1d7";
+}
+
+/* line 529, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-reddit:before {
+  content: "\f1d8";
+}
+
+/* line 530, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-skillshare:before {
+  content: "\f1d9";
+}
+
+/* line 531, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-skype:before {
+  content: "\f1da";
+}
+
+/* line 532, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-smashing-mag:before {
+  content: "\f1db";
+}
+
+/* line 533, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-snapchat:before {
+  content: "\f1dc";
+}
+
+/* line 534, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-spotify:before {
+  content: "\f1dd";
+}
+
+/* line 535, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-squidoo:before {
+  content: "\f1de";
+}
+
+/* line 536, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-stack-overflow:before {
+  content: "\f1df";
+}
+
+/* line 537, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-steam:before {
+  content: "\f1e0";
+}
+
+/* line 538, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-stumbleupon:before {
+  content: "\f1e1";
+}
+
+/* line 539, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-treehouse:before {
+  content: "\f1e2";
+}
+
+/* line 540, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-tumblr:before {
+  content: "\f1e3";
+}
+
+/* line 541, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-twitter:before {
+  content: "\f1e4";
+}
+
+/* line 542, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-vimeo:before {
+  content: "\f1e5";
+}
+
+/* line 543, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-windows:before {
+  content: "\f1e6";
+}
+
+/* line 544, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-xbox:before {
+  content: "\f1e7";
+}
+
+/* line 545, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-yahoo:before {
+  content: "\f1e8";
+}
+
+/* line 546, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-yelp:before {
+  content: "\f1e9";
+}
+
+/* line 547, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-youtube:before {
+  content: "\f1ea";
+}
+
+/* line 548, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-zerply:before {
+  content: "\f1eb";
+}
+
+/* line 549, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-zurb:before {
+  content: "\f1ec";
+}
+
+/* line 550, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-sound:before {
+  content: "\f1ed";
+}
+
+/* line 551, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-star:before {
+  content: "\f1ee";
+}
+
+/* line 552, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-stop:before {
+  content: "\f1ef";
+}
+
+/* line 553, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-strikethrough:before {
+  content: "\f1f0";
+}
+
+/* line 554, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-subscript:before {
+  content: "\f1f1";
+}
+
+/* line 555, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-superscript:before {
+  content: "\f1f2";
+}
+
+/* line 556, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-tablet-landscape:before {
+  content: "\f1f3";
+}
+
+/* line 557, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-tablet-portrait:before {
+  content: "\f1f4";
+}
+
+/* line 558, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-target-two:before {
+  content: "\f1f5";
+}
+
+/* line 559, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-target:before {
+  content: "\f1f6";
+}
+
+/* line 560, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-telephone-accessible:before {
+  content: "\f1f7";
+}
+
+/* line 561, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-telephone:before {
+  content: "\f1f8";
+}
+
+/* line 562, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-text-color:before {
+  content: "\f1f9";
+}
+
+/* line 563, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-thumbnails:before {
+  content: "\f1fa";
+}
+
+/* line 564, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-ticket:before {
+  content: "\f1fb";
+}
+
+/* line 565, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-torso-business:before {
+  content: "\f1fc";
+}
+
+/* line 566, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-torso-female:before {
+  content: "\f1fd";
+}
+
+/* line 567, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-torso:before {
+  content: "\f1fe";
+}
+
+/* line 568, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-torsos-all-female:before {
+  content: "\f1ff";
+}
+
+/* line 569, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-torsos-all:before {
+  content: "\f200";
+}
+
+/* line 570, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-torsos-female-male:before {
+  content: "\f201";
+}
+
+/* line 571, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-torsos-male-female:before {
+  content: "\f202";
+}
+
+/* line 572, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-torsos:before {
+  content: "\f203";
+}
+
+/* line 573, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-trash:before {
+  content: "\f204";
+}
+
+/* line 574, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-trees:before {
+  content: "\f205";
+}
+
+/* line 575, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-trophy:before {
+  content: "\f206";
+}
+
+/* line 576, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-underline:before {
+  content: "\f207";
+}
+
+/* line 577, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-universal-access:before {
+  content: "\f208";
+}
+
+/* line 578, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-unlink:before {
+  content: "\f209";
+}
+
+/* line 579, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-unlock:before {
+  content: "\f20a";
+}
+
+/* line 580, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-upload-cloud:before {
+  content: "\f20b";
+}
+
+/* line 581, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-upload:before {
+  content: "\f20c";
+}
+
+/* line 582, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-usb:before {
+  content: "\f20d";
+}
+
+/* line 583, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-video:before {
+  content: "\f20e";
+}
+
+/* line 584, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-volume-none:before {
+  content: "\f20f";
+}
+
+/* line 585, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-volume-strike:before {
+  content: "\f210";
+}
+
+/* line 586, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-volume:before {
+  content: "\f211";
+}
+
+/* line 587, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-web:before {
+  content: "\f212";
+}
+
+/* line 588, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-wheelchair:before {
+  content: "\f213";
+}
+
+/* line 589, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-widget:before {
+  content: "\f214";
+}
+
+/* line 590, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-wrench:before {
+  content: "\f215";
+}
+
+/* line 591, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-x-circle:before {
+  content: "\f216";
+}
+
+/* line 592, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-x:before {
+  content: "\f217";
+}
+
+/* line 593, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-yen:before {
+  content: "\f218";
+}
+
+/* line 594, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-zoom-in:before {
+  content: "\f219";
+}
+
+/* line 595, C:/Ruby193/lib/ruby/gems/1.9.1/gems/foundation-icons-sass-rails-3.0.0/app/assets/stylesheets/foundation-icons.scss */
+.fi-zoom-out:before {
+  content: "\f21a";
+}
+
+/* line 1, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/common_objects.css.scss */
+.full_line {
+  float: left;
+  width: 100%;
+  height: 6px;
+}
+@media screen and (max-width: 1016px) {
+  /* line 1, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/common_objects.css.scss */
+  .full_line {
+    width: 100%;
+  }
+}
+/* line 8, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/common_objects.css.scss */
+.full_line.blue {
+  background: #1E78C1;
+}
+/* line 11, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/common_objects.css.scss */
+.full_line.white {
+  background: white;
+}
+
+/* line 16, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/common_objects.css.scss */
+.container_header {
+  float: left;
+  width: 100%;
+  background-color: #124F80;
+}
+/* line 20, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/common_objects.css.scss */
+.container_header h1 {
+  font-family: gothic;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding: 30px 0;
+  font-weight: bold;
+}
+
+/* line 30, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/common_objects.css.scss */
+.blue_circle {
+  background-image: url("icons/cercle_p.png");
+  width: 154px;
+  height: 154px;
+  padding: 0 22px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+}
+
+/* line 1, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/header_menu.css.scss */
+.header_menu {
+  float: left;
+  width: 100%;
+}
+/* line 4, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/header_menu.css.scss */
+.header_menu ul {
+  float: left;
+  width: 100%;
+  list-style-type: none;
+  margin: 0 0 0 6%;
+}
+/* line 9, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/header_menu.css.scss */
+.header_menu ul li {
+  float: left;
+}
+/* line 11, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/header_menu.css.scss */
+.header_menu ul li a {
+  border: 1px solid #0F5286;
+  background: rgba(30, 120, 193, 0.83);
+  width: 110px;
+  float: left;
+  height: 65px;
+  display: table;
+  color: white;
+  font-weight: bold;
+}
+/* line 20, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/header_menu.css.scss */
+.header_menu ul li a > span {
+  font-size: 13px;
+  text-transform: uppercase;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 25, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/header_menu.css.scss */
+.header_menu ul li a > span > span {
+  width: 99px;
+  display: block;
+  text-align: center;
+  font-family: 'gothic';
+}
+/* line 30, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/header_menu.css.scss */
+.header_menu ul li a > span > span.technology {
+  width: 108px;
+}
+/* line 37, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/header_menu.css.scss */
+.header_menu ul li.current a {
+  color: #000000;
+}
+/* line 42, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/header_menu.css.scss */
+.header_menu ul li:hover a {
+  color: #000000;
+}
+@media screen and (max-width: 950px) {
+  /* line 49, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/header_menu.css.scss */
+  .header_menu ul {
+    width: 94%;
+  }
+}
+
+/* line 1, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header {
+  float: left;
+  width: 99.999999999%;
+  border: 1px solid white;
+  background: #0292d7;
+  height: 436px;
+  background-image: url("back_header_1.png");
+  background-size: 1000px;
+}
+@media screen and (max-width: 1016px) {
+  /* line 1, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+  header.kiinov_header {
+    width: 100%;
+  }
+}
+/* line 13, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header .header_img_contact_us {
+  float: left;
+  width: 100%;
+  height: 330px;
+}
+/* line 17, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header .header_img_contact_us .image_container {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+/* line 21, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header .header_img_contact_us .image_container img {
+  width: 500px;
+  background: rgba(17, 42, 114, 0.3);
+}
+/* line 26, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header .header_img_contact_us .contact_us_container {
+  margin-top: -182px;
+  float: left;
+  width: 100%;
+}
+/* line 30, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header .header_img_contact_us .contact_us_container .contact_us {
+  float: right;
+  margin: 9px;
+  width: 185px;
+}
+/* line 34, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header .header_img_contact_us .contact_us_container .contact_us .title {
+  float: left;
+  background: rgba(202, 202, 202, 0.73);
+  width: 100%;
+}
+/* line 38, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header .header_img_contact_us .contact_us_container .contact_us .title i {
+  float: left;
+  color: #0F67AE;
+  font-size: 32px;
+  margin: 0 5px;
+}
+/* line 44, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header .header_img_contact_us .contact_us_container .contact_us .title h1 {
+  float: left;
+  color: #0F67AE;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 8px 6px 0 0;
+  font-weight: bold;
+}
+/* line 53, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header .header_img_contact_us .contact_us_container .contact_us p {
+  float: left;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+  text-shadow: 1px 1px 1px #000;
+  position: relative;
+  margin-bottom: 9px;
+}
+/* line 64, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header .header_img_contact_us .contact_us_container .contact_us p:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-top-color: #FFFFFF;
+  border-width: 8px;
+  margin-left: -8px;
+}
+/* line 78, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header .header_img_contact_us .contact_us_container .contact_us .icons {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+/* line 82, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header .header_img_contact_us .contact_us_container .contact_us .icons ul {
+  margin-left: 12px;
+  margin-top: 5px;
+  list-style-type: none;
+}
+/* line 86, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header .header_img_contact_us .contact_us_container .contact_us .icons ul li {
+  float: left;
+  margin: 0 2px;
+}
+/* line 89, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header .header_img_contact_us .contact_us_container .contact_us .icons ul li a {
+  font-size: 34px;
+  color: white;
+}
+/* line 93, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header .header_img_contact_us .contact_us_container .contact_us .icons ul li img {
+  width: 25px;
+}
+/* line 99, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+header.kiinov_header .header_img_contact_us .contact_us_container .contact_us .icons li:hover {
+  background: grey;
+}
+@media screen and (max-width: 950px) {
+  /* line 13, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+  header.kiinov_header .header_img_contact_us {
+    height: 297px;
+  }
+  /* line 106, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+  header.kiinov_header .header_img_contact_us .contact_us_container {
+    margin: 0;
+  }
+  /* line 108, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+  header.kiinov_header .header_img_contact_us .contact_us_container .contact_us {
+    float: left;
+    margin: 0 40%;
+  }
+}
+@media screen and (max-width: 444px) {
+  /* line 13, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+  header.kiinov_header .header_img_contact_us {
+    height: 240px;
+  }
+  /* line 117, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_header.css.scss */
+  header.kiinov_header .header_img_contact_us .contact_us_container .contact_us {
+    margin: 0 30%;
+  }
+}
+
+/* line 1, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left {
+  float: left;
+  width: 27%;
+  padding-top: 30px;
+  margin-bottom: -300px;
+  min-height: 1245px;
+  background-image: url("back_left_1.png");
+  /* BARRE D ARBORESCENCE EN HAUT DE CHAQUE PAGE */
+  /* FIN BARRE D ARBORESCENCE EN HAUT DE CHAQUE PAGE */
+}
+@media screen and (max-width: 840px) {
+  /* line 1, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+  .kiinov_left {
+    width: 100%;
+    background-image: url("back_left_1.png");
+    margin-bottom: 0px;
+    min-height: 0px;
+  }
+}
+@media screen and (max-width: 855px) and (min-width: 840px) {
+  /* line 1, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+  .kiinov_left {
+    width: 27%;
+  }
+}
+/* line 18, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left * {
+  margin: 0;
+  padding: 0;
+}
+/* line 22, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .splitter {
+  float: left;
+  width: 100%;
+}
+/* line 26, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .split_1 {
+  height: 50px;
+}
+/* line 32, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left div.portable_sitemap {
+  display: block;
+  position: absolute;
+  margin-top: -30px;
+  width: 120%;
+  z-index: 4;
+}
+/* line 39, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left h1 {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 30px;
+  width: 247px;
+  height: 50px;
+  color: #1E78C1;
+  text-align: center;
+  font-family: gothic;
+  text-align: center;
+}
+/* line 52, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left div.after_sitemap_each {
+  display: inline-block;
+  vertical-align: top;
+  height: 0px;
+  width: 0px;
+  border-bottom: 25px solid transparent;
+  border-top: 25px solid transparent;
+  border-left: 15px solid white;
+}
+/* line 61, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left div.before_sitemap_each {
+  display: inline-block;
+  vertical-align: top;
+  border-bottom: 25px solid white;
+  border-top: 25px solid white;
+  border-left: 15px solid transparent;
+  margin-left: -10px;
+}
+/* line 69, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left div.sitemap_each_content {
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  width: 200px;
+  color: #1E78C1;
+  text-align: center;
+  font-family: gothic;
+  background: white;
+  text-align: center;
+}
+/* line 80, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .sitemap_each {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  height: 50px;
+  opacity: 0.6;
+}
+/* line 87, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .sitemap_each:hover {
+  opacity: 1;
+}
+/* line 93, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .split_2 {
+  height: 20px;
+}
+/* line 97, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .header {
+  float: left;
+  width: 100%;
+}
+/* line 100, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .header ul {
+  display: none;
+  list-style: none;
+  margin-left: 19%;
+  font-size: 80%;
+}
+/* line 106, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .header i {
+  float: left;
+  width: 15%;
+  padding-right: 3%;
+  padding-top: 12px;
+  text-align: right;
+}
+/* line 112, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .header i:before {
+  content: url("icons/icon_plus_1.png");
+}
+/* line 116, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .header h2 {
+  float: left;
+  width: 80%;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: gothic;
+  margin-top: 7px;
+  cursor: pointer;
+}
+/* line 124, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .header h2 a {
+  color: #1E78C1;
+}
+/* line 132, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .header.current i.opend:before {
+  content: url("icons/icon_moins.png");
+}
+/* line 137, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .header.current i.closed:before {
+  content: url("icons/icon_plus_1.png");
+}
+/* line 143, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .header.current h2 a {
+  color: #0F5287;
+}
+/* line 151, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .header:hover i.closed:before {
+  content: url("icons/icon_plus_1.png");
+}
+/* line 156, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .header:hover i.opend:before {
+  content: url("icons/icon_moins.png");
+}
+/* line 162, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .header:hover h2 a {
+  color: #0f5287;
+}
+/* line 168, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .back_white {
+  position: relative;
+  left: 178px;
+  height: 0;
+}
+@media screen and (max-width: 840px) {
+  /* line 168, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+  .kiinov_left .back_white {
+    display: none;
+  }
+}
+/* line 176, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+.kiinov_left .back_shadow {
+  position: relative;
+  left: 239px;
+  height: 0;
+}
+@media screen and (max-width: 840px) {
+  /* line 176, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_left.css.scss */
+  .kiinov_left .back_shadow {
+    display: none;
+  }
+}
+
+/* line 2, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.page_container {
+  float: left;
+  width: 100%;
+  background-repeat: repeat-y;
+  padding-bottom: 300px;
+}
+@media screen and (min-width: 840px) {
+  /* line 2, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+  .page_container {
+    background: #124F80;
+    background: #124F80;
+  }
+}
+/* line 14, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.page_container .kiinov_left .header i {
+  padding-top: 8px;
+}
+/* line 15, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.page_container .kiinov_left .header h2 {
+  font-size: 13px;
+}
+
+/* line 23, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.kiinov_container {
+  float: left;
+  width: 73%;
+  height: 100%;
+  min-height: 945px;
+}
+@media screen and (max-width: 840px) {
+  /* line 23, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+  .kiinov_container {
+    width: 100%;
+    background: #124F80;
+  }
+}
+/* line 32, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.kiinov_container * {
+  margin: 0;
+  padding: 0;
+}
+/* line 36, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.kiinov_container .splitter {
+  float: left;
+  width: 100%;
+}
+/* line 40, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.kiinov_container .split_1 {
+  height: 50px;
+}
+/* line 43, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.kiinov_container .split_2 {
+  height: 90px;
+}
+/* line 46, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.kiinov_container .title {
+  float: left;
+  width: 100%;
+}
+/* line 49, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.kiinov_container .title i {
+  float: left;
+  width: 10%;
+  text-align: right;
+  margin-right: 5px;
+}
+/* line 54, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.kiinov_container .title i:before {
+  content: url("icons/arrow_white.png");
+  margin-right: 30%;
+}
+/* line 59, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.kiinov_container .title h1 {
+  float: left;
+  text-transform: uppercase;
+  font-size: 37px;
+  color: #1E78C1;
+  font-weight: bold;
+  display: block;
+}
+/* line 67, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.kiinov_container .title p {
+  float: left;
+  width: 3%;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 7px;
+  text-align: center;
+}
+/* line 76, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.kiinov_container .title h2 {
+  float: left;
+  width: 66%;
+  text-transform: uppercase;
+  font-size: 23px;
+  color: white;
+  font-weight: bold;
+  display: block;
+  margin-top: 11px;
+  padding-left: 5px;
+}
+@media screen and (max-width: 884px) {
+  /* line 88, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+  .kiinov_container .title h1 {
+    width: auto;
+  }
+  /* line 91, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+  .kiinov_container .title h2 {
+    width: 100%;
+    padding: 0 10%;
+  }
+}
+/* line 97, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.kiinov_container .paragraphs {
+  float: left;
+  width: 100%;
+  padding: 0 10%;
+  margin-top: 12px;
+  text-align: justify;
+  z-index: 2;
+}
+/* line 104, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.kiinov_container .paragraphs p {
+  font-size: 14px;
+  color: white;
+  margin-top: 25px;
+  margin-right: 5%;
+}
+/* line 109, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_container.css.scss */
+.kiinov_container .paragraphs p.footer {
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* line 1, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer {
+  float: left;
+  width: 100%;
+  margin-top: -300px;
+}
+/* line 5, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .rotated_image {
+  float: left;
+  width: 100%;
+  margin-top: -1px;
+}
+@media screen and (max-width: 840px) {
+  /* line 5, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+  .kiinov_footer .rotated_image {
+    background: #124F80;
+  }
+}
+/* line 12, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .rotated_image img {
+  float: left;
+  width: 100%;
+}
+/* line 17, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus {
+  float: left;
+  width: 100%;
+  background: #071C28;
+  padding: 0;
+  margin-top: -1px;
+}
+@media screen and (max-width: 1016px) {
+  /* line 17, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+  .kiinov_footer .footer_menus {
+    width: 100%;
+  }
+}
+/* line 26, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus * {
+  margin: 0;
+  padding: 0;
+}
+/* line 31, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus ul.first_menu {
+  float: left;
+  width: 100%;
+  list-style-type: none;
+  padding: 0 1%;
+}
+/* line 36, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus ul.first_menu li {
+  float: left;
+}
+/* line 38, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus ul.first_menu li a {
+  width: 110px;
+  float: left;
+  height: 65px;
+  display: table;
+  color: white;
+}
+/* line 44, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus ul.first_menu li a > span {
+  font-size: 13px;
+  text-transform: uppercase;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 49, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus ul.first_menu li a > span > span {
+  width: 99px;
+  display: block;
+  text-align: center;
+  font-family: 'gothic';
+}
+/* line 54, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus ul.first_menu li a > span > span.technology {
+  width: 108px;
+}
+/* line 61, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus ul.first_menu li:hover a {
+  color: #3AB5E5;
+}
+/* line 66, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus ul.first_menu .splitter {
+  float: left;
+  margin: 19px 5px 0px 5px;
+  color: white;
+  width: 1px;
+  height: 25px;
+  background: #85868A;
+}
+/* line 76, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus .second_menu {
+  float: left;
+  width: 100%;
+}
+/* line 79, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus .second_menu ul {
+  padding: 10px 0;
+  float: left;
+  margin-left: 35%;
+  list-style-type: none;
+}
+/* line 84, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus .second_menu ul li {
+  float: left;
+}
+/* line 86, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus .second_menu ul li a {
+  float: left;
+  color: white;
+}
+/* line 89, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus .second_menu ul li a > span {
+  font-size: 13px;
+}
+/* line 91, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus .second_menu ul li a > span > span {
+  text-align: center;
+  font-family: 'gothic';
+}
+/* line 98, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus .second_menu ul li:hover a {
+  color: #3AB5E5;
+  font-weight: bold;
+}
+/* line 104, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus .second_menu ul .splitter {
+  float: left;
+  margin: 0 10px;
+  color: white;
+  width: 1px;
+  height: 25px;
+  background: #85868A;
+}
+/* line 114, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_menus .menu_splitter {
+  float: left;
+  width: 98%;
+  height: 2px;
+  background: #85868A;
+  margin-left: 1%;
+}
+/* line 122, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_info {
+  float: left;
+  width: 100%;
+  padding: 12px 0;
+}
+/* line 126, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_info .logo {
+  float: left;
+  width: 125px;
+  margin: 0 10px;
+}
+/* line 131, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_info .coordinates {
+  float: left;
+  margin: 0 20px;
+}
+/* line 134, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_info .coordinates p {
+  font-size: 10px;
+  color: white;
+}
+/* line 137, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_info .coordinates p a {
+  color: #85868a;
+}
+/* line 139, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_info .coordinates p a:hover {
+  color: white;
+}
+/* line 145, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_info ul.icons {
+  float: left;
+  list-style: none;
+  margin: 5px 20px;
+}
+/* line 149, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_info ul.icons li {
+  float: left;
+}
+/* line 151, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_info ul.icons li a {
+  float: left;
+}
+/* line 153, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_info ul.icons li a img {
+  float: left;
+  width: 25px;
+  margin: 0 15px;
+}
+/* line 158, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_info ul.icons li a p {
+  margin-top: 6px;
+  font-size: 10px;
+  color: #85868A;
+  float: left;
+}
+/* line 165, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_info ul.icons li a:hover img {
+  box-shadow: 0 0 3px #fff;
+}
+/* line 168, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_1/kiinov_footer.css.scss */
+.kiinov_footer .footer_info ul.icons li a:hover p {
+  color: white;
+}
+
+/*.rotated_background {
+float: left;
+width: 100%;
+background: #071B25;
+height: 10px;
+width: 101%;
+margin-left: -5px;
+-webkit-transform: rotate(-7.4deg);
+-moz-transform: rotate(-7.4deg);
+-ms-transform: rotate(-7.4deg);
+-o-transform: rotate(-7.4deg);
+transform: rotate(-7.4deg);
+}
+.rotate_coloring_1 {
+margin-top: -106px;
+}
+.rotate_coloring_2 {
+margin-top: -96px;
+}
+.rotate_coloring_3 {
+margin-top: -86px;
+}.rotate_coloring_4 {
+margin-top: -76px;
+}.rotate_coloring_5 {
+margin-top: -66px;
+}.rotate_coloring_6 {
+margin-top: -56px;
+}.rotate_coloring_7 {
+margin-top: -46px;
+}.rotate_coloring_8 {
+margin-top: -36px;
+}.rotate_coloring_9 {
+margin-top: -26px;
+}*/
+/* h1.rotated_message_1 {
+   float: left;
+   width: 100%;
+   text-align: right;
+   -webkit-transform: rotate(-7deg);
+   -moz-transform: rotate(-7deg);
+   -ms-transform: rotate(-7deg);
+   -o-transform: rotate(-7deg);
+   transform: rotate(-7deg);
+   font-family: impact;
+   color: white;
+   padding-right: 25px;
+ }
+ */
+  /*.rotated_splitter {
+  float: left;
+  width: 100%;
+  border-top: 8px solid #1E78C1;
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -ms-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+}*/
+    /*
+ .rotated_footer {
+   border-top: 8px solid #1E78C1;
+   -webkit-transform: rotate(-7deg);
+   -moz-transform: rotate(-7deg);
+   -ms-transform: rotate(-7deg);
+   -o-transform: rotate(-7deg);
+   transform: rotate(-7deg);
+   background: #071B25;
+   float: left;
+   width: 102%;
+   margin-left: -1%;
+   h1.rotated_message_2 {
+     float: left;
+     width: 100%;
+     text-align: right;
+     font-family: impact;
+     color: #0F5286;
+     padding-right: 25px;
+   }
+   .normal {
+     background: #808080;
+     float: left;
+     width: 99%;
+     -webkit-transform: rotate(7deg);
+     -moz-transform: rotate(7deg);
+     -ms-transform: rotate(7deg);
+     -o-transform: rotate(7deg);
+     transform: rotate(7deg);
+
+     .footer_menu_1 {
+       ul {
+         list-style-type: none;
+         li {
+           a {
+           }
+         }
+       }
+     }
+   }
+ }*/
+/* line 2, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_2/import_this_folder.scss */
+.p_1_2 header.kiinov_header {
+  background-image: url("back_header_1.png");
+}
+/* line 8, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_2/import_this_folder.scss */
+.p_1_2 .kiinov_container {
+  padding-bottom: 0px;
+}
+/* line 9, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_2/import_this_folder.scss */
+.p_1_2 .kiinov_container .data_p_1_2 {
+  float: left;
+  width: 100%;
+}
+/* line 12, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_2/import_this_folder.scss */
+.p_1_2 .kiinov_container .data_p_1_2 .paragraphs {
+  float: right;
+}
+/* line 13, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_2/import_this_folder.scss */
+.p_1_2 .kiinov_container .data_p_1_2 .paragraphs p.entete {
+  margin-top: -15px;
+  width: 100%;
+  color: white;
+  text-align: justify;
+  font-weight: bold;
+}
+/* line 20, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_2/import_this_folder.scss */
+.p_1_2 .kiinov_container .data_p_1_2 .paragraphs p {
+  margin-top: -15px;
+  width: 100%;
+  color: white;
+  text-align: justify;
+  font-weight: normal;
+}
+/* line 30, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_2/import_this_folder.scss */
+.p_1_2 .kiinov_container .data_p_1_2 h2 {
+  margin-top: 25px;
+  margin-left: 10%;
+  font-size: 120%;
+}
+@media screen and (max-width: 840px) {
+  /* line 8, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_2/import_this_folder.scss */
+  .p_1_2 .kiinov_container {
+    background: #124F80;
+  }
+}
+/* line 41, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_2/import_this_folder.scss */
+.p_1_2 .kiinov_container .data_p_1_2 {
+  width: 100%;
+  padding-top: 30px;
+  margin-left: 2%;
+}
+/* line 50, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_2/import_this_folder.scss */
+.p_1_2 .kiinov_footer {
+  margin-top: -300px;
+}
+@media screen and (max-width: 840px) {
+  /* line 52, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_2/import_this_folder.scss */
+  .p_1_2 .kiinov_footer .rotated_image {
+    background: #124F80;
+  }
+}
+
+/* line 2, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 header.kiinov_header {
+  background-image: url("back_header_3_contact_us.png");
+}
+/* line 5, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container {
+  background-image: url("backgound_p_3.png");
+  min-height: 1140px;
+}
+/* line 9, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container {
+  width: 99%;
+  padding-bottom: 0;
+}
+@media screen and (max-width: 840px) {
+  /* line 9, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+  .p_1_3 .page_container .kiinov_container {
+    background-image: none;
+  }
+}
+/* line 15, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 {
+  float: left;
+  width: 100%;
+  padding-top: 75px;
+}
+@media screen and (min-width: 840px) {
+  /* line 15, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+  .p_1_3 .page_container .kiinov_container .data_p_1_3 {
+    padding-left: 200px;
+  }
+}
+/* line 22, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 .coordinates {
+  float: left;
+  background: #0F5286;
+  width: 300px;
+  padding: 10px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+/* line 29, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 .coordinates .data {
+  float: left;
+  background: #1E78C1;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+/* line 36, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 .coordinates .data p {
+  color: white;
+  font-size: 14px;
+  font-family: gothic;
+}
+/* line 40, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 .coordinates .data p a {
+  color: white;
+}
+/* line 45, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 .coordinates .icon {
+  float: left;
+  text-align: center;
+  width: 100%;
+  margin-top: -20px;
+}
+/* line 51, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 .coordinates .map {
+  float: left;
+  width: 100%;
+  height: 200px;
+}
+/* line 57, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 .contact_us_form {
+  float: left;
+  width: 350px;
+  background: #0F5286;
+  padding: 10px;
+}
+/* line 63, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 .contact_us_form * {
+  margin: 0;
+  padding: 0;
+}
+/* line 67, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 .contact_us_form form {
+  float: left;
+  width: 100%;
+}
+/* line 70, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 .contact_us_form form div {
+  float: left;
+  width: 100%;
+}
+/* line 73, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 .contact_us_form form div.input {
+  padding-bottom: 10px;
+}
+/* line 75, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 .contact_us_form form div.input label {
+  display: none;
+}
+/* line 78, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 .contact_us_form form div.input input {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 10px;
+  color: #9A9B9F;
+}
+/* line 84, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 .contact_us_form form div.input textarea {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 10px;
+  color: #9A9B9F;
+  height: 100px;
+}
+/* line 93, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 .contact_us_form form div.controls input[type='submit'] {
+  background-image: url("icons/button_send.png");
+  font-size: 0;
+  width: 99px;
+  height: 34px;
+  margin: 0 40px;
+}
+/* line 100, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .page_container .kiinov_container .data_p_1_3 .contact_us_form form div.controls input[type='reset'] {
+  background-image: url("icons/button_cancel.png");
+  font-size: 0;
+  width: 99px;
+  height: 34px;
+}
+/* line 113, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_1_3/import_this_folder.css.scss */
+.p_1_3 .kiinov_footer .rotated_image {
+  background-image: none;
+}
+
+/* line 2, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 header.kiinov_header {
+  background-image: url("back_header_2_1.png");
+}
+/* line 4, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 header.kiinov_header .header_img_contact_us .image_container img {
+  background: rgba(17, 42, 114, 0.3);
+}
+@media screen and (max-width: 840px) {
+  /* line 8, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .idara_1 .kiinov_footer .rotated_image {
+    background: white;
+  }
+}
+/* line 13, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 .kiinov_left {
+  width: 25%;
+  min-height: 945px;
+}
+@media screen and (max-width: 840px) {
+  /* line 13, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .idara_1 .kiinov_left {
+    width: 100%;
+  }
+}
+/* line 20, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 .page_container {
+  background: white;
+}
+@media screen and (max-width: 925px) {
+  /* line 22, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .idara_1 .page_container .kiinov_left h1 {
+    margin-left: -18px;
+  }
+}
+/* line 27, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 .page_container .kiinov_container {
+  background: white;
+  width: 73%;
+}
+@media screen and (max-width: 840px) {
+  /* line 27, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .idara_1 .page_container .kiinov_container {
+    width: 100%;
+    background: white;
+  }
+}
+/* line 34, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 .page_container .kiinov_container .data_idara_1 {
+  float: left;
+  background: white;
+  width: 102.8%;
+}
+/* line 38, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 .page_container .kiinov_container .data_idara_1 .container_header {
+  background: white;
+}
+/* line 41, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 .page_container .kiinov_container .data_idara_1 .separator {
+  display: inline-block;
+  width: 1px;
+  height: 134px;
+  background: #0F5286;
+}
+/* line 47, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 .page_container .kiinov_container .data_idara_1 .link2pdf {
+  display: inline-block;
+  margin-left: 38%;
+  margin-right: 8%;
+  margin-top: 35px;
+}
+/* line 48, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 .page_container .kiinov_container .data_idara_1 .link2pdf label {
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 57, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 .page_container .kiinov_container .data_idara_1 p.first {
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  margin-top: 25px;
+  text-align: justify;
+}
+/* line 63, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 .page_container .kiinov_container .data_idara_1 p {
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  text-align: justify;
+}
+/* line 68, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 .page_container .kiinov_container .data_idara_1 h1 {
+  background: #0F5286;
+  width: 100%;
+}
+/* line 72, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 .page_container .kiinov_container .data_idara_1 h2 {
+  float: left;
+  width: 100%;
+  text-transform: uppercase;
+  color: #145890;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-right: 7.5%;
+  margin-left: 7.5%;
+}
+/* line 82, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 .page_container .kiinov_container .data_idara_1 ul {
+  float: left;
+  width: 100%;
+  list-style: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+}
+/* line 88, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 .page_container .kiinov_container .data_idara_1 ul li {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  text-transform: lowercase;
+  margin-right: 7.5%;
+  margin-left: 7.5%;
+  line-height: 80%;
+  list-style-image: url("icons/square_list_style.png");
+}
+/* line 98, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_1 .page_container .kiinov_container .data_idara_1 ul li:first-letter {
+  text-transform: uppercase;
+}
+
+/* line 107, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 header.kiinov_header {
+  background-image: url("back_header_2_1.png");
+}
+/* line 109, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 header.kiinov_header .header_img_contact_us .image_container img {
+  background: rgba(17, 42, 114, 0.3);
+}
+@media screen and (max-width: 840px) {
+  /* line 113, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .idara_2 .kiinov_footer .rotated_image {
+    background: white;
+  }
+}
+/* line 118, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 .kiinov_left {
+  width: 25%;
+  min-height: 945px;
+}
+@media screen and (max-width: 840px) {
+  /* line 118, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .idara_2 .kiinov_left {
+    width: 100%;
+  }
+}
+/* line 125, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 .page_container {
+  background: white;
+}
+@media screen and (max-width: 925px) {
+  /* line 127, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .idara_2 .page_container .kiinov_left h1 {
+    margin-left: -18px;
+  }
+}
+/* line 132, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 .page_container .kiinov_container {
+  background: white;
+  width: 73%;
+}
+@media screen and (max-width: 840px) {
+  /* line 132, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .idara_2 .page_container .kiinov_container {
+    width: 100%;
+    background: white;
+  }
+}
+/* line 139, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 .page_container .kiinov_container .data_idara_2 {
+  float: left;
+  background: white;
+  width: 102.8%;
+}
+/* line 143, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 .page_container .kiinov_container .data_idara_2 .container_header {
+  background: white;
+}
+/* line 146, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 .page_container .kiinov_container .data_idara_2 .separator {
+  display: inline-block;
+  width: 1px;
+  height: 134px;
+  background: #0F5286;
+}
+/* line 152, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 .page_container .kiinov_container .data_idara_2 .link2pdf {
+  display: inline-block;
+  margin-left: 38%;
+  margin-right: 8%;
+  margin-top: 35px;
+}
+/* line 153, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 .page_container .kiinov_container .data_idara_2 .link2pdf label {
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 162, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 .page_container .kiinov_container .data_idara_2 p.first {
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  margin-top: 25px;
+  text-align: justify;
+}
+/* line 168, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 .page_container .kiinov_container .data_idara_2 p {
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  text-align: justify;
+}
+/* line 173, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 .page_container .kiinov_container .data_idara_2 h1 {
+  background: #0F5286;
+  width: 100%;
+}
+/* line 177, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 .page_container .kiinov_container .data_idara_2 h2 {
+  float: left;
+  width: 100%;
+  text-transform: uppercase;
+  color: #145890;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-right: 7.5%;
+  margin-left: 7.5%;
+}
+/* line 187, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 .page_container .kiinov_container .data_idara_2 ul {
+  float: left;
+  width: 90%;
+  list-style: none;
+  padding: 10px 20px;
+}
+/* line 192, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 .page_container .kiinov_container .data_idara_2 ul li {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  text-transform: lowercase;
+  margin-right: 7.5%;
+  margin-left: 7.5%;
+  line-height: 90%;
+  list-style-image: url("icons/square_list_style.png");
+}
+/* line 202, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara_2 .page_container .kiinov_container .data_idara_2 ul li:first-letter {
+  text-transform: uppercase;
+}
+
+/* line 211, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara header.kiinov_header {
+  background-image: url("back_header_2_1.png");
+}
+/* line 213, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara header.kiinov_header .header_img_contact_us .image_container img {
+  background: rgba(17, 42, 114, 0.3);
+}
+@media screen and (max-width: 840px) {
+  /* line 217, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .idara .kiinov_footer .rotated_image {
+    background: white;
+  }
+}
+/* line 222, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .kiinov_left {
+  width: 25%;
+  min-height: 945px;
+}
+@media screen and (max-width: 840px) {
+  /* line 222, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .idara .kiinov_left {
+    width: 100%;
+  }
+}
+/* line 229, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container {
+  background: white;
+}
+@media screen and (max-width: 925px) {
+  /* line 231, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .idara .page_container .kiinov_left h1 {
+    margin-left: -18px;
+  }
+}
+/* line 236, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container .kiinov_container {
+  background: white;
+  width: 73%;
+}
+@media screen and (max-width: 840px) {
+  /* line 236, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .idara .page_container .kiinov_container {
+    width: 100%;
+    background: white;
+  }
+}
+/* line 243, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container .kiinov_container .data_idara {
+  float: left;
+  background: white;
+  width: 102.8%;
+  margin-bottom: 350px;
+}
+/* line 248, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container .kiinov_container .data_idara .container_header {
+  background: white;
+}
+/* line 251, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container .kiinov_container .data_idara .separator {
+  display: inline-block;
+  width: 1px;
+  height: 134px;
+  background: #0F5286;
+}
+/* line 257, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container .kiinov_container .data_idara .icon2link {
+  display: inline-block;
+  margin-left: 14%;
+  margin-right: 14%;
+  margin-top: 35px;
+}
+/* line 258, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container .kiinov_container .data_idara .icon2link label {
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 267, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container .kiinov_container .data_idara p.first {
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  margin-top: 25px;
+  text-align: justify;
+}
+/* line 273, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container .kiinov_container .data_idara p {
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  text-align: justify;
+}
+/* line 278, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container .kiinov_container .data_idara h1 {
+  background: #0F5286;
+  width: 100%;
+}
+/* line 282, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container .kiinov_container .data_idara h2 {
+  float: left;
+  width: 100%;
+  text-transform: uppercase;
+  color: #145890;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-right: 7.5%;
+  margin-left: 7.5%;
+}
+/* line 292, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container .kiinov_container .data_idara ul {
+  float: left;
+  width: 100%;
+  list-style: none;
+  padding: 10px 20px;
+}
+/* line 297, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container .kiinov_container .data_idara ul li {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  text-transform: lowercase;
+  margin-right: 7.5%;
+  margin-left: 7.5%;
+  line-height: 80%;
+  list-style-image: url("icons/square_list_style.png");
+}
+/* line 307, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container .kiinov_container .data_idara ul li:first-letter {
+  text-transform: uppercase;
+}
+/* line 312, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container .kiinov_container .data_idara .link_to_pdf {
+  margin-top: 20px;
+  margin-left: 37.5%;
+  height: 200px;
+  width: 25%;
+}
+/* line 317, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container .kiinov_container .data_idara .link_to_pdf img {
+  position: relative;
+  width: 100%;
+}
+/* line 321, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.idara .page_container .kiinov_container .data_idara .link_to_pdf label {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* line 331, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix header.kiinov_header {
+  background-image: url("back_header_2_1.png");
+}
+/* line 333, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix header.kiinov_header .header_img_contact_us .image_container img {
+  background: rgba(17, 42, 114, 0.3);
+}
+@media screen and (max-width: 840px) {
+  /* line 337, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .urbanix .kiinov_footer .rotated_image {
+    background: white;
+  }
+}
+/* line 342, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .kiinov_left {
+  width: 25%;
+  min-height: 945px;
+}
+@media screen and (max-width: 840px) {
+  /* line 342, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .urbanix .kiinov_left {
+    width: 100%;
+  }
+}
+/* line 349, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container {
+  background: white;
+}
+@media screen and (max-width: 925px) {
+  /* line 351, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .urbanix .page_container .kiinov_left h1 {
+    margin-left: -18px;
+  }
+}
+/* line 356, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container .kiinov_container {
+  background: white;
+  width: 73%;
+}
+@media screen and (max-width: 840px) {
+  /* line 356, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .urbanix .page_container .kiinov_container {
+    width: 100%;
+    background: white;
+  }
+}
+/* line 363, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container .kiinov_container .data_urbanix {
+  float: left;
+  background: white;
+  width: 102.8%;
+  margin-bottom: 350px;
+}
+/* line 368, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container .kiinov_container .data_urbanix .container_header {
+  background: white;
+}
+/* line 371, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container .kiinov_container .data_urbanix .separator {
+  display: inline-block;
+  width: 1px;
+  height: 134px;
+  background: #0F5286;
+}
+/* line 377, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container .kiinov_container .data_urbanix .icon2link {
+  display: inline-block;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-top: 35px;
+}
+/* line 378, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container .kiinov_container .data_urbanix .icon2link label {
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 387, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container .kiinov_container .data_urbanix p.first {
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  margin-top: 35px;
+  text-align: justify;
+}
+/* line 393, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container .kiinov_container .data_urbanix p {
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  text-align: justify;
+}
+/* line 398, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container .kiinov_container .data_urbanix h1 {
+  background: #0F5286;
+  width: 100%;
+}
+/* line 402, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container .kiinov_container .data_urbanix h2 {
+  float: left;
+  width: 100%;
+  text-transform: uppercase;
+  color: #145890;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+/* line 410, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container .kiinov_container .data_urbanix ul {
+  float: left;
+  width: 100%;
+  list-style: none;
+  padding: 10px 20px;
+}
+/* line 415, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container .kiinov_container .data_urbanix ul li {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  text-transform: lowercase;
+  margin-right: 7.5%;
+  margin-left: 7.5%;
+  line-height: 80%;
+  list-style-image: url("icons/square_list_style.png");
+}
+/* line 425, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container .kiinov_container .data_urbanix ul li:first-letter {
+  text-transform: uppercase;
+}
+/* line 430, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container .kiinov_container .data_urbanix .link_to_pdf {
+  margin-top: 20px;
+  margin-left: 37.5%;
+  height: 200px;
+  width: 25%;
+}
+/* line 435, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container .kiinov_container .data_urbanix .link_to_pdf img {
+  position: relative;
+  width: 100%;
+}
+/* line 439, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.urbanix .page_container .kiinov_container .data_urbanix .link_to_pdf label {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* line 450, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.p_2_1 header.kiinov_header {
+  background-image: url("back_header_2_1.png");
+}
+/* line 452, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.p_2_1 header.kiinov_header .header_img_contact_us .image_container img {
+  background: rgba(17, 42, 114, 0.3);
+}
+@media screen and (max-width: 840px) {
+  /* line 456, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .p_2_1 .kiinov_footer .rotated_image {
+    background: white;
+  }
+}
+/* line 461, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.p_2_1 .kiinov_left {
+  width: 25%;
+}
+@media screen and (max-width: 840px) {
+  /* line 461, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .p_2_1 .kiinov_left {
+    width: 100%;
+  }
+}
+/* line 467, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.p_2_1 .page_container {
+  background: white;
+}
+@media screen and (max-width: 925px) {
+  /* line 469, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .p_2_1 .page_container .kiinov_left h1 {
+    margin-left: -18px;
+  }
+}
+/* line 474, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.p_2_1 .page_container .kiinov_container {
+  background: white;
+  width: 73%;
+  /*
+  //template_product.html.slim
+  div.header{
+    position:relative;
+    width:80%;
+    border: 4px solid #C9C9C9;
+    border-radius:20px;
+    margin-top: 20px;
+    margin-right:auto;
+    margin-left:auto;
+    background: #E3E3E3;
+  }
+  div.header img{
+    position:relative;
+    padding:3px;
+    height:160px;
+    width:95%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-top:10px;
+    border: 2px solid #999999;
+    border-radius:20px;
+    background:#BABABA;
+  }
+  div.header div.title{
+    position:relative;
+    margin-top:-120px;
+    text-align:center;
+    font-size:75px;
+    color:#E3E3E;
+  }
+  div.preview{
+    position:relative;
+    width:90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 7px;
+    text-align: justify;
+  }
+  div.expend{
+    opacity:0.5;
+    height:20px;
+    margin-top:10px;
+    background:#B5B5B5;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+  }
+  //end - template_product.html.slim
+  */
+}
+@media screen and (max-width: 840px) {
+  /* line 474, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+  .p_2_1 .page_container .kiinov_container {
+    width: 100%;
+    background: white;
+  }
+}
+/* line 530, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.p_2_1 .page_container .kiinov_container .data_p_2_1 {
+  float: left;
+  background: white;
+  width: 102.8%;
+}
+/* line 534, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.p_2_1 .page_container .kiinov_container .data_p_2_1 .separator {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1px;
+  height: 142px;
+  background: #0F5286;
+}
+/* line 541, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.p_2_1 .page_container .kiinov_container .data_p_2_1 .icon2link {
+  width: 200px;
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 35px;
+}
+/* line 544, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.p_2_1 .page_container .kiinov_container .data_p_2_1 .icon2link label {
+  text-align: center;
+}
+/* line 547, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.p_2_1 .page_container .kiinov_container .data_p_2_1 .icon2link img {
+  position: relative;
+  margin-left: 26%;
+}
+/* line 556, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.p_2_1 .page_container .kiinov_container .data_p_2_1 p {
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  margin-top: 120px;
+  text-align: justify;
+}
+/* line 562, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.p_2_1 .page_container .kiinov_container .data_p_2_1 h1 {
+  background: #0F5286;
+  width: 100%;
+}
+/* line 566, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.p_2_1 .page_container .kiinov_container .data_p_2_1 h2 {
+  float: left;
+  width: 100%;
+  text-transform: uppercase;
+  color: #145890;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+/* line 574, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.p_2_1 .page_container .kiinov_container .data_p_2_1 ul.images {
+  float: left;
+  width: 100%;
+  list-style: none;
+  padding: 10px 20px;
+}
+/* line 579, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.p_2_1 .page_container .kiinov_container .data_p_2_1 ul.images li {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  text-transform: lowercase;
+}
+/* line 585, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_1/import_this_folder.css.scss */
+.p_2_1 .page_container .kiinov_container .data_p_2_1 ul.images li:first-letter {
+  text-transform: uppercase;
+}
+
+/* line 2, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_2/import_this_folder.css.scss */
+.p_2_2 .full_line {
+  width: 100%;
+}
+/* line 5, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_2/import_this_folder.css.scss */
+.p_2_2 header.kiinov_header {
+  background-image: url("back_header_2_1.png");
+}
+/* line 7, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_2/import_this_folder.css.scss */
+.p_2_2 header.kiinov_header .header_img_contact_us .image_container img {
+  background: rgba(17, 42, 114, 0.3);
+}
+/* line 11, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_2/import_this_folder.css.scss */
+.p_2_2 .page_container {
+  background-image: url("background_4_products.png");
+  min-height: 1140px;
+  width: 98%;
+}
+/* line 15, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_2/import_this_folder.css.scss */
+.p_2_2 .page_container .kiinov_container {
+  width: 99%;
+  padding-bottom: 0;
+}
+@media screen and (max-width: 840px) {
+  /* line 15, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_2/import_this_folder.css.scss */
+  .p_2_2 .page_container .kiinov_container {
+    background-image: none;
+    background: none;
+  }
+}
+/* line 22, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_2/import_this_folder.css.scss */
+.p_2_2 .page_container .kiinov_container .data_p_2_2 {
+  float: left;
+  width: 100%;
+  padding-left: 290px;
+  padding-top: 136px;
+}
+/* line 27, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_2/import_this_folder.css.scss */
+.p_2_2 .page_container .kiinov_container .data_p_2_2 ul.products_names {
+  float: left;
+  width: 100%;
+  font-size: 30px;
+  color: #145287;
+  font-weight: bold;
+}
+/* line 33, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_2/import_this_folder.css.scss */
+.p_2_2 .page_container .kiinov_container .data_p_2_2 ul.products_names li {
+  float: left;
+  width: 100%;
+  margin: 30px 0;
+}
+/* line 37, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_2/import_this_folder.css.scss */
+.p_2_2 .page_container .kiinov_container .data_p_2_2 ul.products_names li h1 {
+  color: #145287;
+  font-size: 27px;
+  font-weight: bold;
+}
+@media screen and (max-width: 840px) {
+  /* line 47, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_2_2/import_this_folder.css.scss */
+  .p_2_2 .kiinov_footer .rotated_image {
+    background: none;
+  }
+}
+
+/* line 3, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+.p_4_1 header.kiinov_header {
+  background-image: url("background_header_4.png");
+}
+/* line 6, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+.p_4_1 header.kiinov_header .header_img_contact_us .image_container img {
+  background: rgba(17, 42, 114, 0.3);
+}
+/* line 12, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+.p_4_1 .kiinov_left H1 {
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 840px) {
+  /* line 11, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+  .p_4_1 .kiinov_left {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 840px) {
+  /* line 19, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+  .p_4_1 .kiinov_left .header {
+    width: 80%;
+  }
+}
+/* line 24, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+.p_4_1 .kiinov_left .bottom_image {
+  float: left;
+  width: 20%;
+  margin-top: -50px;
+}
+@media screen and (min-width: 840px) {
+  /* line 24, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+  .p_4_1 .kiinov_left .bottom_image {
+    padding: 0 25px;
+    position: relative;
+    top: 70px;
+    width: 100%;
+  }
+}
+/* line 37, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+.p_4_1 .page_container {
+  background-color: #B3CFE6;
+  background-image: url("back_left_1.png");
+}
+@media screen and (max-width: 840px) {
+  /* line 37, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+  .p_4_1 .page_container {
+    background: none;
+  }
+}
+/* line 44, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+.p_4_1 .page_container .kiinov_container {
+  width: 75%;
+  background: #1969AA;
+}
+@media screen and (max-width: 840px) {
+  /* line 44, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+  .p_4_1 .page_container .kiinov_container {
+    width: 100%;
+  }
+}
+/* line 50, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+.p_4_1 .page_container .kiinov_container .data_p_4_1 {
+  float: left;
+  width: 100%;
+  padding-bottom: 450px;
+  margin-bottom: -185px;
+  background: #1969AA;
+}
+/* line 56, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+.p_4_1 .page_container .kiinov_container .data_p_4_1 h1 {
+  background: #1969AA;
+}
+/* line 59, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+.p_4_1 .page_container .kiinov_container .data_p_4_1 .menu_infos {
+  text-align: center;
+  float: left;
+  width: 100%;
+  padding: 0 5%;
+  margin-top: 100px;
+}
+/* line 66, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+.p_4_1 .page_container .kiinov_container .data_p_4_1 .menu_infos #svg_1 {
+  background: white;
+  border: 4px solid grey;
+  border-radius: 110px;
+  width: 100%;
+}
+/* line 71, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+.p_4_1 .page_container .kiinov_container .data_p_4_1 .menu_infos #svg_1 .svgmenu {
+  cursor: pointer;
+}
+/* line 74, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+.p_4_1 .page_container .kiinov_container .data_p_4_1 .menu_infos #svg_1 .svgmenu.consulting:hover {
+  background: red;
+  position: relative;
+  top: -5px;
+}
+@media screen and (max-width: 840px) {
+  /* line 86, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_1/import_this_folder.css.scss */
+  .p_4_1 .kiinov_footer .rotated_image {
+    background: #1969AA;
+  }
+}
+
+/* line 2, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 header.kiinov_header {
+  background-image: url("background_header_4.png");
+}
+/* line 4, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 header.kiinov_header .header_img_contact_us .image_container img {
+  background: rgba(17, 42, 114, 0.3);
+}
+/* line 8, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 .kiinov_left {
+  min-height: 800px;
+}
+@media screen and (min-width: 840px) {
+  /* line 8, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+  .p_4_2 .kiinov_left {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 840px) {
+  /* line 13, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+  .p_4_2 .kiinov_left .header {
+    width: 80%;
+  }
+}
+/* line 18, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 .kiinov_left .bottom_image {
+  float: left;
+  width: 20%;
+  margin-top: -50px;
+}
+@media screen and (min-width: 840px) {
+  /* line 18, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+  .p_4_2 .kiinov_left .bottom_image {
+    padding: 0 25px;
+    position: relative;
+    top: 216px;
+    width: 100%;
+  }
+}
+/* line 30, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 .page_container {
+  background-color: #B3CFE6;
+  background-image: url("back_left_1.png");
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 840px) {
+  /* line 30, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+  .p_4_2 .page_container {
+    background-image: none;
+  }
+}
+/* line 37, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 .page_container .kiinov_container {
+  width: 75%;
+  background-image: url("background_4_1_t_5.png");
+  padding-bottom: 300px;
+}
+@media screen and (max-width: 840px) {
+  /* line 37, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+  .p_4_2 .page_container .kiinov_container {
+    width: 100%;
+  }
+}
+/* line 44, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 .page_container .kiinov_container .data_p_4_2 {
+  float: left;
+  width: 100%;
+}
+/* line 47, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 .page_container .kiinov_container .data_p_4_2 .header {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: 35px;
+}
+/* line 52, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 .page_container .kiinov_container .data_p_4_2 .header h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #1E78C1;
+  font-weight: bold;
+  display: inline-block;
+  width: 350px;
+}
+/* line 53, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 .page_container .kiinov_container .data_p_4_2 .header h1 i {
+  display: inline-block;
+  position: relative;
+  top: -6px;
+  left: -60px;
+}
+/* line 58, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 .page_container .kiinov_container .data_p_4_2 .header h1 i:before {
+  content: url("icons/arrow_blue_small.png");
+}
+/* line 68, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 .page_container .kiinov_container .data_p_4_2 .header h1:before {
+  content: '...';
+  font-family: gothic;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+/* line 77, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 .page_container .kiinov_container .data_p_4_2 .circle_container {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+/* line 82, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 .page_container .kiinov_container .data_p_4_2 .circle_container .circle {
+  display: inline-block;
+}
+/* line 88, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 .page_container .kiinov_container .data_p_4_2 .paragraphs p {
+  color: black;
+  margin-top: 20px;
+  width: 100%;
+  text-align: justify;
+  font-weight: normal;
+}
+/* line 95, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 .page_container .kiinov_container .data_p_4_2 .paragraphs ul {
+  margin-top: 10px;
+  margin-left: 10%;
+  font-size: 90%;
+}
+/* line 100, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 .page_container .kiinov_container .data_p_4_2 .paragraphs h4 {
+  margin-top: 5px;
+  font-size: 18px;
+}
+/* line 104, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+.p_4_2 .page_container .kiinov_container .data_p_4_2 .paragraphs img {
+  position: absolute;
+  height: 400px;
+  margin-top: -350px;
+  float: left;
+  opacity: 0.075;
+  transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+}
+@media screen and (max-width: 840px) {
+  /* line 118, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_4_2/import_this_folder.css.scss */
+  .p_4_2 .kiinov_footer .rotated_image {
+    background-image: none;
+    background: none;
+  }
+}
+
+/* line 1, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.split_3 {
+  height: 15px;
+}
+
+/* line 7, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 header.kiinov_header {
+  background-image: url("background_header_4.png");
+}
+/* line 10, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 header.kiinov_header .header_img_contact_us .image_container img {
+  background: rgba(17, 42, 114, 0.3);
+}
+@media screen and (min-width: 840px) {
+  /* line 15, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+  .p_5 .kiinov_left {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 840px) {
+  /* line 19, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+  .p_5 .kiinov_left .header {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 15, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+  .p_5 .kiinov_left {
+    margin-bottom: 0px;
+  }
+}
+/* line 27, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .kiinov_left .bottom_image {
+  float: left;
+  width: 20%;
+  margin-top: -50px;
+}
+@media screen and (min-width: 840px) {
+  /* line 27, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+  .p_5 .kiinov_left .bottom_image {
+    padding: 0 25px;
+    position: relative;
+    top: 216px;
+    width: 100%;
+  }
+}
+/* line 40, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container {
+  background-color: #B3CFE6;
+  background-image: url("back_left_1.png");
+}
+@media screen and (min-width: 992px) {
+  /* line 40, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+  .p_5 .page_container {
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: 840px) {
+  /* line 40, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+  .p_5 .page_container {
+    background: none;
+  }
+}
+/* line 51, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container {
+  width: 75%;
+  background: #338CD4;
+  padding-bottom: 140px;
+}
+/* line 55, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container h1 {
+  color: white;
+}
+@media screen and (min-width: 992px) {
+  /* line 51, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+  .p_5 .page_container .kiinov_container {
+    padding-bottom: 200px;
+    margin-bottom: 200px;
+  }
+}
+@media screen and (max-width: 840px) {
+  /* line 51, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+  .p_5 .page_container .kiinov_container {
+    width: 100%;
+  }
+}
+/* line 65, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 {
+  float: left;
+  width: 100%;
+}
+/* line 68, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 * {
+  margin: 0;
+  padding: 0;
+}
+/* line 74, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 .title i:before {
+  content: url("icons/arrow_blue.png");
+}
+/* line 78, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 .title h1 {
+  text-transform: none;
+  font-weight: normal;
+  font-family: gothic;
+  font-size: 30px;
+}
+/* line 86, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 .paragraphs {
+  float: left;
+  width: 100%;
+  padding: 0 11%;
+}
+/* line 90, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 .paragraphs .paragraph_title {
+  float: left;
+  width: 100%;
+}
+/* line 93, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 .paragraphs .paragraph_title p {
+  color: #0F5286;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 99, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 .paragraphs .paragraph_title_2 {
+  float: left;
+  width: 100%;
+}
+/* line 102, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 .paragraphs .paragraph_title_2 p {
+  color: white;
+  font-size: 16px;
+}
+/* line 107, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 .paragraphs .paragraph {
+  float: left;
+  width: 100%;
+  font-family: gothic;
+}
+/* line 111, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 .paragraphs .paragraph p {
+  color: #000000;
+  font-size: 16px;
+}
+/* line 115, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 .paragraphs .paragraph ul.temp {
+  float: left;
+  width: 100%;
+  padding-left: 5%;
+}
+/* line 119, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 .paragraphs .paragraph ul.temp li {
+  float: left;
+  width: 100%;
+}
+/* line 122, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 .paragraphs .paragraph ul.temp li p {
+  font-size: 14px;
+}
+/* line 128, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 .paragraphs .title_2 {
+  width: auto;
+}
+/* line 131, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 .paragraphs ul.domains {
+  float: left;
+  list-style: none;
+  margin: 15px 0 0 30px;
+  border-left: 2px solid #1E78C1;
+  padding: 0 10px;
+  width: 80%;
+}
+/* line 138, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 .paragraphs ul.domains li {
+  float: left;
+  width: 100%;
+}
+/* line 141, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+.p_5 .page_container .kiinov_container .data_p_5 .paragraphs ul.domains li p {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+@media screen and (max-width: 840px) {
+  /* line 154, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+  .p_5 .kiinov_footer .rotated_image {
+    background: #338CD4;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 159, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+  .p_5 .kiinov_footer {
+    margin-top: -372px;
+  }
+}
+@media screen and (max-width: 840px) {
+  /* line 159, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+  .p_5 .kiinov_footer {
+    margin-top: -300px;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 840px) {
+  /* line 159, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_5/import_this_folder.css.scss */
+  .p_5 .kiinov_footer {
+    margin-top: -440px;
+  }
+}
+
+/* line 3, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 header.kiinov_header {
+  background-image: url("background_header_4.png");
+}
+/* line 6, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 header.kiinov_header .header_img_contact_us .image_container img {
+  background: rgba(17, 42, 114, 0.3);
+}
+/* line 11, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .kiinov_left {
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 840px) {
+  /* line 11, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+  .p_6 .kiinov_left {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 840px) {
+  /* line 16, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+  .p_6 .kiinov_left .header {
+    width: 80%;
+  }
+}
+/* line 21, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .kiinov_left .bottom_image {
+  float: left;
+  width: 20%;
+  margin-top: -50px;
+}
+@media screen and (min-width: 840px) {
+  /* line 21, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+  .p_6 .kiinov_left .bottom_image {
+    padding: 0 25px;
+    position: relative;
+    top: 216px;
+    width: 100%;
+  }
+}
+/* line 34, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .page_container {
+  background-color: #B3CFE6;
+  background-image: url("back_left_1.png");
+  padding-bottom: 0px;
+}
+@media screen and (max-width: 840px) {
+  /* line 34, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+  .p_6 .page_container {
+    background: none;
+  }
+}
+/* line 43, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .page_container .kiinov_container {
+  width: 75%;
+  padding-bottom: 600px;
+  background: #60A7E0;
+}
+@media screen and (max-width: 840px) {
+  /* line 43, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+  .p_6 .page_container .kiinov_container {
+    width: 100%;
+  }
+}
+/* line 50, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .page_container .kiinov_container .data_p_6 {
+  float: left;
+  width: 100%;
+}
+/* line 53, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .page_container .kiinov_container .data_p_6 * {
+  margin: 0;
+  padding: 0;
+}
+/* line 59, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .page_container .kiinov_container .data_p_6 .title i:before {
+  content: url("icons/arrow_blue.png");
+}
+/* line 63, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .page_container .kiinov_container .data_p_6 .title h1 {
+  color: white;
+  text-transform: none;
+  font-weight: normal;
+  font-family: gothic;
+  font-size: 30px;
+}
+/* line 71, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .page_container .kiinov_container .data_p_6 .paragraphs {
+  float: left;
+  width: 100%;
+  padding: 0 6%;
+}
+/* line 75, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .page_container .kiinov_container .data_p_6 .paragraphs .paragraph_title {
+  float: left;
+  width: 100%;
+}
+/* line 78, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .page_container .kiinov_container .data_p_6 .paragraphs .paragraph_title p {
+  color: #0F5286;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 84, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .page_container .kiinov_container .data_p_6 .paragraphs .paragraph_title_2 {
+  float: left;
+  width: 100%;
+}
+/* line 87, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .page_container .kiinov_container .data_p_6 .paragraphs .paragraph_title_2 p {
+  color: #1E78C1;
+  font-size: 16px;
+}
+/* line 92, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .page_container .kiinov_container .data_p_6 .paragraphs .paragraph {
+  float: left;
+  width: 100%;
+  font-family: gothic;
+}
+/* line 96, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .page_container .kiinov_container .data_p_6 .paragraphs .paragraph p {
+  color: #000000;
+  font-size: 16px;
+}
+/* line 101, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .page_container .kiinov_container .data_p_6 .paragraphs .title_2 {
+  width: auto;
+}
+/* line 110, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+.p_6 .kiinov_footer {
+  margin-top: -350px;
+}
+@media screen and (max-width: 840px) {
+  /* line 113, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_6/import_this_folder.css.scss */
+  .p_6 .kiinov_footer .rotated_image {
+    background: #60A7E0;
+  }
+}
+
+/* line 3, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 header.kiinov_header {
+  background-image: url("background_header_4.png");
+}
+/* line 6, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 header.kiinov_header .header_img_contact_us .image_container img {
+  background: rgba(17, 42, 114, 0.3);
+}
+/* line 11, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .kiinov_left {
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 840px) {
+  /* line 11, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+  .p_7_1 .kiinov_left {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 840px) {
+  /* line 16, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+  .p_7_1 .kiinov_left .header {
+    width: 80%;
+  }
+}
+/* line 21, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .kiinov_left .bottom_image {
+  float: left;
+  width: 20%;
+  margin-top: -50px;
+}
+@media screen and (min-width: 840px) {
+  /* line 21, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+  .p_7_1 .kiinov_left .bottom_image {
+    padding: 0 25px;
+    position: relative;
+    top: 216px;
+    width: 100%;
+  }
+}
+/* line 34, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container {
+  padding-bottom: 0px;
+  background-color: #B3CFE6;
+  background-image: url("back_left_1.png");
+}
+@media screen and (max-width: 840px) {
+  /* line 34, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+  .p_7_1 .page_container {
+    background: none;
+  }
+}
+/* line 42, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container {
+  padding-bottom: 478px;
+  width: 75%;
+  background: #92C5EE;
+}
+@media screen and (max-width: 840px) {
+  /* line 42, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+  .p_7_1 .page_container .kiinov_container {
+    width: 100%;
+  }
+}
+/* line 49, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container .data_p_7_1 {
+  float: left;
+  width: 100%;
+}
+/* line 52, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container .data_p_7_1 * {
+  margin: 0;
+  padding: 0;
+}
+/* line 56, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container .data_p_7_1 .header_padding {
+  padding: 0 10%;
+}
+/* line 61, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container .data_p_7_1 .title i:before {
+  content: url("icons/arrow_blue.png");
+}
+/* line 65, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container .data_p_7_1 .title h1 {
+  text-transform: none;
+  font-weight: normal;
+  font-family: gothic;
+  font-size: 30px;
+}
+/* line 72, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container .data_p_7_1 h1.sub_header {
+  color: #2890D7;
+  font-size: 25px;
+  font-family: gothic;
+}
+/* line 77, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container .data_p_7_1 .paragraphs {
+  float: left;
+  width: 100%;
+  padding: 0 6%;
+}
+/* line 81, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container .data_p_7_1 .paragraphs .paragraph_title {
+  float: left;
+  width: 100%;
+}
+/* line 84, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container .data_p_7_1 .paragraphs .paragraph_title p {
+  color: #0F5286;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 90, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container .data_p_7_1 .paragraphs .paragraph_title_2 {
+  float: left;
+  width: 100%;
+}
+/* line 93, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container .data_p_7_1 .paragraphs .paragraph_title_2 p {
+  color: #1E78C1;
+  font-size: 16px;
+}
+/* line 98, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container .data_p_7_1 .paragraphs .paragraph {
+  float: left;
+  width: 100%;
+  font-family: gothic;
+}
+/* line 102, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container .data_p_7_1 .paragraphs .paragraph h5.date {
+  color: #385BA2;
+  font-size: 15px;
+  font-weight: normal;
+}
+/* line 107, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container .data_p_7_1 .paragraphs .paragraph h4.sub_header {
+  color: #1F78C5;
+  font-size: 16px;
+  font-family: gothic;
+}
+/* line 112, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container .data_p_7_1 .paragraphs .paragraph p {
+  color: #000000;
+  font-size: 16px;
+}
+/* line 117, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .page_container .kiinov_container .data_p_7_1 .paragraphs .title_2 {
+  width: auto;
+}
+/* line 126, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+.p_7_1 .kiinov_footer {
+  margin-top: -372px;
+}
+@media screen and (max-width: 840px) {
+  /* line 129, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_7_1/import_this_folder.css.scss */
+  .p_7_1 .kiinov_footer .rotated_image {
+    background: #92C5EE;
+    background-image: url("back_header_2.png");
+  }
+}
+
+/* line 3, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 header.kiinov_header {
+  background-image: url("background_header_4.png");
+}
+/* line 6, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 header.kiinov_header .header_img_contact_us .image_container img {
+  background: rgba(17, 42, 114, 0.3);
+}
+/* line 11, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .kiinov_left {
+  margin-bottom: 0px;
+  min-height: 1000px;
+}
+@media screen and (min-width: 840px) {
+  /* line 11, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+  .p_8 .kiinov_left {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 840px) {
+  /* line 17, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+  .p_8 .kiinov_left .header {
+    width: 80%;
+  }
+}
+/* line 22, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .kiinov_left .bottom_image {
+  float: left;
+  width: 20%;
+  margin-top: -50px;
+}
+@media screen and (min-width: 840px) {
+  /* line 22, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+  .p_8 .kiinov_left .bottom_image {
+    padding: 0 25px;
+    position: relative;
+    top: 216px;
+    width: 100%;
+  }
+}
+/* line 35, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container {
+  padding-bottom: 0px;
+  background-color: #B3CFE6;
+  background-image: url("back_left_1.png");
+}
+@media screen and (max-width: 840px) {
+  /* line 35, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+  .p_8 .page_container {
+    background: none;
+  }
+}
+/* line 43, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container {
+  padding-bottom: 478px;
+  width: 75%;
+  background: #C8DDEE;
+}
+@media screen and (max-width: 840px) {
+  /* line 43, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+  .p_8 .page_container .kiinov_container {
+    width: 100%;
+  }
+}
+/* line 50, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container .data_p_8 {
+  float: left;
+  width: 100%;
+}
+/* line 53, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container .data_p_8 * {
+  margin: 0;
+  padding: 0;
+}
+/* line 57, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container .data_p_8 .header_padding {
+  padding: 0 10%;
+}
+/* line 62, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container .data_p_8 .title i:before {
+  content: url("icons/arrow_blue.png");
+}
+/* line 66, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container .data_p_8 .title h1 {
+  text-transform: none;
+  font-weight: normal;
+  font-family: gothic;
+  font-size: 30px;
+}
+/* line 73, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container .data_p_8 h1.sub_header {
+  color: #2890D7;
+  font-size: 25px;
+  font-family: gothic;
+}
+/* line 78, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container .data_p_8 .paragraphs {
+  float: left;
+  width: 100%;
+  padding: 0 6%;
+}
+/* line 82, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container .data_p_8 .paragraphs .paragraph_title {
+  float: left;
+  width: 100%;
+}
+/* line 85, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container .data_p_8 .paragraphs .paragraph_title p {
+  color: #0F5286;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 91, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container .data_p_8 .paragraphs .paragraph_title_2 {
+  float: left;
+  width: 100%;
+}
+/* line 94, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container .data_p_8 .paragraphs .paragraph_title_2 p {
+  color: #1E78C1;
+  font-size: 16px;
+}
+/* line 99, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container .data_p_8 .paragraphs .paragraph {
+  float: left;
+  width: 100%;
+  font-family: gothic;
+}
+/* line 103, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container .data_p_8 .paragraphs .paragraph h5.date {
+  color: #385BA2;
+  font-size: 15px;
+  font-weight: normal;
+}
+/* line 108, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container .data_p_8 .paragraphs .paragraph h4.sub_header {
+  color: #1F78C5;
+  font-size: 16px;
+  font-family: gothic;
+}
+/* line 113, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container .data_p_8 .paragraphs .paragraph p {
+  color: #000000;
+  font-size: 16px;
+}
+/* line 118, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .page_container .kiinov_container .data_p_8 .paragraphs .title_2 {
+  width: auto;
+}
+/* line 128, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+.p_8 .kiinov_footer {
+  margin-top: -372px;
+}
+@media screen and (max-width: 840px) {
+  /* line 131, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports/p_8/import_this_folder.css.scss */
+  .p_8 .kiinov_footer .rotated_image {
+    background: #C8DDEE;
+  }
+}
+
+/* line 16, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports.css.scss */
+body {
+  background: #D5D5D5;
+}
+
+/* line 20, C:/Users/SamZaraf/Desktop/Travail Maroc/Projet Kiinov site/Kiinov/app/assets/stylesheets/imports.css.scss */
+#site_container {
+  box-shadow: 0px 0px 40px #000;
+  background-color: white;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html><html class="no-js" lang="fr">
+<!-- Mirrored from localhost:3000/surveys/7e7d75a5-9d64-4b3c-beec-1f3578a04b2f/edit by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 29 May 2014 14:20:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><meta charset="utf-8" /><meta content="width=device-width" name="viewport" /><meta content="Agence urbaine : Berrechid" property="og:site_name" /><title>Agence urbaine : Berrechid</title><link href="../../assets/application7e76.css?body=1" media="screen" rel="stylesheet" /><script src="../../assets/vendor/modernizr7e76.js?body=1"></script><meta content="authenticity_token" name="csrf-param" />
+<meta content="moFQ790ZKxZ8JzM5j59TOAXoHf3SqAwGUMRH9TxJ/v8=" name="csrf-token" /></head><body class="surveys edit fr"><div class="off-canvas-wrap" data-offcanvas=""><div class="inner-wrap"><nav class="tab-bar"><section class="middle tab-bar-section"><a href="../../index.html"><img alt="Logo berrechid" src="../../assets/logo-berrechid.png" /></a><a class="fa fa-envelope-o messages_pending" count="200" href="../../support.html"></a></section></nav><div class="page-content section main-section"><h3>Form Edit Sondage :</h3><p id="notice"></p><p id="error"></p><div id="left-tabs"><div class="small-4 medium-3 large-2 columns"><div class="left-menu"><dl class="tabs vertical" data-tab=""><dd class="active"><a href="#niveau1">Infos. Sondage</a></dd><dd><a href="#niveau2">Liste des Questions</a></dd></dl></div></div><div class="small-8 medium-9 large-10 columns"><div class="tabs-content vertical tabs-panels"><div class="content active" id="niveau1"><h3>Modifier le Sondage :</h3><form accept-charset="UTF-8" action="http://localhost:3000/surveys/7e7d75a5-9d64-4b3c-beec-1f3578a04b2f" class="form edit_survey" id="edit_survey_7e7d75a5-9d64-4b3c-beec-1f3578a04b2f" method="post" novalidate="novalidate"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="moFQ790ZKxZ8JzM5j59TOAXoHf3SqAwGUMRH9TxJ/v8=" /></div><div class="input string required survey_key"><label class="string required control-label" for="survey_key"><abbr title="required">*</abbr> Clé</label><input class="string required" id="survey_key" name="survey[key]" type="text" value="it-is-a-long-established" /></div><div class="input string required survey_title_fr"><label class="string required control-label" for="survey_title_fr"><abbr title="required">*</abbr> Titre FR</label><input class="string required" id="survey_title_fr" name="survey[title_fr]" type="text" value="It is a long established fact that a reader will be distracted" /></div><div class="input string optional survey_title_ar"><label class="string optional control-label" for="survey_title_ar">Titre AR</label><input class="string optional" id="survey_title_ar" name="survey[title_ar]" type="text" value="It is a long established fact that a reader will be distracted" /></div><div class="input string required survey_objective_fr"><label class="string required control-label" for="survey_objective_fr"><abbr title="required">*</abbr> Objectif FR</label><input class="string required" id="survey_objective_fr" name="survey[objective_fr]" type="text" value="The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters" /></div><div class="input string optional survey_objective_ar"><label class="string optional control-label" for="survey_objective_ar">Objectif AR</label><input class="string optional" id="survey_objective_ar" name="survey[objective_ar]" type="text" value="The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters" /></div><div class="input text optional survey_resume_fr"><label class="text optional control-label" for="survey_resume_fr">Résumer FR</label><textarea class="text optional" id="survey_resume_fr" name="survey[resume_fr]">
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</textarea></div><div class="input text optional survey_resume_ar"><label class="text optional control-label" for="survey_resume_ar">Résumer AR</label><textarea class="text optional" id="survey_resume_ar" name="survey[resume_ar]">
+</textarea></div><input class="button tiny" data-disable-with="loading..." name="commit" type="submit" value="Update Survey" /></form></div><div class="content" id="niveau2"><div id="form_survey_questions"><h3>Ajouter une question :</h3><form accept-charset="UTF-8" action="http://localhost:3000/surveys/7e7d75a5-9d64-4b3c-beec-1f3578a04b2f/questions" class="form new_survey_question" data-remote="true" id="new_survey_question" method="post" novalidate="novalidate"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div><div class="input string required survey_question_label_fr"><label class="string required control-label" for="survey_question_label_fr"><abbr title="required">*</abbr> Label FR</label><input class="string required" id="survey_question_label_fr" name="survey_question[label_fr]" placeholder="Entrer la Label FR ..." type="text" value="" /></div><div class="input string optional survey_question_label_ar"><label class="string optional control-label" for="survey_question_label_ar">Label Ar</label><input class="string optional" id="survey_question_label_ar" name="survey_question[label_ar]" placeholder="Entrer la Label AR ..." type="text" value="" /></div><div class="input select required survey_question_kind"><label class="select required control-label" for="survey_question_kind"><abbr title="required">*</abbr> Type de réponse</label><select class="select required" id="survey_question_kind" name="survey_question[kind]"><option value=""></option>
+<option value="textbox">Zone de texte</option>
+<option value="inputbox">Zone de saisie</option>
+<option value="datebox">Date</option>
+<option value="colorbox">Couleur</option>
+<option value="numberbox">Numéro</option>
+<option value="radio">Choix unique (bouton radio)</option>
+<option value="select">Choix unique (liste déroulante)</option>
+<option value="checkbox">Choix multiple (cases à cocher)</option></select></div><div class="input integer optional survey_question_position"><label class="integer optional control-label" for="survey_question_position">Position</label><input class="numeric integer optional" id="survey_question_position" name="survey_question[position]" step="1" type="number" /></div><input class="button tiny" data-disable-with="loading..." name="commit" type="submit" value="Create Question" /></form></div><h3>Liste des questions :</h3><div class="tables"><table><thead><tr><th>Position</th><th>Label FR</th><th>Type de réponse</th><th width="220">Action</th></tr></thead><tbody id="list_survey_questions"><tr><td>1</td><td>It is a long established fact that a reader will be distracted ?</td><td>Choix unique (bouton radio)</td><td width="220"><a class="fi-page-edit" data-remote="true" href="questions/2a5c9794-7f5a-4617-98e0-0e3bbb3cb98c/edit.js">Modifier</a><a class="fi-page-delete" data-confirm="Vous voulez vraiment supprimer ?" data-method="delete" data-remote="true" href="questions/2a5c9794-7f5a-4617-98e0-0e3bbb3cb98c" rel="nofollow">Supprimer</a><a class="fi-plus" data-reveal-ajax="true" data-reveal-id="urbain_agency-modal" href="questions/2a5c9794-7f5a-4617-98e0-0e3bbb3cb98c/answers.html" title="Liste des réponses">Ajouter</a><div class="reveal-modal" data-reveal=""></div></td></tr><tr><td>2</td><td>On the other hand, we denounce with righteous indignation ?</td><td>Zone de saisie</td><td width="220"><a class="fi-page-edit" data-remote="true" href="questions/13839226-73fc-4bf0-832b-a458e4d62090/edit.js">Modifier</a><a class="fi-page-delete" data-confirm="Vous voulez vraiment supprimer ?" data-method="delete" data-remote="true" href="questions/13839226-73fc-4bf0-832b-a458e4d62090" rel="nofollow">Supprimer</a></td></tr><tr><td>3</td><td> he rejects pleasures to secure other greater pleasures ?</td><td>Zone de texte</td><td width="220"><a class="fi-page-edit" data-remote="true" href="questions/5d0b86a0-6447-48ac-a683-51799767e7d9/edit.js">Modifier</a><a class="fi-page-delete" data-confirm="Vous voulez vraiment supprimer ?" data-method="delete" data-remote="true" href="questions/5d0b86a0-6447-48ac-a683-51799767e7d9" rel="nofollow">Supprimer</a></td></tr></tbody></table></div></div></div></div></div><a href="../../surveys.html">Back</a></div></div></div><div class="reveal-modal" data-reveal="" id="urbain_agency-modal"></div><script src="../../assets/jquery/jquery7e76.js?body=1"></script>
+<script src="../../assets/jquery7e76.js?body=1"></script>
+<script src="../../assets/jquery_ujs7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.core7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.widget7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.accordion7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.position7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.menu7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.autocomplete7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.button7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.datepicker7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.mouse7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.draggable7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.resizable7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.dialog7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.droppable7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.effect7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.effect-blind7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.effect-bounce7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.effect-clip7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.effect-drop7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.effect-explode7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.effect-fade7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.effect-fold7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.effect-highlight7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.effect-pulsate7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.effect-scale7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.effect-shake7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.effect-slide7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.effect-transfer7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.progressbar7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.selectable7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.slider7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.sortable7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.spinner7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.tabs7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.tooltip7e76.js?body=1"></script>
+<script src="../../assets/jquery.ui.all7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation.alert7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation.clearing7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation.dropdown7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation.offcanvas7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation.tooltip7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation.topbar7e76.js?body=1"></script>
+<script src="../../assets/foundation_custom7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation.abide7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation.accordion7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation.interchange7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation.joyride7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation.magellan7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation.orbit7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation.reveal7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation.slider7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation.tab7e76.js?body=1"></script>
+<script src="../../assets/foundation/foundation.equalizer7e76.js?body=1"></script>
+<script src="../../assets/foundation7e76.js?body=1"></script>
+<script src="../../assets/ckeditor/basepath7e76.js?body=1"></script>
+<script src="../../assets/ckeditor/ckeditor7e76.js?body=1"></script>
+<script src="../../assets/ckeditor/jquery7e76.js?body=1"></script>
+<script src="../../assets/ckeditor-jquery7e76.js?body=1"></script>
+<script src="../../assets/ckeditor/lang/fr7e76.js?body=1"></script>
+<script src="../../assets/ckeditor/lang/ar7e76.js?body=1"></script>
+<script src="../../assets/to_close_widget7e76.js?body=1"></script>
+<script src="../../assets/to_close_li7e76.js?body=1"></script>
+<script src="../../assets/to_close_form7e76.js?body=1"></script>
+<script src="../../assets/pages7e76.js?body=1"></script>
+<script src="../../assets/on_off_button7e76.js?body=1"></script>
+<script src="../../assets/editable/jqueryui-editable7e76.js?body=1"></script>
+<script src="../../assets/editable/rails/editable_form7e76.js?body=1"></script>
+<script src="../../assets/editable/rails/data_classes7e76.js?body=1"></script>
+<script src="../../assets/editable/rails/error_handling7e76.js?body=1"></script>
+<script src="../../assets/editable/rails7e76.js?body=1"></script>
+<script src="../../assets/cocoon7e76.js?body=1"></script>
+<script src="../../assets/epiceditor7e76.js?body=1"></script>
+<script src="../../assets/application7e76.js?body=1"></script></body>
+<!-- Mirrored from localhost:3000/surveys/7e7d75a5-9d64-4b3c-beec-1f3578a04b2f/edit by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 29 May 2014 14:20:25 GMT -->
+</html>

@@ -1,0 +1,1046 @@
+/*!
+ * jQuery UI CSS Framework 1.10.4
+ * http://jqueryui.com
+ *
+ * Copyright 2014 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ */
+/*
+
+
+ */
+/* SpryTabbedPanels.css - version 0.4 - Spry Pre-Release 1.6 */
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+/* Horizontal Tabbed Panels
+*
+* The default style for a TabbedPanels widget places all tab buttons
+* (left aligned) above the content panel.
+*/
+/* This is the selector for the main TabbedPanels container. For our
+* default style, this container does not contribute anything visually,
+* but it is floated left to make sure that any floating or clearing done
+* with any of its child elements are contained completely within the
+* TabbedPanels container, to minimize any impact or undesireable
+* interaction with other floated elements on the page that may be used
+* for layout.
+*
+* If you want to constrain the width of the TabbedPanels widget, set a
+* width on the TabbedPanels container. By default, the TabbedPanels widget
+* expands horizontally to fill up available space.
+*
+* The name of the class ("TabbedPanels") used in this selector is not
+* necessary to make the widget function. You can use any class name you
+* want to style the TabbedPanels container.
+*/
+/* line 29, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/SpryTabbedPanels.css.scss */
+.TabbedPanels {
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  clear: none;
+  width: 100%;
+  /* IE Hack to force proper layout when preceded by a paragraph. (hasLayout Bug)*/
+}
+
+/* This is the selector for the TabGroup. The TabGroup container houses
+* all of the tab buttons for each tabbed panel in the widget. This container
+* does not contribute anything visually to the look of the widget for our
+* default style.
+*
+* The name of the class ("TabbedPanelsTabGroup") used in this selector is not
+* necessary to make the widget function. You can use any class name you
+* want to style the TabGroup container.
+*/
+/* line 46, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/SpryTabbedPanels.css.scss */
+.TabbedPanelsTabGroup {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* This is the selector for the TabbedPanelsTab. This container houses
+* the title for the panel. This is also the tab "button" that the user clicks
+* on to activate the corresponding content panel so that it appears on top
+* of the other tabbed panels contained in the widget.
+*
+* For our default style, each tab is positioned relatively 1 pixel down from
+* where it wold normally render. This allows each tab to overlap the content
+* panel that renders below it. Each tab is rendered with a 1 pixel bottom
+* border that has a color that matches the top border of the current content
+* panel. This gives the appearance that the tab is being drawn behind the
+* content panel.
+*
+* The name of the class ("TabbedPanelsTab") used in this selector is not
+* necessary to make the widget function. You can use any class name you want
+* to style this tab container.
+*/
+/* line 67, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/SpryTabbedPanels.css.scss */
+.TabbedPanelsTab {
+  position: relative;
+  top: 1px;
+  float: left;
+  padding: 4px 10px;
+  margin: 0px 1px 0px 0px;
+  font-weight: bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  /*background-color: #DDD;*/
+  background-image: url(libs/spry/bg_tab.gif);
+  list-style: none;
+  border-left: solid 1px #860e0b;
+  border-bottom: solid 1px #860e0b;
+  border-top: solid 1px #860e0b;
+  border-right: solid 1px #860e0b;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  cursor: pointer;
+  color: #860e0b;
+}
+
+/* This selector is an example of how to change the appearnce of a tab button
+* container as the mouse enters it. The class "TabbedPanelsTabHover" is
+* programatically added and removed from the tab element as the mouse enters
+* and exits the container.
+*/
+/* line 94, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/SpryTabbedPanels.css.scss */
+.TabbedPanelsTabHover {
+  /*background-color: #CCC;*/
+  background-image: url(libs/spry/bg_tab_hover.gif);
+}
+
+/* This selector is an example of how to change the appearance of a tab button
+* container after the user has clicked on it to activate a content panel.
+* The class "TabbedPanelsTabSelected" is programatically added and removed
+* from the tab element as the user clicks on the tab button containers in
+* the widget.
+*
+* As mentioned above, for our default style, tab buttons are positioned
+* 1 pixel down from where it would normally render. When the tab button is
+* selected, we change its bottom border to match the background color of the
+* content panel so that it looks like the tab is part of the content panel.
+*/
+/* line 110, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/SpryTabbedPanels.css.scss */
+.TabbedPanelsTabSelected {
+  background-color: #860e0b;
+  color: #ffffff;
+  background-image: none;
+  /*background-image:url(libs/spry/bg_tab_s.png);*/
+  /*background-repeat:repeat-x;*/
+  border-bottom: none;
+}
+
+/* This selector is an example of how to make a link inside of a tab button
+* look like normal text. Users may want to use links inside of a tab button
+* so that when it gets focus, the text *inside* the tab button gets a focus
+* ring around it, instead of the focus ring around the entire tab.
+*/
+/* line 125, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/SpryTabbedPanels.css.scss */
+.TabbedPanelsTab a {
+  color: black;
+  text-decoration: none;
+}
+
+/* This is the selector for the ContentGroup. The ContentGroup container houses
+* all of the content panels for each tabbed panel in the widget. For our
+* default style, this container provides the background color and borders that
+* surround the content.
+*
+* The name of the class ("TabbedPanelsContentGroup") used in this selector is
+* not necessary to make the widget function. You can use any class name you
+* want to style the ContentGroup container.
+*/
+/* line 139, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/SpryTabbedPanels.css.scss */
+.TabbedPanelsContentGroup {
+  clear: both;
+  border-left: solid 1px #860e0b;
+  border-bottom: solid 1px #860e0b;
+  border-top: solid 1px #860e0b;
+  border-right: solid 1px #860e0b;
+  background-color: #fcf9ec;
+}
+
+/* This is the selector for the Content panel. The Content panel holds the
+* content for a single tabbed panel. For our default style, this container
+* provides some padding, so that the content is not pushed up against the
+* widget borders.
+*
+* The name of the class ("TabbedPanelsContent") used in this selector is
+* not necessary to make the widget function. You can use any class name you
+* want to style the Content container.
+*/
+/* line 157, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/SpryTabbedPanels.css.scss */
+.TabbedPanelsContent {
+  padding: 4px;
+}
+
+/* This selector is an example of how to change the appearnce of the currently
+* active container panel. The class "TabbedPanelsContentVisible" is
+* programatically added and removed from the content element as the panel
+* is activated/deactivated.
+*/
+/* Vertical Tabbed Panels
+*
+* The following rules override some of the default rules above so that the
+* TabbedPanels widget renders with its tab buttons along the left side of
+* the currently active content panel.
+*
+* With the rules defined below, the only change that will have to be made
+* to switch a horizontal tabbed panels widget to a vertical tabbed panels
+* widget, is to use the "VTabbedPanels" class on the top-level widget
+* container element, instead of "TabbedPanels".
+*/
+/* This selector floats the TabGroup so that the tab buttons it contains
+* render to the left of the active content panel. A border is drawn around
+* the group container to make it look like a list container.
+*/
+/* line 185, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/SpryTabbedPanels.css.scss */
+.VTabbedPanels .TabbedPanelsTabGroup {
+  float: left;
+  width: 10em;
+  height: 20em;
+  background-color: #EEE;
+  position: relative;
+  border-top: solid 1px #999;
+  border-right: solid 1px #999;
+  border-left: solid 1px #CCC;
+  border-bottom: solid 1px #CCC;
+}
+
+/* This selector disables the float property that is placed on each tab button
+* by the default TabbedPanelsTab selector rule above. It also draws a bottom
+* border for the tab. The tab button will get its left and right border from
+* the TabGroup, and its top border from the TabGroup or tab button above it.
+*/
+/* line 202, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/SpryTabbedPanels.css.scss */
+.VTabbedPanels .TabbedPanelsTab {
+  float: none;
+  margin: 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+/* This selector disables the float property that is placed on each tab button
+* by the default TabbedPanelsTab selector rule above. It also draws a bottom
+* border for the tab. The tab button will get its left and right border from
+* the TabGroup, and its top border from the TabGroup or tab button above it.
+*/
+/* line 215, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/SpryTabbedPanels.css.scss */
+.VTabbedPanels .TabbedPanelsTabSelected {
+  background-color: #EEE;
+  border-bottom: solid 1px #999;
+}
+
+/* This selector floats the content panels for the widget so that they
+* render to the right of the tabbed buttons.
+*/
+/* line 223, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/SpryTabbedPanels.css.scss */
+.VTabbedPanels .TabbedPanelsContentGroup {
+  clear: none;
+  float: left;
+  padding: 0px;
+  width: 30em;
+  height: 20em;
+}
+
+/* calendar.js stylesheet */
+/* line 4, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/calendar.css */
+table#calendar_control {
+  z-index: 50;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  position: absolute;
+  border-collapse: collapse;
+  background: white;
+  border: 1px solid silver;
+  cursor: default;
+}
+
+/* line 14, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/calendar.css */
+table#calendar_control td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 2px;
+}
+
+/* line 21, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/calendar.css */
+td#calendar_prev_month, td#calendar_next_month,
+td#calendar_prev_year, td#calendar_next_year {
+  cursor: pointer;
+}
+
+/* line 24, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/calendar.css */
+table#calendar_control td#calendar_prev_month {
+  text-align: left;
+}
+
+/* line 27, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/calendar.css */
+table#calendar_control td#calendar_next_month {
+  text-align: right;
+}
+
+/* line 31, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/calendar.css */
+td#calendar_header {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* line 36, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/calendar.css */
+table#calendar_control td.day_letter {
+  font-size: 10px;
+  color: #564610;
+  background-image: url(libs/calendar/-289580856.html);
+}
+
+/* line 42, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/calendar.css */
+table#calendar_control td.day_number {
+  width: 22px;
+  height: 20px;
+  font-size: 12px;
+  color: #333333;
+  text-align: center;
+  border: 1px solid #b9a456;
+  cursor: pointer;
+}
+
+/* line 51, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/calendar.css */
+table#calendar_control td.normal {
+  background: #fffcf4;
+}
+
+/* line 54, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/calendar.css */
+table#calendar_control td.blank {
+  background: aliceblue;
+  background: #fcf7e6;
+}
+
+/* line 58, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/calendar.css */
+table#calendar_control td.hover {
+  background: #fff799;
+}
+
+/* line 61, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/calendar.css */
+table#calendar_control td.selected {
+  background: #fcf7e6;
+}
+
+/* line 64, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/calendar.css */
+table#calendar_control td.weekend {
+  color: #860e0b;
+}
+
+/* line 67, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/calendar.css */
+table#calendar_control td.today {
+  color: red;
+}
+
+/* 
+    Document   : popup
+    Created on : Dec 20, 2009, 9:37:48 AM
+    Author     : root
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+/* line 15, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup_mask {
+  background-color: #444;
+  /*#85BBEF;*/
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 100%;
+}
+
+/* line 26, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup {
+  position: absolute;
+  z-index: 2;
+}
+
+/* line 30, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .popup_table {
+  font: inherit;
+  font-size: 100%;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 38, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .popup_table td, .popup .popup_table th {
+  /*    padding: 0;*/
+}
+
+/* line 41, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .close_button {
+  position: absolute;
+  top: 11px;
+  right: 25px;
+  background: transparent url(libs/popup/close.gif) no-repeat;
+  width: 12px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* line 50, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .loader_popup {
+  background: transparent url(libs/popup/loader.gif) no-repeat;
+  padding-left: 5px;
+  margin: auto;
+  position: relative;
+  width: 280px;
+}
+
+/* line 58, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .popup_title {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+/* line 63, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .popup_content {
+  background: #fff;
+  text-align: center;
+  overflow: auto;
+  position: relative;
+}
+
+/* line 69, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .popup_content iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 73, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .popup_content_loader {
+  position: relative;
+  font-weight: bold;
+}
+
+/* line 77, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .popup_content_loader img {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* line 81, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .l_head, .popup .c_head, .popup .r_head {
+  height: 30px;
+}
+
+/* line 85, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .l_head {
+  background: transparent url(libs/popup/L_Head.png) no-repeat;
+  width: 24px;
+}
+
+/* line 89, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .c_head {
+  background: transparent url(libs/popup/C_Head.png) repeat-x;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 94, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .r_head {
+  background: transparent url(libs/popup/R_Head.png) no-repeat;
+  width: 31px;
+}
+
+/* line 99, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .l_body {
+  background: transparent url(libs/popup/L_Body.png) repeat-y left top;
+  width: 16px;
+}
+
+/* line 103, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .c_body {
+  overflow: auto;
+}
+
+/* line 106, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .r_body {
+  background: transparent url(libs/popup/R_Body.png) repeat-y right top;
+  width: 16px;
+}
+
+/* line 111, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .l_foot, .popup .c_foot, .popup .r_foot {
+  height: 40px;
+}
+
+/* line 114, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .l_foot {
+  background: transparent url(libs/popup/L_Foot.png) no-repeat;
+  width: 31px;
+}
+
+/* line 118, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .c_foot {
+  background: transparent url(libs/popup/C_Foot.png) repeat-x;
+}
+
+/* line 121, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+.popup .r_foot {
+  background: transparent url(libs/popup/R_Foot.png) no-repeat right bottom;
+  width: 31px;
+}
+
+/* FOR IE */
+/* line 126, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+* html .popup .l_head {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* line 131, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+* html .popup .c_head {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* line 137, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+* html .popup .r_head {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* line 143, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+* html .popup .l_body {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* line 149, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+* html .popup .r_body {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* line 155, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+* html .popup .l_foot {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* line 160, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+* html .popup .c_foot {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* line 165, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/libs/popup.css.scss */
+* html .popup .r_foot {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* 
+    Document   : layout
+    Created on : Mar 3, 2010, 10:41:33 AM
+    Author     : root
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+/* line 14, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/administration.css.scss */
+body {
+  background: #FFF;
+}
+
+/* line 17, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/administration.css.scss */
+.wrap {
+  width: 1000px;
+  text-align: left;
+  margin: 0px auto;
+}
+
+/* line 22, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/administration.css.scss */
+.head {
+  border: 2px solid #BFBFBF;
+  position: relative;
+  /*background-color:#dcd6be;*/
+  margin-top: 2px;
+}
+
+/* line 28, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/administration.css.scss */
+.head .tool {
+  height: 76px;
+  background: #016ea4 url(skins/default/bg_header.png);
+  border-bottom: 1px solid #BFBFBF;
+}
+
+/* line 33, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/administration.css.scss */
+.head .logo {
+  width: 290px;
+  height: 100px;
+  background: transparent url(logo-berrechid.png) no-repeat;
+  margin-top: 10px;
+  float: left;
+  margin-left: 10px;
+}
+
+/* line 41, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/administration.css.scss */
+.head .logo div {
+  font-size: 9px;
+  font-weight: bold;
+  margin-left: 72px;
+  color: #553A17;
+  text-align: center;
+}
+
+/* line 48, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/administration.css.scss */
+.page {
+  margin-top: 5px;
+  position: relative;
+}
+
+/* line 52, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/administration.css.scss */
+.foot {
+  margin-top: 2px;
+  height: 20px;
+}
+
+/* 
+    Document   : general
+    Created on : Oct 7, 2009, 4:50:33 PM
+    Author     : root
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+/* line 15, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/general.css.scss */
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+  font-family: tahoma,clean,sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: normal;
+}
+
+/* line 26, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/general.css.scss */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 30, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/general.css.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 33, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/general.css.scss */
+table {
+  font: inherit;
+  font-size: 100%;
+}
+
+/* line 38, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/general.css.scss */
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 42, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/general.css.scss */
+fieldset {
+  margin: 3px;
+  padding: 2px;
+  border: 1px solid #AEB7BA;
+  padding-left: 5px;
+}
+
+/* line 48, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/general.css.scss */
+legend {
+  font-weight: bold;
+  color: #666;
+}
+
+/* line 52, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/general.css.scss */
+select, textarea, .zonetext, .txt {
+  font-size: 11px;
+  padding: 2px;
+  width: 200px;
+  border: 1px solid;
+  border-color: #AEB7BA;
+  background-color: #fff;
+}
+
+/* line 60, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/general.css.scss */
+select {
+  padding: 1px 2px;
+}
+
+/* line 63, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/general.css.scss */
+input.btn {
+  background-image: url(skins/default/btn_bg.gif);
+  border: 1px solid #CCC;
+  color: #404040;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px 10px;
+}
+
+/* line 72, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/general.css.scss */
+input.btn:hover {
+  background-image: url(skins/default/content-tl-bg.gif);
+  color: #fff;
+}
+
+/* line 76, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/general.css.scss */
+.required {
+  font-weight: bold;
+  color: #cc0000;
+  font-size: 10px;
+}
+
+/* line 81, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/general.css.scss */
+#flash_error, #flash_access_denied {
+  background-color: #FCC;
+  border: 1px solid #C66;
+}
+
+/* line 85, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/general.css.scss */
+#flash_notice, #flash_error, #flash_access_denied {
+  margin: 10px 0px;
+  padding: 5px 8px;
+}
+
+/* line 89, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/general.css.scss */
+#flash_access_denied {
+  background-image: url(common/icons/stop.png);
+  background-repeat: no-repeat;
+  background-position: 3px 3px;
+  padding-left: 22px;
+}
+
+/* Canva */
+/* line 4, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+#tpl {
+  float: none;
+  width: 100%;
+  text-align: left;
+}
+
+/* line 10, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.TabbedPanelsTabGroup {
+  overflow: hidden;
+}
+
+/* line 14, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.TabbedPanelsTab {
+  float: left;
+  margin: 0px;
+  margin-right: 2px;
+  padding: 5px 10px;
+}
+
+/* line 21, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.TabbedPanelsContent {
+  height: 98%;
+  overflow: auto;
+  padding: 5px;
+  background: #fefefe;
+}
+
+/* line 28, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.TabbedPanelsContentGroup {
+  border-color: #BFBFBF;
+}
+
+/* line 32, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.TabbedPanelsTabSelected {
+  background-image: url(skins/default/content-tl-bg.gif);
+  border-color: #ddd;
+  font-size: 11px !important;
+}
+
+/* line 38, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.bar {
+  height: 50px;
+  border: 1px solid #BFBFBF;
+  margin: 1px;
+  margin-bottom: 7px;
+  text-align: center;
+  background: transparent url(skins/default/bar_bg.png) bottom center;
+}
+
+/* line 47, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.content {
+  margin: 1px;
+  background: #fAfAfA;
+}
+
+/* line 52, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.content table tr.over {
+  background: #eee;
+}
+
+/* line 56, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.content table tr.active {
+  background: #ccc;
+}
+
+/* line 60, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.bar table, .content table {
+  color: #000000;
+  font-size: 11px;
+}
+
+/* line 65, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.bar form {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 70, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.bar table {
+  margin: 5pt auto;
+  text-align: left;
+}
+
+/* line 75, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.bar table th {
+  padding: 0px 8px;
+  text-align: left;
+  padding-bottom: 1px;
+}
+
+/* line 81, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.bar table td {
+  padding: 0px 6px;
+}
+
+/* line 85, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.bar select {
+  width: 125px;
+}
+
+/* line 89, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.bar .zonetext {
+  width: 140px;
+}
+
+/* line 93, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.content table {
+  width: 100%;
+}
+
+/* line 97, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.content table th {
+  background-image: url(skins/default/content-tl-bg.gif);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  height: 25px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* line 107, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.content table, .content table th, .content table td {
+  border: 1px solid #BFBFBF;
+  border-collapse: collapse;
+}
+
+/* line 112, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.content table {
+  border-width: 2px;
+}
+
+/* line 116, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.content table td {
+  padding: 1px;
+  padding-left: 2px;
+  font-size: 11px;
+}
+
+/* line 122, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.content .pg {
+  text-align: center;
+}
+
+/* line 126, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.content .msg {
+  color: #860E0B;
+  font-size: 11px;
+  text-align: center;
+  vertical-align: middle;
+  height: 50px;
+  font-weight: bold;
+}
+
+/* line 135, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.content ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* line 142, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.content li {
+  display: inline;
+  margin: 0px 2px;
+  cursor: pointer;
+}
+
+/* line 148, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.content li a, .content li img {
+  text-decoration: none;
+  border: none;
+}
+
+/* line 153, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.action {
+  float: right;
+}
+
+/* Paginate */
+/* line 158, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.pagination {
+  font-size: 12px;
+  color: #ffffff;
+  height: 14px;
+  padding: 5px;
+  text-align: right;
+  background-image: url(skins/default/content-tl-bg.gif);
+}
+
+/* line 167, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.pagination a {
+  padding: 1px 1px 1px 1px;
+  margin: 2px;
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* line 174, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.pagination a:hover, .pagination a:active, .pagination span.current {
+  font-size: 13px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+/* line 180, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.pagination span.current {
+  padding: 2px 5px;
+  background: #AAA;
+  font-weight: bold;
+}
+
+/* line 186, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.pagination img {
+  border: none;
+}
+
+/* line 190, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.pagination .load {
+  color: #fff;
+  padding-left: 20px;
+}
+
+/*Form*/
+/* line 196, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.form {
+  margin: 10px;
+  text-align: left;
+}
+
+/* line 201, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.form .title {
+  color: #9D8C52;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* line 207, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.form table {
+  text-align: left;
+  margin: 5px auto;
+}
+
+/* line 212, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.form table th {
+  text-align: center;
+  padding-right: 5px;
+}
+
+/* line 218, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.form select {
+  width: 255px;
+}
+
+/* line 222, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.form .zonetext, .form textarea, .form .file {
+  width: 250px;
+}
+
+/* line 226, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.form textarea {
+  height: 100px;
+}
+
+/* line 230, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.form .act {
+  border-top: 2px solid #EDE7D4;
+  bottom: 0;
+  padding: 10px 0;
+  position: absolute;
+  text-align: center;
+  width: 96%;
+}
+
+/* line 239, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.form .act .btn {
+  margin: 0px 5px;
+}
+
+/* line 243, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.form .act .inprogress {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 3em;
+  background: white;
+}
+
+/* line 255, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.form .act .inprogress span {
+  padding-left: 20px;
+}
+
+/* line 259, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.load {
+  padding: 20px;
+}
+
+/* line 263, /home/michael/RubymineProjects/urbain-agency-admin/app/assets/stylesheets/admin/system/canva_list.css.scss */
+.form .act .inprogress span, .load, .pagination .load {
+  background: transparent url(common/icons/loader.gif) no-repeat left center;
+}

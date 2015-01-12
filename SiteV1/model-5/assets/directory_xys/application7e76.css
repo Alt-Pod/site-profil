@@ -1,0 +1,237 @@
+/* line 5, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories .left_content {
+  width: 210px;
+  padding-right: 10px;
+}
+
+/* line 10, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories .left_content legend:before {
+  /*    content: "\25B6   ";*/
+  content: "\25B6   ";
+}
+
+/* line 15, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories .left_content ul {
+  padding-left: 2px;
+  list-style-type: none;
+}
+
+/* line 20, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories .left_content ul li {
+  font-weight: bold;
+  color: #1A1818;
+  padding: 2px 0px;
+}
+
+/* line 26, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories .left_content ul li:hover {
+  cursor: pointer;
+  color: #AA1511;
+  text-decoration: underline;
+}
+
+/* line 32, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories .left_content ul li.active {
+  font-weight: bolder;
+  color: #015b86;
+}
+
+/* line 37, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories .left_content ul li:before {
+  content: "\2198";
+}
+
+/* line 41, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories .left_content .accordion {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif !important;
+  font-size: 11px;
+}
+
+/* line 46, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories .left_content .accordion h3 {
+  padding-left: 25px;
+  line-height: 30px !important;
+}
+
+/* line 51, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories .left_content .accordion div {
+  padding: 0px !important;
+  padding-left: 5px !important;
+  margin-top: -1px !important;
+}
+
+/* line 63, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories_menu_form {
+  text-align: left;
+  padding: 5px;
+}
+
+/* line 67, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories_menu_form .menu, .directory_xys_directories_menu_form .detail {
+  border: 1px solid #9D8C52;
+  height: 485px;
+  background-color: #fffcf4;
+  position: absolute;
+}
+
+/* line 73, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories_menu_form .clear {
+  height: 0px;
+  clear: both;
+}
+
+/* line 77, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories_menu_form .menu {
+  width: 140px;
+  left: 5px;
+}
+
+/* line 81, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories_menu_form .menu .items {
+  margin: 0px;
+  padding: 1px;
+  list-style-type: none;
+}
+
+/* line 86, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories_menu_form .menu .item div {
+  padding: 3px 4px 4px 20px;
+  color: #000;
+  margin: 1px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* line 93, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories_menu_form .menu ul li .ico {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: transparent url(../common/icons/bullet_black.png) no-repeat center;
+  left: 2px;
+  top: 2px;
+}
+
+/* line 101, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories_menu_form .menu ul li div.over {
+  background-color: #E9E4D1;
+}
+
+/* line 104, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories_menu_form .menu ul li div.sl {
+  background-color: #ECE1C0;
+  font-weight: bold;
+}
+
+/* line 108, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories_menu_form .menu ul .sl .ico {
+  background-image: url(../common/icons/bullet_red.png);
+}
+
+/* line 111, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories_menu_form .menu .loader {
+  background: transparent url(../common/icons/loader-menu.gif) no-repeat center;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 5px;
+}
+
+/**/
+/* line 120, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories_menu_form .menu .items .items .item div {
+  padding-left: 10px;
+}
+
+/*Detail*/
+/* line 124, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories_menu_form .detail {
+  width: 740px;
+  left: 150px;
+  overflow: auto;
+}
+
+/* line 129, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories_menu_form .load {
+  background: url(../common/icons/img-loader.gif) center no-repeat;
+  padding: 0px;
+}
+
+/* line 134, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/directories.css.scss */
+.directory_xys_directories_menu_form .detail .form .zone_description {
+  height: 380px;
+  overflow: auto;
+  border: 1px solid #ccc;
+  background: #fAfAfA;
+  padding: 5px;
+}
+
+/* line 6, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/marks.css.scss */
+span.handle {
+  font-size: 12px;
+  cursor: move;
+  color: #777;
+  vertical-align: top;
+}
+
+/* line 5, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/demands.css.scss */
+.directory_xys_demands_content .left_content {
+  width: 210px;
+  padding-right: 10px;
+}
+
+/* line 10, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/demands.css.scss */
+.directory_xys_demands_content .left_content legend:before {
+  /*    content: "\25B6   ";*/
+  content: "\25B6   ";
+}
+
+/* line 15, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/demands.css.scss */
+.directory_xys_demands_content .left_content ul {
+  padding-left: 2px;
+  list-style-type: none;
+}
+
+/* line 20, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/demands.css.scss */
+.directory_xys_demands_content .left_content ul li {
+  font-weight: bold;
+  color: #1A1818;
+  padding: 2px 0px;
+}
+
+/* line 26, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/demands.css.scss */
+.directory_xys_demands_content .left_content ul li:hover {
+  cursor: pointer;
+  color: #AA1511;
+  text-decoration: underline;
+}
+
+/* line 32, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/demands.css.scss */
+.directory_xys_demands_content .left_content ul li.active {
+  font-weight: bolder;
+  color: #015b86;
+}
+
+/* line 37, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/demands.css.scss */
+.directory_xys_demands_content .left_content ul li:before {
+  content: "\2198";
+}
+
+/* line 41, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/demands.css.scss */
+.directory_xys_demands_content .left_content .accordion {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif !important;
+  font-size: 11px;
+}
+
+/* line 46, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/demands.css.scss */
+.directory_xys_demands_content .left_content .accordion h3 {
+  padding-left: 25px;
+  line-height: 30px !important;
+}
+
+/* line 51, /home/michael/RubymineProjects/urbain-agency-admin/lib/plugins/directory/app/assets/stylesheets/directory_xys/demands.css.scss */
+.directory_xys_demands_content .left_content .accordion div {
+  padding: 0px !important;
+  padding-left: 5px !important;
+  margin-top: -1px !important;
+}

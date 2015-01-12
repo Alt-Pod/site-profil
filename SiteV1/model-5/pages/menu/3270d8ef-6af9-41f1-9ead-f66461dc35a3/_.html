@@ -1,0 +1,3650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body {
+      background-color: #FAFAFA;
+      color: #333;
+      margin: 0px;
+    }
+
+    body, p, ol, ul, td {
+      font-family: helvetica, verdana, arial, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      font-size: 11px;
+      white-space: pre-wrap;
+    }
+
+    pre.box {
+      border: 1px solid #EEE;
+      padding: 10px;
+      margin: 0px;
+      width: 958px;
+    }
+
+    header {
+      color: #F0F0F0;
+      background: #C52F24;
+      padding: 0.5em 1.5em;
+    }
+
+    h1 {
+      margin: 0.2em 0;
+      line-height: 1.1em;
+      font-size: 2em;
+    }
+
+    h2 {
+      color: #C52F24;
+      line-height: 25px;
+    }
+
+    .details {
+      border: 1px solid #D0D0D0;
+      border-radius: 4px;
+      margin: 1em 0px;
+      display: block;
+      width: 978px;
+    }
+
+    .summary {
+      padding: 8px 15px;
+      border-bottom: 1px solid #D0D0D0;
+      display: block;
+    }
+
+    .details pre {
+      margin: 5px;
+      border: none;
+    }
+
+    #container {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 1.5em;
+    }
+
+    .source * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .source {
+      border: 1px solid #D9D9D9;
+      background: #ECECEC;
+      width: 978px;
+    }
+
+    .source pre {
+      padding: 10px 0px;
+      border: none;
+    }
+
+    .source .data {
+      font-size: 80%;
+      overflow: auto;
+      background-color: #FFF;
+    }
+
+    .info {
+      padding: 0.5em;
+    }
+
+    .source .data .line_numbers {
+      background-color: #ECECEC;
+      color: #AAA;
+      padding: 1em .5em;
+      border-right: 1px solid #DDD;
+      text-align: right;
+    }
+
+    .line {
+      padding-left: 10px;
+    }
+
+    .line:hover {
+      background-color: #F6F6F6;
+    }
+
+    .line.active {
+      background-color: #FFCCCC;
+    }
+
+    a { color: #980905; }
+    a:visited { color: #666; }
+    a:hover { color: #C52F24; }
+
+      #route_table {
+    margin: 0 auto 0;
+    border-collapse: collapse;
+  }
+
+  #route_table td {
+    padding: 0 30px;
+  }
+
+  #route_table tr.bottom th {
+    padding-bottom: 10px;
+    line-height: 15px;
+  }
+
+  #route_table .matched_paths {
+    background-color: LightGoldenRodYellow;
+  }
+
+  #route_table .matched_paths {
+    border-bottom: solid 3px SlateGrey;
+  }
+
+  #path_search {
+    width: 80%;
+    font-size: inherit;
+  }
+
+  </style>
+
+  <script>
+    var toggle = function(id) {
+      var s = document.getElementById(id).style;
+      s.display = s.display == 'none' ? 'block' : 'none';
+      return false;
+    }
+    var show = function(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    var hide = function(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    var toggleTrace = function() {
+      return toggle('blame_trace');
+    }
+    var toggleSessionDump = function() {
+      return toggle('session_dump');
+    }
+    var toggleEnvDump = function() {
+      return toggle('env_dump');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>Routing Error</h1>
+</header>
+<div id="container">
+  <h2>No route matches [GET] &quot;/pages/menu/3270d8ef-6af9-41f1-9ead-f66461dc35a3/%22&quot;</h2>
+
+  
+<p><code>Rails.root: /home/michael/RubymineProjects/urbain-agency-admin</code></p>
+
+<div id="traces">
+    <a href="#" onclick="hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);; return false;">Application Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);; return false;">Framework Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);; return false;">Full Trace</a> 
+
+    <div id="Application-Trace" style="display: block;">
+      <pre><code></code></pre>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+      <pre><code>actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.0) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets&#39;
+actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.0) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.0) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process&#39;
+thin (1.5.1) lib/thin/connection.rb:79:in `catch&#39;
+thin (1.5.1) lib/thin/connection.rb:79:in `pre_process&#39;
+thin (1.5.1) lib/thin/connection.rb:54:in `process&#39;
+thin (1.5.1) lib/thin/connection.rb:39:in `receive_data&#39;
+eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine&#39;
+eventmachine (1.0.3) lib/eventmachine.rb:187:in `run&#39;
+thin (1.5.1) lib/thin/backends/base.rb:63:in `start&#39;
+thin (1.5.1) lib/thin/server.rb:159:in `start&#39;
+rack (1.5.2) lib/rack/handler/thin.rb:16:in `run&#39;
+rack (1.5.2) lib/rack/server.rb:264:in `start&#39;
+railties (4.1.0) lib/rails/commands/server.rb:69:in `start&#39;
+railties (4.1.0) lib/rails/commands/commands_tasks.rb:81:in `block in server&#39;
+railties (4.1.0) lib/rails/commands/commands_tasks.rb:76:in `tap&#39;
+railties (4.1.0) lib/rails/commands/commands_tasks.rb:76:in `server&#39;
+railties (4.1.0) lib/rails/commands/commands_tasks.rb:40:in `run_command!&#39;
+railties (4.1.0) lib/rails/commands.rb:17:in `&lt;top (required)&gt;&#39;
+bin/rails:8:in `require&#39;
+bin/rails:8:in `&lt;top (required)&gt;&#39;
+spring (1.1.3) lib/spring/client/rails.rb:27:in `load&#39;
+spring (1.1.3) lib/spring/client/rails.rb:27:in `call&#39;
+spring (1.1.3) lib/spring/client/command.rb:7:in `call&#39;
+spring (1.1.3) lib/spring/client.rb:26:in `run&#39;
+spring (1.1.3) bin/spring:48:in `&lt;top (required)&gt;&#39;
+spring (1.1.3) lib/spring/binstub.rb:11:in `load&#39;
+spring (1.1.3) lib/spring/binstub.rb:11:in `&lt;top (required)&gt;&#39;
+/home/michael/.rbenv/versions/2.1.1/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require&#39;
+/home/michael/.rbenv/versions/2.1.1/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require&#39;
+bin/spring:16:in `&lt;top (required)&gt;&#39;
+bin/rails:3:in `load&#39;
+bin/rails:3:in `&lt;top (required)&gt;&#39;
+-e:1:in `load&#39;
+-e:1:in `&lt;main&gt;&#39;</code></pre>
+    </div>
+    <div id="Full-Trace" style="display: none;">
+      <pre><code>actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.0) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets&#39;
+actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.0) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.0) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process&#39;
+thin (1.5.1) lib/thin/connection.rb:79:in `catch&#39;
+thin (1.5.1) lib/thin/connection.rb:79:in `pre_process&#39;
+thin (1.5.1) lib/thin/connection.rb:54:in `process&#39;
+thin (1.5.1) lib/thin/connection.rb:39:in `receive_data&#39;
+eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine&#39;
+eventmachine (1.0.3) lib/eventmachine.rb:187:in `run&#39;
+thin (1.5.1) lib/thin/backends/base.rb:63:in `start&#39;
+thin (1.5.1) lib/thin/server.rb:159:in `start&#39;
+rack (1.5.2) lib/rack/handler/thin.rb:16:in `run&#39;
+rack (1.5.2) lib/rack/server.rb:264:in `start&#39;
+railties (4.1.0) lib/rails/commands/server.rb:69:in `start&#39;
+railties (4.1.0) lib/rails/commands/commands_tasks.rb:81:in `block in server&#39;
+railties (4.1.0) lib/rails/commands/commands_tasks.rb:76:in `tap&#39;
+railties (4.1.0) lib/rails/commands/commands_tasks.rb:76:in `server&#39;
+railties (4.1.0) lib/rails/commands/commands_tasks.rb:40:in `run_command!&#39;
+railties (4.1.0) lib/rails/commands.rb:17:in `&lt;top (required)&gt;&#39;
+bin/rails:8:in `require&#39;
+bin/rails:8:in `&lt;top (required)&gt;&#39;
+spring (1.1.3) lib/spring/client/rails.rb:27:in `load&#39;
+spring (1.1.3) lib/spring/client/rails.rb:27:in `call&#39;
+spring (1.1.3) lib/spring/client/command.rb:7:in `call&#39;
+spring (1.1.3) lib/spring/client.rb:26:in `run&#39;
+spring (1.1.3) bin/spring:48:in `&lt;top (required)&gt;&#39;
+spring (1.1.3) lib/spring/binstub.rb:11:in `load&#39;
+spring (1.1.3) lib/spring/binstub.rb:11:in `&lt;top (required)&gt;&#39;
+/home/michael/.rbenv/versions/2.1.1/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require&#39;
+/home/michael/.rbenv/versions/2.1.1/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require&#39;
+bin/spring:16:in `&lt;top (required)&gt;&#39;
+bin/rails:3:in `load&#39;
+bin/rails:3:in `&lt;top (required)&gt;&#39;
+-e:1:in `load&#39;
+-e:1:in `&lt;main&gt;&#39;</code></pre>
+    </div>
+</div>
+
+
+    <h2>
+      Routes
+    </h2>
+
+    <p>
+      Routes match in priority from top to bottom
+    </p>
+
+    
+<table id='route_table' class='route_table'>
+  <thead>
+    <tr>
+      <th>Helper</th>
+      <th>HTTP Verb</th>
+      <th>Path</th>
+      <th>Controller#Action</th>
+    </tr>
+    <tr class='bottom'>
+      <th>
+        <a data-route-helper="_path" href="#" title="Returns a relative path (without the http or domain)">Path</a> /
+        <a data-route-helper="_url" href="#" title="Returns an absolute url (with the http and domain)">Url</a>
+      </th>
+      <th>
+      </th>
+      <th>
+        <input id="path_search" name="path[]" placeholder="Path Match" type="search" />
+      </th>
+      <th>
+      </th>
+    </tr>
+  </thead>
+  <tbody class='matched_paths' id='matched_paths'>
+  </tbody>
+  <tbody>
+    <tr class='route_row' data-helper='path'>
+  <td data-route-name='menu_index'>
+      menu_index<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/pages/menu(.:format)' data-regexp='^\/pages\/menu(?:\.([^\/.?]+))?$'>
+    /pages/menu(.:format)
+  </td>
+  <td data-route-reqs='pages/menu#index'>
+    pages/menu#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/pages/menu(.:format)' data-regexp='^\/pages\/menu(?:\.([^\/.?]+))?$'>
+    /pages/menu(.:format)
+  </td>
+  <td data-route-reqs='pages/menu#create'>
+    pages/menu#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_menu'>
+      new_menu<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/pages/menu/new(.:format)' data-regexp='^\/pages\/menu\/new(?:\.([^\/.?]+))?$'>
+    /pages/menu/new(.:format)
+  </td>
+  <td data-route-reqs='pages/menu#new'>
+    pages/menu#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_menu'>
+      edit_menu<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/pages/menu/:id/edit(.:format)' data-regexp='^\/pages\/menu\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /pages/menu/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='pages/menu#edit'>
+    pages/menu#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='menu'>
+      menu<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/pages/menu/:id(.:format)' data-regexp='^\/pages\/menu\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /pages/menu/:id(.:format)
+  </td>
+  <td data-route-reqs='pages/menu#show'>
+    pages/menu#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/pages/menu/:id(.:format)' data-regexp='^\/pages\/menu\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /pages/menu/:id(.:format)
+  </td>
+  <td data-route-reqs='pages/menu#update'>
+    pages/menu#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/pages/menu/:id(.:format)' data-regexp='^\/pages\/menu\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /pages/menu/:id(.:format)
+  </td>
+  <td data-route-reqs='pages/menu#update'>
+    pages/menu#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/pages/menu/:id(.:format)' data-regexp='^\/pages\/menu\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /pages/menu/:id(.:format)
+  </td>
+  <td data-route-reqs='pages/menu#destroy'>
+    pages/menu#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='categories'>
+      categories<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/pages/categories(.:format)' data-regexp='^\/pages\/categories(?:\.([^\/.?]+))?$'>
+    /pages/categories(.:format)
+  </td>
+  <td data-route-reqs='pages/categories#index'>
+    pages/categories#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/pages/categories(.:format)' data-regexp='^\/pages\/categories(?:\.([^\/.?]+))?$'>
+    /pages/categories(.:format)
+  </td>
+  <td data-route-reqs='pages/categories#create'>
+    pages/categories#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_category'>
+      new_category<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/pages/categories/new(.:format)' data-regexp='^\/pages\/categories\/new(?:\.([^\/.?]+))?$'>
+    /pages/categories/new(.:format)
+  </td>
+  <td data-route-reqs='pages/categories#new'>
+    pages/categories#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_category'>
+      edit_category<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/pages/categories/:id/edit(.:format)' data-regexp='^\/pages\/categories\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /pages/categories/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='pages/categories#edit'>
+    pages/categories#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='category'>
+      category<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/pages/categories/:id(.:format)' data-regexp='^\/pages\/categories\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /pages/categories/:id(.:format)
+  </td>
+  <td data-route-reqs='pages/categories#show'>
+    pages/categories#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/pages/categories/:id(.:format)' data-regexp='^\/pages\/categories\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /pages/categories/:id(.:format)
+  </td>
+  <td data-route-reqs='pages/categories#update'>
+    pages/categories#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/pages/categories/:id(.:format)' data-regexp='^\/pages\/categories\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /pages/categories/:id(.:format)
+  </td>
+  <td data-route-reqs='pages/categories#update'>
+    pages/categories#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/pages/categories/:id(.:format)' data-regexp='^\/pages\/categories\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /pages/categories/:id(.:format)
+  </td>
+  <td data-route-reqs='pages/categories#destroy'>
+    pages/categories#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='validate_page'>
+      validate_page<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/pages/:id/validate(.:format)' data-regexp='^\/pages\/([^\/.?]+)\/validate(?:\.([^\/.?]+))?$'>
+    /pages/:id/validate(.:format)
+  </td>
+  <td data-route-reqs='pages#validate'>
+    pages#validate
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='editor_page'>
+      editor_page<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/pages/:id/editor(.:format)' data-regexp='^\/pages\/([^\/.?]+)\/editor(?:\.([^\/.?]+))?$'>
+    /pages/:id/editor(.:format)
+  </td>
+  <td data-route-reqs='pages#editor'>
+    pages#editor
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_images'>
+      page_images<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/pages/:page_id/images(.:format)' data-regexp='^\/pages\/([^\/.?]+)\/images(?:\.([^\/.?]+))?$'>
+    /pages/:page_id/images(.:format)
+  </td>
+  <td data-route-reqs='pages/images#index'>
+    pages/images#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/pages/:page_id/images(.:format)' data-regexp='^\/pages\/([^\/.?]+)\/images(?:\.([^\/.?]+))?$'>
+    /pages/:page_id/images(.:format)
+  </td>
+  <td data-route-reqs='pages/images#create'>
+    pages/images#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='pages'>
+      pages<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/pages(.:format)' data-regexp='^\/pages(?:\.([^\/.?]+))?$'>
+    /pages(.:format)
+  </td>
+  <td data-route-reqs='pages#index'>
+    pages#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/pages(.:format)' data-regexp='^\/pages(?:\.([^\/.?]+))?$'>
+    /pages(.:format)
+  </td>
+  <td data-route-reqs='pages#create'>
+    pages#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_page'>
+      new_page<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/pages/new(.:format)' data-regexp='^\/pages\/new(?:\.([^\/.?]+))?$'>
+    /pages/new(.:format)
+  </td>
+  <td data-route-reqs='pages#new'>
+    pages#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_page'>
+      edit_page<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/pages/:id/edit(.:format)' data-regexp='^\/pages\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /pages/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='pages#edit'>
+    pages#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page'>
+      page<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/pages/:id(.:format)' data-regexp='^\/pages\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /pages/:id(.:format)
+  </td>
+  <td data-route-reqs='pages#show'>
+    pages#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/pages/:id(.:format)' data-regexp='^\/pages\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /pages/:id(.:format)
+  </td>
+  <td data-route-reqs='pages#update'>
+    pages#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/pages/:id(.:format)' data-regexp='^\/pages\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /pages/:id(.:format)
+  </td>
+  <td data-route-reqs='pages#update'>
+    pages#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/pages/:id(.:format)' data-regexp='^\/pages\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /pages/:id(.:format)
+  </td>
+  <td data-route-reqs='pages#destroy'>
+    pages#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='validate_faq'>
+      validate_faq<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/faqs/:id/validate(.:format)' data-regexp='^\/faqs\/([^\/.?]+)\/validate(?:\.([^\/.?]+))?$'>
+    /faqs/:id/validate(.:format)
+  </td>
+  <td data-route-reqs='faqs#validate'>
+    faqs#validate
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='toggle_state_faq_question'>
+      toggle_state_faq_question<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/faqs/:faq_id/questions/:id/toggle_state(.:format)' data-regexp='^\/faqs\/([^\/.?]+)\/questions\/([^\/.?]+)\/toggle_state(?:\.([^\/.?]+))?$'>
+    /faqs/:faq_id/questions/:id/toggle_state(.:format)
+  </td>
+  <td data-route-reqs='faqs/questions#toggle_state'>
+    faqs/questions#toggle_state
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='faq_questions'>
+      faq_questions<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/faqs/:faq_id/questions(.:format)' data-regexp='^\/faqs\/([^\/.?]+)\/questions(?:\.([^\/.?]+))?$'>
+    /faqs/:faq_id/questions(.:format)
+  </td>
+  <td data-route-reqs='faqs/questions#index'>
+    faqs/questions#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/faqs/:faq_id/questions(.:format)' data-regexp='^\/faqs\/([^\/.?]+)\/questions(?:\.([^\/.?]+))?$'>
+    /faqs/:faq_id/questions(.:format)
+  </td>
+  <td data-route-reqs='faqs/questions#create'>
+    faqs/questions#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_faq_question'>
+      new_faq_question<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/faqs/:faq_id/questions/new(.:format)' data-regexp='^\/faqs\/([^\/.?]+)\/questions\/new(?:\.([^\/.?]+))?$'>
+    /faqs/:faq_id/questions/new(.:format)
+  </td>
+  <td data-route-reqs='faqs/questions#new'>
+    faqs/questions#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_faq_question'>
+      edit_faq_question<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/faqs/:faq_id/questions/:id/edit(.:format)' data-regexp='^\/faqs\/([^\/.?]+)\/questions\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /faqs/:faq_id/questions/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='faqs/questions#edit'>
+    faqs/questions#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='faq_question'>
+      faq_question<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/faqs/:faq_id/questions/:id(.:format)' data-regexp='^\/faqs\/([^\/.?]+)\/questions\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /faqs/:faq_id/questions/:id(.:format)
+  </td>
+  <td data-route-reqs='faqs/questions#show'>
+    faqs/questions#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/faqs/:faq_id/questions/:id(.:format)' data-regexp='^\/faqs\/([^\/.?]+)\/questions\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /faqs/:faq_id/questions/:id(.:format)
+  </td>
+  <td data-route-reqs='faqs/questions#update'>
+    faqs/questions#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/faqs/:faq_id/questions/:id(.:format)' data-regexp='^\/faqs\/([^\/.?]+)\/questions\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /faqs/:faq_id/questions/:id(.:format)
+  </td>
+  <td data-route-reqs='faqs/questions#update'>
+    faqs/questions#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/faqs/:faq_id/questions/:id(.:format)' data-regexp='^\/faqs\/([^\/.?]+)\/questions\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /faqs/:faq_id/questions/:id(.:format)
+  </td>
+  <td data-route-reqs='faqs/questions#destroy'>
+    faqs/questions#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='faqs'>
+      faqs<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/faqs(.:format)' data-regexp='^\/faqs(?:\.([^\/.?]+))?$'>
+    /faqs(.:format)
+  </td>
+  <td data-route-reqs='faqs#index'>
+    faqs#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/faqs(.:format)' data-regexp='^\/faqs(?:\.([^\/.?]+))?$'>
+    /faqs(.:format)
+  </td>
+  <td data-route-reqs='faqs#create'>
+    faqs#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_faq'>
+      new_faq<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/faqs/new(.:format)' data-regexp='^\/faqs\/new(?:\.([^\/.?]+))?$'>
+    /faqs/new(.:format)
+  </td>
+  <td data-route-reqs='faqs#new'>
+    faqs#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_faq'>
+      edit_faq<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/faqs/:id/edit(.:format)' data-regexp='^\/faqs\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /faqs/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='faqs#edit'>
+    faqs#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='faq'>
+      faq<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/faqs/:id(.:format)' data-regexp='^\/faqs\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /faqs/:id(.:format)
+  </td>
+  <td data-route-reqs='faqs#show'>
+    faqs#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/faqs/:id(.:format)' data-regexp='^\/faqs\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /faqs/:id(.:format)
+  </td>
+  <td data-route-reqs='faqs#update'>
+    faqs#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/faqs/:id(.:format)' data-regexp='^\/faqs\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /faqs/:id(.:format)
+  </td>
+  <td data-route-reqs='faqs#update'>
+    faqs#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/faqs/:id(.:format)' data-regexp='^\/faqs\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /faqs/:id(.:format)
+  </td>
+  <td data-route-reqs='faqs#destroy'>
+    faqs#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='validate_support_department'>
+      validate_support_department<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/support/:id/validate(.:format)' data-regexp='^\/support\/([^\/.?]+)\/validate(?:\.([^\/.?]+))?$'>
+    /support/:id/validate(.:format)
+  </td>
+  <td data-route-reqs='support_departments#validate'>
+    support_departments#validate
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='validate_support_department_ticket'>
+      validate_support_department_ticket<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/support/:support_department_id/tickets/:id/validate(.:format)' data-regexp='^\/support\/([^\/.?]+)\/tickets\/([^\/.?]+)\/validate(?:\.([^\/.?]+))?$'>
+    /support/:support_department_id/tickets/:id/validate(.:format)
+  </td>
+  <td data-route-reqs='support_tickets#validate'>
+    support_tickets#validate
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='support_department_tickets'>
+      support_department_tickets<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/support/:support_department_id/tickets(.:format)' data-regexp='^\/support\/([^\/.?]+)\/tickets(?:\.([^\/.?]+))?$'>
+    /support/:support_department_id/tickets(.:format)
+  </td>
+  <td data-route-reqs='support_tickets#index'>
+    support_tickets#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/support/:support_department_id/tickets(.:format)' data-regexp='^\/support\/([^\/.?]+)\/tickets(?:\.([^\/.?]+))?$'>
+    /support/:support_department_id/tickets(.:format)
+  </td>
+  <td data-route-reqs='support_tickets#create'>
+    support_tickets#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_support_department_ticket'>
+      new_support_department_ticket<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/support/:support_department_id/tickets/new(.:format)' data-regexp='^\/support\/([^\/.?]+)\/tickets\/new(?:\.([^\/.?]+))?$'>
+    /support/:support_department_id/tickets/new(.:format)
+  </td>
+  <td data-route-reqs='support_tickets#new'>
+    support_tickets#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_support_department_ticket'>
+      edit_support_department_ticket<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/support/:support_department_id/tickets/:id/edit(.:format)' data-regexp='^\/support\/([^\/.?]+)\/tickets\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /support/:support_department_id/tickets/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='support_tickets#edit'>
+    support_tickets#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='support_department_ticket'>
+      support_department_ticket<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/support/:support_department_id/tickets/:id(.:format)' data-regexp='^\/support\/([^\/.?]+)\/tickets\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /support/:support_department_id/tickets/:id(.:format)
+  </td>
+  <td data-route-reqs='support_tickets#show'>
+    support_tickets#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/support/:support_department_id/tickets/:id(.:format)' data-regexp='^\/support\/([^\/.?]+)\/tickets\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /support/:support_department_id/tickets/:id(.:format)
+  </td>
+  <td data-route-reqs='support_tickets#update'>
+    support_tickets#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/support/:support_department_id/tickets/:id(.:format)' data-regexp='^\/support\/([^\/.?]+)\/tickets\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /support/:support_department_id/tickets/:id(.:format)
+  </td>
+  <td data-route-reqs='support_tickets#update'>
+    support_tickets#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/support/:support_department_id/tickets/:id(.:format)' data-regexp='^\/support\/([^\/.?]+)\/tickets\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /support/:support_department_id/tickets/:id(.:format)
+  </td>
+  <td data-route-reqs='support_tickets#destroy'>
+    support_tickets#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='support_departments'>
+      support_departments<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/support(.:format)' data-regexp='^\/support(?:\.([^\/.?]+))?$'>
+    /support(.:format)
+  </td>
+  <td data-route-reqs='support_departments#index'>
+    support_departments#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/support(.:format)' data-regexp='^\/support(?:\.([^\/.?]+))?$'>
+    /support(.:format)
+  </td>
+  <td data-route-reqs='support_departments#create'>
+    support_departments#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_support_department'>
+      new_support_department<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/support/new(.:format)' data-regexp='^\/support\/new(?:\.([^\/.?]+))?$'>
+    /support/new(.:format)
+  </td>
+  <td data-route-reqs='support_departments#new'>
+    support_departments#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_support_department'>
+      edit_support_department<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/support/:id/edit(.:format)' data-regexp='^\/support\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /support/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='support_departments#edit'>
+    support_departments#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='support_department'>
+      support_department<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/support/:id(.:format)' data-regexp='^\/support\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /support/:id(.:format)
+  </td>
+  <td data-route-reqs='support_departments#show'>
+    support_departments#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/support/:id(.:format)' data-regexp='^\/support\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /support/:id(.:format)
+  </td>
+  <td data-route-reqs='support_departments#update'>
+    support_departments#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/support/:id(.:format)' data-regexp='^\/support\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /support/:id(.:format)
+  </td>
+  <td data-route-reqs='support_departments#update'>
+    support_departments#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/support/:id(.:format)' data-regexp='^\/support\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /support/:id(.:format)
+  </td>
+  <td data-route-reqs='support_departments#destroy'>
+    support_departments#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='validate_download'>
+      validate_download<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/downloads/:id/validate(.:format)' data-regexp='^\/downloads\/([^\/.?]+)\/validate(?:\.([^\/.?]+))?$'>
+    /downloads/:id/validate(.:format)
+  </td>
+  <td data-route-reqs='downloads#validate'>
+    downloads#validate
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='downloads'>
+      downloads<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/downloads(.:format)' data-regexp='^\/downloads(?:\.([^\/.?]+))?$'>
+    /downloads(.:format)
+  </td>
+  <td data-route-reqs='downloads#index'>
+    downloads#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/downloads(.:format)' data-regexp='^\/downloads(?:\.([^\/.?]+))?$'>
+    /downloads(.:format)
+  </td>
+  <td data-route-reqs='downloads#create'>
+    downloads#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_download'>
+      new_download<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/downloads/new(.:format)' data-regexp='^\/downloads\/new(?:\.([^\/.?]+))?$'>
+    /downloads/new(.:format)
+  </td>
+  <td data-route-reqs='downloads#new'>
+    downloads#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_download'>
+      edit_download<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/downloads/:id/edit(.:format)' data-regexp='^\/downloads\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /downloads/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='downloads#edit'>
+    downloads#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='download'>
+      download<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/downloads/:id(.:format)' data-regexp='^\/downloads\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /downloads/:id(.:format)
+  </td>
+  <td data-route-reqs='downloads#show'>
+    downloads#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/downloads/:id(.:format)' data-regexp='^\/downloads\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /downloads/:id(.:format)
+  </td>
+  <td data-route-reqs='downloads#update'>
+    downloads#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/downloads/:id(.:format)' data-regexp='^\/downloads\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /downloads/:id(.:format)
+  </td>
+  <td data-route-reqs='downloads#update'>
+    downloads#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/downloads/:id(.:format)' data-regexp='^\/downloads\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /downloads/:id(.:format)
+  </td>
+  <td data-route-reqs='downloads#destroy'>
+    downloads#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='validate_newsletter'>
+      validate_newsletter<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/newsletters/:id/validate(.:format)' data-regexp='^\/newsletters\/([^\/.?]+)\/validate(?:\.([^\/.?]+))?$'>
+    /newsletters/:id/validate(.:format)
+  </td>
+  <td data-route-reqs='newsletters#validate'>
+    newsletters#validate
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='newsletters'>
+      newsletters<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/newsletters(.:format)' data-regexp='^\/newsletters(?:\.([^\/.?]+))?$'>
+    /newsletters(.:format)
+  </td>
+  <td data-route-reqs='newsletters#index'>
+    newsletters#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/newsletters(.:format)' data-regexp='^\/newsletters(?:\.([^\/.?]+))?$'>
+    /newsletters(.:format)
+  </td>
+  <td data-route-reqs='newsletters#create'>
+    newsletters#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_newsletter'>
+      new_newsletter<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/newsletters/new(.:format)' data-regexp='^\/newsletters\/new(?:\.([^\/.?]+))?$'>
+    /newsletters/new(.:format)
+  </td>
+  <td data-route-reqs='newsletters#new'>
+    newsletters#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_newsletter'>
+      edit_newsletter<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/newsletters/:id/edit(.:format)' data-regexp='^\/newsletters\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /newsletters/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='newsletters#edit'>
+    newsletters#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='newsletter'>
+      newsletter<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/newsletters/:id(.:format)' data-regexp='^\/newsletters\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /newsletters/:id(.:format)
+  </td>
+  <td data-route-reqs='newsletters#show'>
+    newsletters#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/newsletters/:id(.:format)' data-regexp='^\/newsletters\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /newsletters/:id(.:format)
+  </td>
+  <td data-route-reqs='newsletters#update'>
+    newsletters#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/newsletters/:id(.:format)' data-regexp='^\/newsletters\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /newsletters/:id(.:format)
+  </td>
+  <td data-route-reqs='newsletters#update'>
+    newsletters#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/newsletters/:id(.:format)' data-regexp='^\/newsletters\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /newsletters/:id(.:format)
+  </td>
+  <td data-route-reqs='newsletters#destroy'>
+    newsletters#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='newsletter_subscribers'>
+      newsletter_subscribers<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/newsletter_subscribers(.:format)' data-regexp='^\/newsletter_subscribers(?:\.([^\/.?]+))?$'>
+    /newsletter_subscribers(.:format)
+  </td>
+  <td data-route-reqs='newsletter_subscribers#index'>
+    newsletter_subscribers#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='validate_survey'>
+      validate_survey<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/surveys/:id/validate(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/validate(?:\.([^\/.?]+))?$'>
+    /surveys/:id/validate(.:format)
+  </td>
+  <td data-route-reqs='surveys#validate'>
+    surveys#validate
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='cancel_survey_questions'>
+      cancel_survey_questions<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions/cancel(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions\/cancel(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions/cancel(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions#cancel'>
+    surveys/questions#cancel
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='cancel_survey_question_answers'>
+      cancel_survey_question_answers<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions/:question_id/answers/cancel(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions\/([^\/.?]+)\/answers\/cancel(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions/:question_id/answers/cancel(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions/answers#cancel'>
+    surveys/questions/answers#cancel
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='survey_question_answers'>
+      survey_question_answers<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions/:question_id/answers(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions\/([^\/.?]+)\/answers(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions/:question_id/answers(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions/answers#index'>
+    surveys/questions/answers#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions/:question_id/answers(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions\/([^\/.?]+)\/answers(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions/:question_id/answers(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions/answers#create'>
+    surveys/questions/answers#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_survey_question_answer'>
+      new_survey_question_answer<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions/:question_id/answers/new(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions\/([^\/.?]+)\/answers\/new(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions/:question_id/answers/new(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions/answers#new'>
+    surveys/questions/answers#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_survey_question_answer'>
+      edit_survey_question_answer<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions/:question_id/answers/:id/edit(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions\/([^\/.?]+)\/answers\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions/:question_id/answers/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions/answers#edit'>
+    surveys/questions/answers#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='survey_question_answer'>
+      survey_question_answer<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions/:question_id/answers/:id(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions\/([^\/.?]+)\/answers\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions/:question_id/answers/:id(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions/answers#show'>
+    surveys/questions/answers#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions/:question_id/answers/:id(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions\/([^\/.?]+)\/answers\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions/:question_id/answers/:id(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions/answers#update'>
+    surveys/questions/answers#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions/:question_id/answers/:id(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions\/([^\/.?]+)\/answers\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions/:question_id/answers/:id(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions/answers#update'>
+    surveys/questions/answers#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions/:question_id/answers/:id(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions\/([^\/.?]+)\/answers\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions/:question_id/answers/:id(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions/answers#destroy'>
+    surveys/questions/answers#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='survey_questions'>
+      survey_questions<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions#index'>
+    surveys/questions#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions#create'>
+    surveys/questions#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_survey_question'>
+      new_survey_question<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions/new(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions\/new(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions/new(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions#new'>
+    surveys/questions#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_survey_question'>
+      edit_survey_question<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions/:id/edit(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions#edit'>
+    surveys/questions#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='survey_question'>
+      survey_question<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions/:id(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions/:id(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions#show'>
+    surveys/questions#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions/:id(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions/:id(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions#update'>
+    surveys/questions#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions/:id(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions/:id(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions#update'>
+    surveys/questions#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/surveys/:survey_id/questions/:id(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/questions\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /surveys/:survey_id/questions/:id(.:format)
+  </td>
+  <td data-route-reqs='surveys/questions#destroy'>
+    surveys/questions#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='surveys'>
+      surveys<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/surveys(.:format)' data-regexp='^\/surveys(?:\.([^\/.?]+))?$'>
+    /surveys(.:format)
+  </td>
+  <td data-route-reqs='surveys#index'>
+    surveys#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/surveys(.:format)' data-regexp='^\/surveys(?:\.([^\/.?]+))?$'>
+    /surveys(.:format)
+  </td>
+  <td data-route-reqs='surveys#create'>
+    surveys#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_survey'>
+      new_survey<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/surveys/new(.:format)' data-regexp='^\/surveys\/new(?:\.([^\/.?]+))?$'>
+    /surveys/new(.:format)
+  </td>
+  <td data-route-reqs='surveys#new'>
+    surveys#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_survey'>
+      edit_survey<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/surveys/:id/edit(.:format)' data-regexp='^\/surveys\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /surveys/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='surveys#edit'>
+    surveys#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='survey'>
+      survey<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/surveys/:id(.:format)' data-regexp='^\/surveys\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /surveys/:id(.:format)
+  </td>
+  <td data-route-reqs='surveys#show'>
+    surveys#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/surveys/:id(.:format)' data-regexp='^\/surveys\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /surveys/:id(.:format)
+  </td>
+  <td data-route-reqs='surveys#update'>
+    surveys#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/surveys/:id(.:format)' data-regexp='^\/surveys\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /surveys/:id(.:format)
+  </td>
+  <td data-route-reqs='surveys#update'>
+    surveys#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/surveys/:id(.:format)' data-regexp='^\/surveys\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /surveys/:id(.:format)
+  </td>
+  <td data-route-reqs='surveys#destroy'>
+    surveys#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='sign_in'>
+      sign_in<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/sign_in(.:format)' data-regexp='^\/sign_in(?:\.([^\/.?]+))?$'>
+    /sign_in(.:format)
+  </td>
+  <td data-route-reqs='devise/sessions#new'>
+    devise/sessions#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='root'>
+      root<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/' data-regexp='^\/$'>
+    /
+  </td>
+  <td data-route-reqs='main#index'>
+    main#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='classification_xys'>
+      classification_xys<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb=''>
+    
+  </td>
+  <td data-route-path='/classifications' data-regexp='^\/classifications'>
+    /classifications
+  </td>
+  <td data-route-reqs='ClassificationXys::Engine'>
+    ClassificationXys::Engine
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='comment_xys'>
+      comment_xys<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb=''>
+    
+  </td>
+  <td data-route-path='/' data-regexp='^\/'>
+    /
+  </td>
+  <td data-route-reqs='CommentXys::Engine'>
+    CommentXys::Engine
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='coordinate_xys'>
+      coordinate_xys<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb=''>
+    
+  </td>
+  <td data-route-path='/coordinate' data-regexp='^\/coordinate'>
+    /coordinate
+  </td>
+  <td data-route-reqs='CoordinateXys::Engine'>
+    CoordinateXys::Engine
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='geographic_coordinates_xys'>
+      geographic_coordinates_xys<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb=''>
+    
+  </td>
+  <td data-route-path='/geographic_coordinates' data-regexp='^\/geographic_coordinates'>
+    /geographic_coordinates
+  </td>
+  <td data-route-reqs='GeographicCoordinatesXys::Engine'>
+    GeographicCoordinatesXys::Engine
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='directory_xys'>
+      directory_xys<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb=''>
+    
+  </td>
+  <td data-route-path='/' data-regexp='^\/'>
+    /
+  </td>
+  <td data-route-reqs='DirectoryXys::Engine'>
+    DirectoryXys::Engine
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='multimedias_xys'>
+      multimedias_xys<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb=''>
+    
+  </td>
+  <td data-route-path='/multimedias' data-regexp='^\/multimedias'>
+    /multimedias
+  </td>
+  <td data-route-reqs='MultimediasXys::Engine'>
+    MultimediasXys::Engine
+  </td>
+</tr>
+
+<tr><th colspan="4">Routes for ClassificationXys::Engine</th></tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='classification_children'>
+      classification_children<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/c/:key/:family(.:format)' data-regexp='^\/c\/([^\/.?]+)\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /c/:key/:family(.:format)
+  </td>
+  <td data-route-reqs='classification_xys/application#get'>
+    classification_xys/application#get
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='validate_declaration'>
+      validate_declaration<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/declarations/:id/validate(.:format)' data-regexp='^\/declarations\/([^\/.?]+)\/validate(?:\.([^\/.?]+))?$'>
+    /declarations/:id/validate(.:format)
+  </td>
+  <td data-route-reqs='classification_xys/declarations#validate'>
+    classification_xys/declarations#validate
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='move_declarations'>
+      move_declarations<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/declarations/move(.:format)' data-regexp='^\/declarations\/move(?:\.([^\/.?]+))?$'>
+    /declarations/move(.:format)
+  </td>
+  <td data-route-reqs='classification_xys/declarations#move'>
+    classification_xys/declarations#move
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='sort_declarations'>
+      sort_declarations<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/declarations/sort(.:format)' data-regexp='^\/declarations\/sort(?:\.([^\/.?]+))?$'>
+    /declarations/sort(.:format)
+  </td>
+  <td data-route-reqs='classification_xys/declarations#sort'>
+    classification_xys/declarations#sort
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='declarations'>
+      declarations<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/declarations(.:format)' data-regexp='^\/declarations(?:\.([^\/.?]+))?$'>
+    /declarations(.:format)
+  </td>
+  <td data-route-reqs='classification_xys/declarations#index'>
+    classification_xys/declarations#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/declarations(.:format)' data-regexp='^\/declarations(?:\.([^\/.?]+))?$'>
+    /declarations(.:format)
+  </td>
+  <td data-route-reqs='classification_xys/declarations#create'>
+    classification_xys/declarations#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_declaration'>
+      new_declaration<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/declarations/new(.:format)' data-regexp='^\/declarations\/new(?:\.([^\/.?]+))?$'>
+    /declarations/new(.:format)
+  </td>
+  <td data-route-reqs='classification_xys/declarations#new'>
+    classification_xys/declarations#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_declaration'>
+      edit_declaration<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/declarations/:id/edit(.:format)' data-regexp='^\/declarations\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /declarations/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='classification_xys/declarations#edit'>
+    classification_xys/declarations#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='declaration'>
+      declaration<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/declarations/:id(.:format)' data-regexp='^\/declarations\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /declarations/:id(.:format)
+  </td>
+  <td data-route-reqs='classification_xys/declarations#show'>
+    classification_xys/declarations#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/declarations/:id(.:format)' data-regexp='^\/declarations\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /declarations/:id(.:format)
+  </td>
+  <td data-route-reqs='classification_xys/declarations#update'>
+    classification_xys/declarations#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/declarations/:id(.:format)' data-regexp='^\/declarations\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /declarations/:id(.:format)
+  </td>
+  <td data-route-reqs='classification_xys/declarations#update'>
+    classification_xys/declarations#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/declarations/:id(.:format)' data-regexp='^\/declarations\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /declarations/:id(.:format)
+  </td>
+  <td data-route-reqs='classification_xys/declarations#destroy'>
+    classification_xys/declarations#destroy
+  </td>
+</tr>
+
+<tr><th colspan="4">Routes for CommentXys::Engine</th></tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='validate_comment'>
+      validate_comment<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/comments/:id/validate(.:format)' data-regexp='^\/comments\/([^\/.?]+)\/validate(?:\.([^\/.?]+))?$'>
+    /comments/:id/validate(.:format)
+  </td>
+  <td data-route-reqs='comment_xys/comments#validate'>
+    comment_xys/comments#validate
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/comments/:id/validate(.:format)' data-regexp='^\/comments\/([^\/.?]+)\/validate(?:\.([^\/.?]+))?$'>
+    /comments/:id/validate(.:format)
+  </td>
+  <td data-route-reqs='comment_xys/comments#validate'>
+    comment_xys/comments#validate
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='comments'>
+      comments<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/comments(.:format)' data-regexp='^\/comments(?:\.([^\/.?]+))?$'>
+    /comments(.:format)
+  </td>
+  <td data-route-reqs='comment_xys/comments#index'>
+    comment_xys/comments#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/comments(.:format)' data-regexp='^\/comments(?:\.([^\/.?]+))?$'>
+    /comments(.:format)
+  </td>
+  <td data-route-reqs='comment_xys/comments#create'>
+    comment_xys/comments#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_comment'>
+      new_comment<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/comments/new(.:format)' data-regexp='^\/comments\/new(?:\.([^\/.?]+))?$'>
+    /comments/new(.:format)
+  </td>
+  <td data-route-reqs='comment_xys/comments#new'>
+    comment_xys/comments#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_comment'>
+      edit_comment<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/comments/:id/edit(.:format)' data-regexp='^\/comments\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /comments/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='comment_xys/comments#edit'>
+    comment_xys/comments#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='comment'>
+      comment<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/comments/:id(.:format)' data-regexp='^\/comments\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /comments/:id(.:format)
+  </td>
+  <td data-route-reqs='comment_xys/comments#show'>
+    comment_xys/comments#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/comments/:id(.:format)' data-regexp='^\/comments\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /comments/:id(.:format)
+  </td>
+  <td data-route-reqs='comment_xys/comments#update'>
+    comment_xys/comments#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/comments/:id(.:format)' data-regexp='^\/comments\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /comments/:id(.:format)
+  </td>
+  <td data-route-reqs='comment_xys/comments#update'>
+    comment_xys/comments#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/comments/:id(.:format)' data-regexp='^\/comments\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /comments/:id(.:format)
+  </td>
+  <td data-route-reqs='comment_xys/comments#destroy'>
+    comment_xys/comments#destroy
+  </td>
+</tr>
+
+<tr><th colspan="4">Routes for CoordinateXys::Engine</th></tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='sort_coordinate_instances'>
+      sort_coordinate_instances<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/coordinate_instances/sort(.:format)' data-regexp='^\/coordinate_instances\/sort(?:\.([^\/.?]+))?$'>
+    /coordinate_instances/sort(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/coordinate_instances#sort'>
+    coordinate_xys/coordinate_instances#sort
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='gmap_coordinate_instance'>
+      gmap_coordinate_instance<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/coordinate_instances/:id/gmap(.:format)' data-regexp='^\/coordinate_instances\/([^\/.?]+)\/gmap(?:\.([^\/.?]+))?$'>
+    /coordinate_instances/:id/gmap(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/coordinate_instances#gmap'>
+    coordinate_xys/coordinate_instances#gmap
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='coordinate_instances'>
+      coordinate_instances<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/coordinate_instances(.:format)' data-regexp='^\/coordinate_instances(?:\.([^\/.?]+))?$'>
+    /coordinate_instances(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/coordinate_instances#index'>
+    coordinate_xys/coordinate_instances#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/coordinate_instances(.:format)' data-regexp='^\/coordinate_instances(?:\.([^\/.?]+))?$'>
+    /coordinate_instances(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/coordinate_instances#create'>
+    coordinate_xys/coordinate_instances#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_coordinate_instance'>
+      new_coordinate_instance<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/coordinate_instances/new(.:format)' data-regexp='^\/coordinate_instances\/new(?:\.([^\/.?]+))?$'>
+    /coordinate_instances/new(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/coordinate_instances#new'>
+    coordinate_xys/coordinate_instances#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_coordinate_instance'>
+      edit_coordinate_instance<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/coordinate_instances/:id/edit(.:format)' data-regexp='^\/coordinate_instances\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /coordinate_instances/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/coordinate_instances#edit'>
+    coordinate_xys/coordinate_instances#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='coordinate_instance'>
+      coordinate_instance<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/coordinate_instances/:id(.:format)' data-regexp='^\/coordinate_instances\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /coordinate_instances/:id(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/coordinate_instances#show'>
+    coordinate_xys/coordinate_instances#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/coordinate_instances/:id(.:format)' data-regexp='^\/coordinate_instances\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /coordinate_instances/:id(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/coordinate_instances#update'>
+    coordinate_xys/coordinate_instances#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/coordinate_instances/:id(.:format)' data-regexp='^\/coordinate_instances\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /coordinate_instances/:id(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/coordinate_instances#update'>
+    coordinate_xys/coordinate_instances#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/coordinate_instances/:id(.:format)' data-regexp='^\/coordinate_instances\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /coordinate_instances/:id(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/coordinate_instances#destroy'>
+    coordinate_xys/coordinate_instances#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='sort_contact_instances'>
+      sort_contact_instances<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/contact_instances/sort(.:format)' data-regexp='^\/contact_instances\/sort(?:\.([^\/.?]+))?$'>
+    /contact_instances/sort(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/contact_instances#sort'>
+    coordinate_xys/contact_instances#sort
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='contact_instances'>
+      contact_instances<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/contact_instances(.:format)' data-regexp='^\/contact_instances(?:\.([^\/.?]+))?$'>
+    /contact_instances(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/contact_instances#index'>
+    coordinate_xys/contact_instances#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/contact_instances(.:format)' data-regexp='^\/contact_instances(?:\.([^\/.?]+))?$'>
+    /contact_instances(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/contact_instances#create'>
+    coordinate_xys/contact_instances#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_contact_instance'>
+      new_contact_instance<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/contact_instances/new(.:format)' data-regexp='^\/contact_instances\/new(?:\.([^\/.?]+))?$'>
+    /contact_instances/new(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/contact_instances#new'>
+    coordinate_xys/contact_instances#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_contact_instance'>
+      edit_contact_instance<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/contact_instances/:id/edit(.:format)' data-regexp='^\/contact_instances\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /contact_instances/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/contact_instances#edit'>
+    coordinate_xys/contact_instances#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='contact_instance'>
+      contact_instance<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/contact_instances/:id(.:format)' data-regexp='^\/contact_instances\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /contact_instances/:id(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/contact_instances#show'>
+    coordinate_xys/contact_instances#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/contact_instances/:id(.:format)' data-regexp='^\/contact_instances\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /contact_instances/:id(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/contact_instances#update'>
+    coordinate_xys/contact_instances#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/contact_instances/:id(.:format)' data-regexp='^\/contact_instances\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /contact_instances/:id(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/contact_instances#update'>
+    coordinate_xys/contact_instances#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/contact_instances/:id(.:format)' data-regexp='^\/contact_instances\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /contact_instances/:id(.:format)
+  </td>
+  <td data-route-reqs='coordinate_xys/contact_instances#destroy'>
+    coordinate_xys/contact_instances#destroy
+  </td>
+</tr>
+
+<tr><th colspan="4">Routes for GeographicCoordinatesXys::Engine</th></tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='location_children'>
+      location_children<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/l/:id(.:format)' data-regexp='^\/l\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /l/:id(.:format)
+  </td>
+  <td data-route-reqs='geographic_coordinates_xys/application#get'>
+    geographic_coordinates_xys/application#get
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='validate_location'>
+      validate_location<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/locations/:id/validate(.:format)' data-regexp='^\/locations\/([^\/.?]+)\/validate(?:\.([^\/.?]+))?$'>
+    /locations/:id/validate(.:format)
+  </td>
+  <td data-route-reqs='geographic_coordinates_xys/locations#validate'>
+    geographic_coordinates_xys/locations#validate
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='gmap_locations'>
+      gmap_locations<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/locations/gmap(.:format)' data-regexp='^\/locations\/gmap(?:\.([^\/.?]+))?$'>
+    /locations/gmap(.:format)
+  </td>
+  <td data-route-reqs='geographic_coordinates_xys/locations#gmap'>
+    geographic_coordinates_xys/locations#gmap
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='locations'>
+      locations<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/locations(.:format)' data-regexp='^\/locations(?:\.([^\/.?]+))?$'>
+    /locations(.:format)
+  </td>
+  <td data-route-reqs='geographic_coordinates_xys/locations#index'>
+    geographic_coordinates_xys/locations#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/locations(.:format)' data-regexp='^\/locations(?:\.([^\/.?]+))?$'>
+    /locations(.:format)
+  </td>
+  <td data-route-reqs='geographic_coordinates_xys/locations#create'>
+    geographic_coordinates_xys/locations#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_location'>
+      new_location<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/locations/new(.:format)' data-regexp='^\/locations\/new(?:\.([^\/.?]+))?$'>
+    /locations/new(.:format)
+  </td>
+  <td data-route-reqs='geographic_coordinates_xys/locations#new'>
+    geographic_coordinates_xys/locations#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_location'>
+      edit_location<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/locations/:id/edit(.:format)' data-regexp='^\/locations\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /locations/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='geographic_coordinates_xys/locations#edit'>
+    geographic_coordinates_xys/locations#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='location'>
+      location<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/locations/:id(.:format)' data-regexp='^\/locations\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /locations/:id(.:format)
+  </td>
+  <td data-route-reqs='geographic_coordinates_xys/locations#show'>
+    geographic_coordinates_xys/locations#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/locations/:id(.:format)' data-regexp='^\/locations\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /locations/:id(.:format)
+  </td>
+  <td data-route-reqs='geographic_coordinates_xys/locations#update'>
+    geographic_coordinates_xys/locations#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/locations/:id(.:format)' data-regexp='^\/locations\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /locations/:id(.:format)
+  </td>
+  <td data-route-reqs='geographic_coordinates_xys/locations#update'>
+    geographic_coordinates_xys/locations#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/locations/:id(.:format)' data-regexp='^\/locations\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /locations/:id(.:format)
+  </td>
+  <td data-route-reqs='geographic_coordinates_xys/locations#destroy'>
+    geographic_coordinates_xys/locations#destroy
+  </td>
+</tr>
+
+<tr><th colspan="4">Routes for DirectoryXys::Engine</th></tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='validate_demand'>
+      validate_demand<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/demands/:id/validate(.:format)' data-regexp='^\/directories\/demands\/([^\/.?]+)\/validate(?:\.([^\/.?]+))?$'>
+    /directories/demands/:id/validate(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/demands#validate'>
+    directory_xys/demands#validate
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='demands'>
+      demands<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/demands(.:format)' data-regexp='^\/directories\/demands(?:\.([^\/.?]+))?$'>
+    /directories/demands(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/demands#index'>
+    directory_xys/demands#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/directories/demands(.:format)' data-regexp='^\/directories\/demands(?:\.([^\/.?]+))?$'>
+    /directories/demands(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/demands#create'>
+    directory_xys/demands#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_demand'>
+      new_demand<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/demands/new(.:format)' data-regexp='^\/directories\/demands\/new(?:\.([^\/.?]+))?$'>
+    /directories/demands/new(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/demands#new'>
+    directory_xys/demands#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_demand'>
+      edit_demand<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/demands/:id/edit(.:format)' data-regexp='^\/directories\/demands\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /directories/demands/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/demands#edit'>
+    directory_xys/demands#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='demand'>
+      demand<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/demands/:id(.:format)' data-regexp='^\/directories\/demands\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/demands/:id(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/demands#show'>
+    directory_xys/demands#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/directories/demands/:id(.:format)' data-regexp='^\/directories\/demands\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/demands/:id(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/demands#update'>
+    directory_xys/demands#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/directories/demands/:id(.:format)' data-regexp='^\/directories\/demands\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/demands/:id(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/demands#update'>
+    directory_xys/demands#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/directories/demands/:id(.:format)' data-regexp='^\/directories\/demands\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/demands/:id(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/demands#destroy'>
+    directory_xys/demands#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/list/:kind(.:format)' data-regexp='^\/directories\/list\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/list/:kind(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/directories#index'>
+    directory_xys/directories#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='choice_directories'>
+      choice_directories<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/choice(.:format)' data-regexp='^\/directories\/choice(?:\.([^\/.?]+))?$'>
+    /directories/choice(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/directories#choice'>
+    directory_xys/directories#choice
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/directories/choice(.:format)' data-regexp='^\/directories\/choice(?:\.([^\/.?]+))?$'>
+    /directories/choice(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/directories#choice'>
+    directory_xys/directories#choice
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='validate_directory'>
+      validate_directory<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/:id/validate(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/validate(?:\.([^\/.?]+))?$'>
+    /directories/:id/validate(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/directories#validate'>
+    directory_xys/directories#validate
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/directories/:id/validate(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/validate(?:\.([^\/.?]+))?$'>
+    /directories/:id/validate(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/directories#validate'>
+    directory_xys/directories#validate
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='update_description_directory'>
+      update_description_directory<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/directories/:id/update_description(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/update_description(?:\.([^\/.?]+))?$'>
+    /directories/:id/update_description(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/directories#update_description'>
+    directory_xys/directories#update_description
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='cancel_directory_marks'>
+      cancel_directory_marks<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/:directory_id/marks/cancel(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/marks\/cancel(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/marks/cancel(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/marks#cancel'>
+    directory_xys/marks#cancel
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='sort_directory_marks'>
+      sort_directory_marks<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/directories/:directory_id/marks/sort(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/marks\/sort(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/marks/sort(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/marks#sort'>
+    directory_xys/marks#sort
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='directory_marks'>
+      directory_marks<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/:directory_id/marks(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/marks(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/marks(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/marks#index'>
+    directory_xys/marks#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/directories/:directory_id/marks(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/marks(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/marks(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/marks#create'>
+    directory_xys/marks#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_directory_mark'>
+      new_directory_mark<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/:directory_id/marks/new(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/marks\/new(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/marks/new(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/marks#new'>
+    directory_xys/marks#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_directory_mark'>
+      edit_directory_mark<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/:directory_id/marks/:id/edit(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/marks\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/marks/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/marks#edit'>
+    directory_xys/marks#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='directory_mark'>
+      directory_mark<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/:directory_id/marks/:id(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/marks\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/marks/:id(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/marks#show'>
+    directory_xys/marks#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/directories/:directory_id/marks/:id(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/marks\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/marks/:id(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/marks#update'>
+    directory_xys/marks#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/directories/:directory_id/marks/:id(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/marks\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/marks/:id(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/marks#update'>
+    directory_xys/marks#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/directories/:directory_id/marks/:id(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/marks\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/marks/:id(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/marks#destroy'>
+    directory_xys/marks#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='cancel_directory_sectors'>
+      cancel_directory_sectors<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/:directory_id/sectors/cancel(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/sectors\/cancel(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/sectors/cancel(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/sectors#cancel'>
+    directory_xys/sectors#cancel
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='sort_directory_sectors'>
+      sort_directory_sectors<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/directories/:directory_id/sectors/sort(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/sectors\/sort(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/sectors/sort(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/sectors#sort'>
+    directory_xys/sectors#sort
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='directory_sectors'>
+      directory_sectors<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/:directory_id/sectors(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/sectors(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/sectors(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/sectors#index'>
+    directory_xys/sectors#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/directories/:directory_id/sectors(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/sectors(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/sectors(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/sectors#create'>
+    directory_xys/sectors#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_directory_sector'>
+      new_directory_sector<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/:directory_id/sectors/new(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/sectors\/new(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/sectors/new(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/sectors#new'>
+    directory_xys/sectors#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_directory_sector'>
+      edit_directory_sector<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/:directory_id/sectors/:id/edit(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/sectors\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/sectors/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/sectors#edit'>
+    directory_xys/sectors#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='directory_sector'>
+      directory_sector<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/:directory_id/sectors/:id(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/sectors\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/sectors/:id(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/sectors#show'>
+    directory_xys/sectors#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/directories/:directory_id/sectors/:id(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/sectors\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/sectors/:id(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/sectors#update'>
+    directory_xys/sectors#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/directories/:directory_id/sectors/:id(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/sectors\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/sectors/:id(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/sectors#update'>
+    directory_xys/sectors#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/directories/:directory_id/sectors/:id(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/sectors\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/:directory_id/sectors/:id(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/sectors#destroy'>
+    directory_xys/sectors#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='directories'>
+      directories<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories(.:format)' data-regexp='^\/directories(?:\.([^\/.?]+))?$'>
+    /directories(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/directories#index'>
+    directory_xys/directories#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/directories(.:format)' data-regexp='^\/directories(?:\.([^\/.?]+))?$'>
+    /directories(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/directories#create'>
+    directory_xys/directories#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_directory'>
+      new_directory<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/new(.:format)' data-regexp='^\/directories\/new(?:\.([^\/.?]+))?$'>
+    /directories/new(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/directories#new'>
+    directory_xys/directories#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_directory'>
+      edit_directory<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/:id/edit(.:format)' data-regexp='^\/directories\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /directories/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/directories#edit'>
+    directory_xys/directories#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='directory'>
+      directory<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/directories/:id(.:format)' data-regexp='^\/directories\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/:id(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/directories#show'>
+    directory_xys/directories#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/directories/:id(.:format)' data-regexp='^\/directories\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/:id(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/directories#update'>
+    directory_xys/directories#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/directories/:id(.:format)' data-regexp='^\/directories\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/:id(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/directories#update'>
+    directory_xys/directories#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/directories/:id(.:format)' data-regexp='^\/directories\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /directories/:id(.:format)
+  </td>
+  <td data-route-reqs='directory_xys/directories#destroy'>
+    directory_xys/directories#destroy
+  </td>
+</tr>
+
+<tr><th colspan="4">Routes for MultimediasXys::Engine</th></tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='choice_attachments'>
+      choice_attachments<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/attachments/choice(.:format)' data-regexp='^\/attachments\/choice(?:\.([^\/.?]+))?$'>
+    /attachments/choice(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/attachments#choice'>
+    multimedias_xys/attachments#choice
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/attachments/choice(.:format)' data-regexp='^\/attachments\/choice(?:\.([^\/.?]+))?$'>
+    /attachments/choice(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/attachments#choice'>
+    multimedias_xys/attachments#choice
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='validate_attachment'>
+      validate_attachment<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/attachments/:id/validate(.:format)' data-regexp='^\/attachments\/([^\/.?]+)\/validate(?:\.([^\/.?]+))?$'>
+    /attachments/:id/validate(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/attachments#validate'>
+    multimedias_xys/attachments#validate
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='attachments'>
+      attachments<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/attachments(.:format)' data-regexp='^\/attachments(?:\.([^\/.?]+))?$'>
+    /attachments(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/attachments#index'>
+    multimedias_xys/attachments#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/attachments(.:format)' data-regexp='^\/attachments(?:\.([^\/.?]+))?$'>
+    /attachments(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/attachments#create'>
+    multimedias_xys/attachments#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_attachment'>
+      new_attachment<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/attachments/new(.:format)' data-regexp='^\/attachments\/new(?:\.([^\/.?]+))?$'>
+    /attachments/new(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/attachments#new'>
+    multimedias_xys/attachments#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_attachment'>
+      edit_attachment<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/attachments/:id/edit(.:format)' data-regexp='^\/attachments\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /attachments/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/attachments#edit'>
+    multimedias_xys/attachments#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='attachment'>
+      attachment<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/attachments/:id(.:format)' data-regexp='^\/attachments\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /attachments/:id(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/attachments#show'>
+    multimedias_xys/attachments#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/attachments/:id(.:format)' data-regexp='^\/attachments\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /attachments/:id(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/attachments#update'>
+    multimedias_xys/attachments#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/attachments/:id(.:format)' data-regexp='^\/attachments\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /attachments/:id(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/attachments#update'>
+    multimedias_xys/attachments#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/attachments/:id(.:format)' data-regexp='^\/attachments\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /attachments/:id(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/attachments#destroy'>
+    multimedias_xys/attachments#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='cancel_instances'>
+      cancel_instances<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/instances/cancel(.:format)' data-regexp='^\/instances\/cancel(?:\.([^\/.?]+))?$'>
+    /instances/cancel(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/instances#cancel'>
+    multimedias_xys/instances#cancel
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='tag_instances'>
+      tag_instances<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb=''>
+    
+  </td>
+  <td data-route-path='/instances/tag(.:format)' data-regexp='^\/instances\/tag(?:\.([^\/.?]+))?$'>
+    /instances/tag(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/instances#tag'>
+    multimedias_xys/instances#tag
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='activated_instance'>
+      activated_instance<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/instances/:id/activated(.:format)' data-regexp='^\/instances\/([^\/.?]+)\/activated(?:\.([^\/.?]+))?$'>
+    /instances/:id/activated(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/instances#activated'>
+    multimedias_xys/instances#activated
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='sort_instances'>
+      sort_instances<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET|POST'>
+    GET|POST
+  </td>
+  <td data-route-path='/instances/sort(.:format)' data-regexp='^\/instances\/sort(?:\.([^\/.?]+))?$'>
+    /instances/sort(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/instances#sort'>
+    multimedias_xys/instances#sort
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='instances'>
+      instances<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/instances(.:format)' data-regexp='^\/instances(?:\.([^\/.?]+))?$'>
+    /instances(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/instances#index'>
+    multimedias_xys/instances#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/instances(.:format)' data-regexp='^\/instances(?:\.([^\/.?]+))?$'>
+    /instances(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/instances#create'>
+    multimedias_xys/instances#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_instance'>
+      new_instance<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/instances/new(.:format)' data-regexp='^\/instances\/new(?:\.([^\/.?]+))?$'>
+    /instances/new(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/instances#new'>
+    multimedias_xys/instances#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_instance'>
+      edit_instance<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/instances/:id/edit(.:format)' data-regexp='^\/instances\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /instances/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/instances#edit'>
+    multimedias_xys/instances#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='instance'>
+      instance<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/instances/:id(.:format)' data-regexp='^\/instances\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /instances/:id(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/instances#show'>
+    multimedias_xys/instances#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/instances/:id(.:format)' data-regexp='^\/instances\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /instances/:id(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/instances#update'>
+    multimedias_xys/instances#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/instances/:id(.:format)' data-regexp='^\/instances\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /instances/:id(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/instances#update'>
+    multimedias_xys/instances#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/instances/:id(.:format)' data-regexp='^\/instances\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /instances/:id(.:format)
+  </td>
+  <td data-route-reqs='multimedias_xys/instances#destroy'>
+    multimedias_xys/instances#destroy
+  </td>
+</tr>
+
+  </tbody>
+</table>
+
+<script type='text/javascript'>
+  function each(elems, func) {
+    if (!elems instanceof Array) { elems = [elems]; }
+    for (var i = 0, len = elems.length; i < len; i++) {
+      func(elems[i]);
+    }
+  }
+
+  function setValOn(elems, val) {
+    each(elems, function(elem) {
+      elem.innerHTML = val;
+    });
+  }
+
+  function onClick(elems, func) {
+    each(elems, function(elem) {
+      elem.onclick = func;
+    });
+  }
+
+  // Enables functionality to toggle between `_path` and `_url` helper suffixes
+  function setupRouteToggleHelperLinks() {
+    var toggleLinks = document.querySelectorAll('#route_table [data-route-helper]');
+    onClick(toggleLinks, function(){
+      var helperTxt   = this.getAttribute("data-route-helper"),
+          helperElems = document.querySelectorAll('[data-route-name] span.helper');
+      setValOn(helperElems, helperTxt);
+    });
+  }
+
+  // takes an array of elements with a data-regexp attribute and
+  // passes their parent <tr> into the callback function
+  // if the regexp matches a given path
+  function eachElemsForPath(elems, path, func) {
+    each(elems, function(e){
+      var reg = e.getAttribute("data-regexp");
+      if (path.match(RegExp(reg))) {
+        func(e.parentNode.cloneNode(true));
+      }
+    })
+  }
+
+  // Ensure path always starts with a slash "/" and remove params or fragments
+  function sanitizePath(path) {
+    var path = path.charAt(0) == '/' ? path : "/" + path;
+    return path.replace(/\#.*|\?.*/, '');
+  }
+
+  // Enables path search functionality
+  function setupMatchPaths() {
+    var regexpElems     = document.querySelectorAll('#route_table [data-regexp]'),
+        pathElem        = document.querySelector('#path_search'),
+        selectedSection = document.querySelector('#matched_paths'),
+        noMatchText     = '<tr><th colspan="4">None</th></tr>';
+
+
+    // Remove matches if no path is present
+    pathElem.onblur = function(e) {
+      if (pathElem.value === "") selectedSection.innerHTML = "";
+    }
+
+    // On key press perform a search for matching paths
+    pathElem.onkeyup = function(e){
+      var path        = sanitizePath(pathElem.value),
+          defaultText = '<tr><th colspan="4">Paths Matching (' + path + '):</th></tr>';
+
+      // Clear out results section
+      selectedSection.innerHTML= defaultText;
+
+      // Display matches if they exist
+      eachElemsForPath(regexpElems, path, function(e){
+        selectedSection.appendChild(e);
+      });
+
+      // If no match present, tell the user
+      if (selectedSection.innerHTML === defaultText) {
+        selectedSection.innerHTML = selectedSection.innerHTML + noMatchText;
+      }
+    }
+  }
+
+  setupMatchPaths();
+  setupRouteToggleHelperLinks();
+</script>
+
+</div>
+
+
+</body>
+</html>

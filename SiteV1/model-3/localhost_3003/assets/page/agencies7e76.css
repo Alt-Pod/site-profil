@@ -1,0 +1,33 @@
+/* line 2, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/agencies.css.scss */
+.agencies .menu_lvl1 .agency .first_link a {
+  color: black;
+  border-bottom: 2px solid black;
+}
+/* line 6, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/agencies.css.scss */
+.agencies .agency .shape_for_li_1, .agencies .agency .shape_for_li_2 {
+  background: transparent;
+}
+/* line 9, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/agencies.css.scss */
+.agencies ul.core_menu .agency a {
+  background: #74958A;
+  color: white;
+  font-weight: bold;
+}
+/* line 14, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/agencies.css.scss */
+.agencies .agency .shape {
+  width: 0px;
+  height: 0px;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-top: 10px solid #74958A;
+  margin-bottom: -10px;
+  margin-left: 55px;
+}
+/* line 23, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/agencies.css.scss */
+.agencies .core_menu_lvl2 {
+  display: block;
+}
+/* line 26, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/agencies.css.scss */
+.agencies .menu_lvl1 .agency .shape {
+  display: none;
+}

@@ -1,0 +1,46 @@
+/* line 1, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/show_standart.css.scss */
+.content_container {
+  margin-top: -15px;
+  padding: 20px;
+  text-align: justify;
+  font-family: "Century Gothic";
+}
+/* line 6, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/show_standart.css.scss */
+.content_container h2 {
+  color: #32B3BA;
+}
+/* line 9, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/show_standart.css.scss */
+.content_container h3 {
+  color: #32B3BA;
+}
+/* line 12, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/show_standart.css.scss */
+.content_container ul {
+  margin-left: -20px;
+}
+/* line 15, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/show_standart.css.scss */
+.content_container li {
+  text-align: initial;
+}
+/* line 18, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/show_standart.css.scss */
+.content_container .first_list {
+  list-style-position: inside;
+  list-style-type: upper-roman;
+}
+/* line 22, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/show_standart.css.scss */
+.content_container .second_list {
+  list-style-position: inside;
+  list-style-type: decimal;
+}
+/* line 25, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/show_standart.css.scss */
+.content_container .second_list li {
+  font-weight: inherit;
+}
+/* line 29, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/show_standart.css.scss */
+.content_container .third_list {
+  list-style-position: inside;
+  list-style: none;
+}
+/* line 32, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/show_standart.css.scss */
+.content_container .third_list li:before {
+  content: "- ";
+}

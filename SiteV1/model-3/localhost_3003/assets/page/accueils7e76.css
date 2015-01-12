@@ -1,0 +1,46 @@
+/* line 1, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/accueils.css.scss */
+.accueil .shape_for_li_1, .accueil .shape_for_li_2 {
+  background: transparent;
+}
+
+/* line 7, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/accueils.css.scss */
+.accueils .menu_lvl1 .accueil .first_link a {
+  color: #252525;
+  border-bottom: 2px solid #252525;
+}
+/* line 11, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/accueils.css.scss */
+.accueils .sidebar {
+  display: none;
+}
+/* line 14, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/accueils.css.scss */
+.accueils .core_container {
+  width: 100%;
+}
+
+/* line 19, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/accueils.css.scss */
+.core_left, .core_right {
+  display: inline-block;
+  margin-top: 20px;
+  width: 44%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  vertical-align: top;
+}
+/* line 26, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/accueils.css.scss */
+.core_left img, .core_right img {
+  box-shadow: 8px 8px 12px #aaa;
+  width: 90%;
+}
+/* line 30, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/accueils.css.scss */
+.core_left h2, .core_right h2 {
+  color: #32B3BA;
+  font-family: "century gothic";
+  margin-top: 5px;
+}
+/* line 35, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/accueils.css.scss */
+.core_left p, .core_right p {
+  font-family: "century gothic";
+  margin-left: 3px;
+  text-align: justify;
+  width: 95%;
+}

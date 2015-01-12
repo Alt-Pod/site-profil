@@ -1,0 +1,241 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url('font/Century Gothic.ttf');
+}
+@font-face {
+    font-family: "Lobster";
+    src: url('font/Lobster 1.4.otf');
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url('font/OpenSans.ttf');
+}
+
+
+html{
+	font-size: 14px;
+}
+
+a{
+	text-decoration: none;
+	color: #464646;	
+}
+
+body{
+	background: #404750 url("img/temp/random_grey_variations.png") repeat right top;
+	width:80%;
+	display:block;
+	margin:0 auto;
+	font-family: "Century Gothic";
+	color: #464646;
+	font-size:12px;
+	box-shadow: 0 0 10px whitesmoke;
+}
+
+#shadow{
+	box-shadow: 0 0 10px whitesmoke;
+	border-radius:5px;
+}
+
+header{
+	margin:15px 0 0 0;
+	background: whitesmoke url("img/temp/bright_squares.png") repeat right top;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	padding:15px 3%;
+}
+
+header #dl_cv{
+	position:fixed;
+	bottom:0;
+	right:1%;
+	background:#ddd;
+	border:2px solid grey;
+	border-bottom:0;
+	padding:5px 7px;
+	font-size:1rem;
+	font-weight:bold;
+	font-family: "OpenSans";
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+
+header #dl_cv:hover{
+    -webkit-animation: shake 0.5s; 
+    animation: shake 0.5s;
+}
+
+header #dl_cv .icon{
+	margin:0 5px ;
+}
+
+header .socialnetwork{
+	display:block;
+	position:absolute;
+}
+
+header .socialnetwork a{
+	display:inline-block;
+	vertical-align: top;
+	font-size: 1.4rem;
+	text-align: center;
+	color: #579AC5;
+	opacity:0.85;
+	padding: 0 5px;
+}
+
+header .socialnetwork a:hover{
+	opacity:1;
+	font-size:1.5rem;
+}
+
+header h1, header h2{
+	width:100%;
+	text-align: center;
+	margin:10px 0;
+	font-family: "Lobster";
+}
+
+header h1{
+	font-size: 3rem;
+	color: #51689A;
+	text-shadow: 2px 2px 2px #AAAAAA;
+}
+
+header h2{
+	font-size: 2rem;
+	color: #579AC5;
+	text-shadow: 2px 2px 3px #AAAAAA;
+}
+
+header .address, header .contacts{
+	display:inline-block;
+	vertical-align: middle;
+}
+
+header .address{
+	float:right;
+}
+
+header p{
+	display:inline-block;
+	vertical-align: middle;
+	width:calc(100% - 23px);
+	margin:0;
+	padding:0;
+	font-size:1.2rem;
+}
+header .contact p span{
+	display:inline-block;
+	vertical-align: middle;
+	font-size:1.2rem;
+}
+header .contact p span:first-of-type{
+	width:80px;
+}
+header .contact .icon{
+	display:inline-block;
+	vertical-align: middle;
+	width:20px;
+}
+
+header .address{
+	font-size:1.2rem;
+}
+
+header .address p{
+	display: inherit;
+	float: right;
+	width: inherit;
+	font-size:1.2rem;
+}
+
+header .address span{
+	font-size:1.2rem;
+}
+
+header .address #labeled{
+	margin-left:-95px;
+	position:absolute;
+}
+
+header .address .icon{
+	margin-left: -115px;
+	position: absolute;
+	margin-top: 2px;
+
+}
+
+header .menu{
+	display:block;
+	width:100%;
+	margin:15px auto;
+}
+
+header .menu ul{
+	list-style: none;
+	display: block;
+	width:90%;
+	margin:25px auto 0 auto;
+	padding: 10px 0px;
+	border-radius:5px;
+	background: #E4E4E4;
+	box-shadow: 0 0 10px #CECECE;
+}
+
+header .menu ul li{
+	display:inline-block;
+	vertical-align: middle;
+	height:25px;
+	width:calc(25% - 3px);
+}
+
+header .menu ul li a{
+	display:block;
+	font-size:1.2rem;
+	width:75%;
+	margin:0 auto;
+	height:100%;
+	text-align: center;
+	font-family: "OpenSans";
+}
+
+header .menu ul li a:hover span, header .menu ul li.current a span{
+	text-shadow: 1px 1px 2px #A5A4A4;
+	border-bottom:1px dashed #BEBEBE;
+}
+
+header .menu ul li a span:first-of-type{
+	width:1px;
+	height:100%;
+}
+
+header .menu ul li a span{
+	display:inline-block;
+	vertical-align: middle;
+	font-weight:bold;
+	color: #555770;;
+	padding-bottom:3px;
+}
+
+header #old_site{
+	position:fixed;
+	color:whitesmoke;
+	text-shadow:1px 1px 3px white;
+	left:1%;
+	top:15px;
+}
+
+header #old_site:hover{
+	font-weight:bold;
+	font-size:1rem;
+}
+
+.core{
+	padding:0 5% 20px 5%;
+	background: whitesmoke url("img/temp/bright_squares.png") repeat right top;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}

@@ -1,0 +1,33 @@
+/* line 2, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/services.css.scss */
+.services .menu_lvl1 .services .first_link a {
+  color: black;
+  border-bottom: 2px solid black;
+}
+/* line 6, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/services.css.scss */
+.services .services .shape_for_li_1, .services .services .shape_for_li_2 {
+  background: transparent;
+}
+/* line 9, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/services.css.scss */
+.services ul.core_menu .services a {
+  background: #74958A;
+  color: white;
+  font-weight: bold;
+}
+/* line 14, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/services.css.scss */
+.services .services .shape {
+  width: 0px;
+  height: 0px;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-top: 10px solid #74958A;
+  margin-bottom: -10px;
+  margin-left: 55px;
+}
+/* line 23, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/services.css.scss */
+.services .core_menu_lvl2 {
+  display: block;
+}
+/* line 26, /home/michael/RubymineProjects/au_berrechid/app/assets/stylesheets/page/services.css.scss */
+.services .menu_lvl1 .services .shape {
+  display: none;
+}
