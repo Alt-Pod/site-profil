@@ -97,5 +97,50 @@
 }
 
 .landing.core .keywords{
+	width:80%;
+	margin:0 auto;
+}
+
+.keywords{
+	padding:20px 3%;
+	background: whitesmoke url("img/temp/bright_squares.png") repeat right top;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.keywords h3{
+	margin:0;
+	width:80%;
+	display:block;
+	text-align:center;
+	margin:0 auto;
+	font-family: "OpenSans";
+	color: #579AC5;
+	padding-bottom:5px;
+	margin-bottom:15px;
+	font-size: 1.35rem;
+}
+
+.keywords .each{
+	display:inline-block;
+	vertical-align: top;
+	width:32%;
+}
+
+.keywords .each label{
 	width:100%;
+	display:block;
+	font-size:1.1rem;
+	font-weight:bold;
+}
+
+.keywords .each ul{
+	padding:0 2%;
+	margin:10px 0 0 0;
+	list-style:none;
+	display:block;
+}
+
+.keywords .each ul li{
+	font-size: 0.9rem;
 }

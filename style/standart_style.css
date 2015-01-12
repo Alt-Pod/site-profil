@@ -125,12 +125,12 @@ header p{
 	width:calc(100% - 23px);
 	margin:0;
 	padding:0;
-	font-size:1.2rem;
+	font-size:1rem;
 }
 header .contact p span{
 	display:inline-block;
 	vertical-align: middle;
-	font-size:1.2rem;
+	font-size:1rem;
 }
 header .contact p span:first-of-type{
 	width:80px;
@@ -142,18 +142,18 @@ header .contact .icon{
 }
 
 header .address{
-	font-size:1.2rem;
+	font-size:1rem;
 }
 
 header .address p{
 	display: inherit;
 	float: right;
 	width: inherit;
-	font-size:1.2rem;
+	font-size:1rem;
 }
 
 header .address span{
-	font-size:1.2rem;
+	font-size:1rem;
 }
 
 header .address #labeled{
@@ -238,4 +238,5 @@ header #old_site:hover{
 	background: whitesmoke url("img/temp/bright_squares.png") repeat right top;
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
+	margin-bottom:30px;
 }
