@@ -145,6 +145,11 @@ header .contact p span{
 header .contact p span:first-of-type{
 	width:80px;
 }
+
+header .contact:first-of-type p span:first-of-type{
+	margin-right: -4px;
+}
+
 header .contact .icon{
 	display:inline-block;
 	vertical-align: middle;
