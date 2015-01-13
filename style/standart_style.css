@@ -96,7 +96,6 @@ header h1, header h2{
 	text-align: center;
 	margin:10px 0;
 	font-family: "Title_Font";
-	letter-spacing: 2px;
 }
 
 header h1{
@@ -104,6 +103,7 @@ header h1{
 	font-size: 4rem;
 	color: #51689A;
 	text-shadow: 2px 2px 2px #AAAAAA;
+	letter-spacing: 2px;
 }
 
 header h2{
@@ -111,6 +111,7 @@ header h2{
 	color: #579AC5;
 	text-shadow: 2px 2px 3px #AAAAAA;
 	font-variant: small-caps;
+	letter-spacing: 5px;
 }
 
 header .address, header .contacts{
