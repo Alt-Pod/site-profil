@@ -12,8 +12,17 @@
 	}
 }
 @media only screen and (max-width:950px){
+	header{
+		margin-top:0;
+	}
+	.core{
+		margin-bottom:0;
+	}
+	#shadow{
+		border-radius:0;
+	}
 	body{
-		width:99%;
+		width:100%;
 	}
 	html{
 		font-size:13px;
