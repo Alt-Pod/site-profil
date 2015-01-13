@@ -120,8 +120,13 @@ header .address, header .contacts{
 	vertical-align: middle;
 }
 
+header .contacts{
+	margin-left: 5%;
+}
+
 header .address{
 	float:right;
+	margin-right: 5%;
 }
 
 header p{
