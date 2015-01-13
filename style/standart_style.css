@@ -3,8 +3,8 @@
     src: url('font/Century Gothic.ttf');
 }
 @font-face {
-    font-family: "Lobster";
-    src: url('font/Lobster 1.4.otf');
+    font-family: "Title_Font";
+    src: url('font/gnuolane.ttf');
 }
 
 @font-face {
@@ -95,17 +95,17 @@ header h1, header h2{
 	width:100%;
 	text-align: center;
 	margin:10px 0;
-	font-family: "Lobster";
+	font-family: "Title_Font";
 }
 
 header h1{
-	font-size: 3rem;
+	font-size: 3.8rem;
 	color: #51689A;
 	text-shadow: 2px 2px 2px #AAAAAA;
 }
 
 header h2{
-	font-size: 2rem;
+	font-size: 2.4rem;
 	color: #579AC5;
 	text-shadow: 2px 2px 3px #AAAAAA;
 }
@@ -195,7 +195,7 @@ header .menu ul li{
 header .menu ul li a{
 	display:block;
 	font-size:1.2rem;
-	width:75%;
+	width:90%;
 	margin:0 auto;
 	height:100%;
 	text-align: center;
