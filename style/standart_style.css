@@ -84,6 +84,8 @@ header .socialnetwork a{
 	color: #579AC5;
 	opacity:0.85;
 	padding: 0 5px;
+	width:20px;
+	height:20px;
 }
 
 header .socialnetwork a:hover{
