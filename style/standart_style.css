@@ -96,6 +96,7 @@ header h1, header h2{
 	text-align: center;
 	margin:10px 0;
 	font-family: "Title_Font";
+	letter-spacing: 2px;
 }
 
 header h1{

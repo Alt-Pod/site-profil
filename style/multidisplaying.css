@@ -14,6 +14,8 @@
 @media only screen and (max-width:950px){
 	header{
 		margin-top:0;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
 	}
 	.core{
 		margin-bottom:0;
