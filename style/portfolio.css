@@ -50,7 +50,7 @@
 }
 
 .core.portfolio .block:hover{
-	box-shadow: 0 0 30px grey;
+	box-shadow: 5px 5px 15px grey;
 }
 
 .core.portfolio .block a{
