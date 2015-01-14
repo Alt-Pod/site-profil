@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from localhost:3002/info/fichette by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jan 2015 18:12:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>foundation-rails</title>
+
+    <link href="../assets/application7e76.css?body=1" media="screen" rel="stylesheet" />
+    <script src="../assets/vendor/modernizr7e76.js?body=1"></script>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="HiwMQXneRp0FbPOUpLtT+9u52wqJpF+oVvT/DHaZFTw=" name="csrf-token" />
+  </head>
+
+  <body>
+
+    <div class="info"><div class="fallback"><a href="../index.html">retour au menu</a></div><h1>Info : fichette</h1><div class="row"><h2>Sources</h2><div class="columns small-12 medium-6 large-4"><h3>HTML(slim)</h3><textarea>.fichette
+  .row.custom_foundation_row
+    .columns.large-2.show-for-large-up
+      .img_placeholder
+        =image_tag 'http://lorempizza.com/400/400'
+    .columns.large-6.small-6
+      .text_content
+        h2 =  "Titre du bloc"
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.
+        button = "bouton"
+    .columns.large-4.small-6
+      .main_info
+        .adress style='display:none;'
+          span KIINOV
+          span 42, avenue de Tanger
+          span 58 000
+          span Tanger
+          span Maroc
+        .stars
+          .full.fa.fa-star
+          .full.fa.fa-star
+          .half.fa.fa-star-half-empty
+          .empty.fa.fa-star-o
+          .empty.fa.fa-star-o
+        .social
+          a.fa.fa-share-alt.icon.current
+          a.fa.fa-envelope.icon
+          .show
+            .content.current
+              span Réseaux sociaux
+            .content
+              span Contact
+        .price
+          .row
+            .columns.small-6
+              span Nouveau prix
+              .new 9.99 DH
+            .columns.small-6
+              span Ancien prix
+              .old 13.99 DH</textarea></div><div class="columns small-12 medium-6 large-4"><h3>SCSS</h3><textarea>.fichette{
+  margin-bottom:20px;
+  overflow:hidden;
+  border:1px solid $fichette-border-color;
+  padding:$fichette-padding 2*$fichette-padding $fichette-padding 2*$fichette-padding;
+  height:$fichette-height;
+  .img_placeholder{
+    float:left;
+    background:whitesmoke;
+    border:1px solid #ddd;
+    padding:$fichette-img-placeholder-padding;
+    img{
+      display:block;
+      margin-right:auto;
+      margin-left:auto;
+      max-height: $fichette-img-height;
+    }
+  }
+  .text_content{
+    h2{
+      margin: 0;
+      font-size: 1.6em;
+      overflow: hidden;
+      max-height: $fichette-text-h2-height;
+    }
+    p{
+      font-size: 0.8em;
+      overflow:hidden;
+      margin-bottom:0;
+      max-height: $fichette-text-p-height;
+    }
+    button{
+      padding: 0 10px 0 10px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      height:$fichette-text-button-height;
+    }
+  }
+  .main_info{
+    border-left: 1px solid #ddd;
+    overflow:hidden;
+    padding-left: 10px;
+    height:$fichette-info-height;
+    .adress{
+      margin-bottom:10px;
+      span{
+        width:100%;
+        display: block;
+      }
+    }
+    .stars{
+      margin-bottom:10px;
+      .half{
+        min-width:15px;
+      }
+    }
+    .social{
+      margin-bottom:10px;
+      a.icon{
+        text-align:center;
+        color: #333;
+        background: whitesmoke;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-bottom: 1px solid whitesmoke;
+        display:inline-block;
+        vertical-align: bottom;
+        opacity:0.7;
+        width:40px;
+        &:hover{
+          width:50px;
+          opacity:0.9;
+        }
+      }
+      a.current {
+        margin-bottom:-1px;
+        opacity:1;
+        width:50px;
+        margin-right:0;
+        padding: 6px 5px 5px 5px;
+      }
+      .show{
+        height:40px;
+        background:whitesmoke;
+        border:1px solid #ddd;
+        .content{
+          display:none;
+        }
+        .content.current{
+          display:block;
+        }
+      }
+    }
+    .price{
+      margin-bottom:10px;
+      .old{
+        text-decoration: line-through;
+      }
+      .new{
+        font-size: 1.8em;
+        font-weight:bold;
+      }
+      .old{
+        font-size: 1.6em;
+      }
+    }
+  }
+}
+
+//foundation customisation
+.custom_foundation_row{
+  @include grid-row($behavior: nest)
+}</textarea></div><div class="columns small-12 medium-6 large-4"><h3>JAVASCRIPT</h3><textarea>$(document).ready ->
+  social_menu = $('.fichette .main_info .social .icon')
+  social_menu.click (e) ->
+    e.preventDefault()
+    social_menu.removeClass 'current'
+    $(this).addClass 'current'
+    $(this).siblings('.show').children('.content').removeClass 'current'
+    $(this).siblings('.show').children('.content').eq($(this).index()).addClass 'current'</textarea></div></div><div class="row"><h2>Requirements</h2><div class="columns small-12 medium-6 large-4"><h3>Variables</h3><textarea>//FICHETTE
+$fichette-height:200px;
+$fichette-padding:10px;
+$fichette-border-color:#ddd;
+$fichette-img-placeholder-padding:$fichette-padding/2;
+$fichette-img-height: $fichette-height - 2*$fichette-padding - 2*$fichette-img-placeholder-padding;
+$fichette-text-h2-height:30px;
+$fichette-text-button-height:30px;
+$fichette-text-p-height:$fichette-height - $fichette-text-h2-height - $fichette-text-button-height - 2 * $fichette-padding;
+$fichette-info-height: $fichette-height - 2*$fichette-padding;</textarea></div><div class="columns small-12 medium-6 large-4"><h3>Mixins</h3><textarea></textarea></div><div class="columns small-12 medium-6 large-4"><h3>Animations</h3><textarea></textarea></div></div><div class="row"><div class="small-4 small-centered columns"><h3>Other requirements</h3><ul><li><a href="http://foundation.zurb.com/docs">Foundation</a></li><li><a href="http://fortawesome.github.io/Font-Awesome/icons/">FontAwesome</a></li></ul></div></div></div>
+    <script src="../assets/jquery/jquery7e76.js?body=1"></script>
+<script src="../assets/jquery7e76.js?body=1"></script>
+<script src="../assets/jquery_ujs7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.abide7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.accordion7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.alert7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.clearing7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.dropdown7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.interchange7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.joyride7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.magellan7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.offcanvas7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.orbit7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.reveal7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.slider7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.tab7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.tooltip7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.topbar7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.equalizer7e76.js?body=1"></script>
+<script src="../assets/foundation7e76.js?body=1"></script>
+<script src="../assets/handlebars7e76.js?body=1"></script>
+<script src="../assets/slick7e76.js?body=1"></script>
+<script src="../assets/handlebars.runtime7e76.js?body=1"></script>
+<script src="../assets/random_img_for_ex7e76.js?body=1"></script>
+<script src="../assets/tab_widget7e76.js?body=1"></script>
+<script src="../assets/smart_widget7e76.js?body=1"></script>
+<script src="../assets/ticker7e76.js?body=1"></script>
+<script src="../assets/multi_display7e76.js?body=1"></script>
+<script src="../assets/img_slider7e76.js?body=1"></script>
+<script src="../assets/templates/main/tab17e76.js?body=1"></script>
+<script src="../assets/templates/main/tab27e76.js?body=1"></script>
+<script src="../assets/templates/main/tab37e76.js?body=1"></script>
+<script src="../assets/application7e76.js?body=1"></script>
+  </body>
+
+<!-- Mirrored from localhost:3002/info/fichette by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jan 2015 18:12:14 GMT -->
+</html>

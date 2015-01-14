@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from localhost:3002/info/tab_widget by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jan 2015 18:12:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>foundation-rails</title>
+
+    <link href="../assets/application7e76.css?body=1" media="screen" rel="stylesheet" />
+    <script src="../assets/vendor/modernizr7e76.js?body=1"></script>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="HiwMQXneRp0FbPOUpLtT+9u52wqJpF+oVvT/DHaZFTw=" name="csrf-token" />
+  </head>
+
+  <body>
+
+    <div class="info"><div class="fallback"><a href="../index.html">retour au menu</a></div><h1>Info : tab widget</h1><div class="row"><h2>Sources</h2><div class="columns small-12 medium-6 large-4"><h3>HTML(slim)</h3><textarea>.tab_widget
+  .tabs
+    ul.small-block-grid-3
+      li
+        .each
+          =link_to "Menu 1", "#"
+      li
+        .each
+          =link_to "Menu 2", "#"
+      li
+        .each
+          =link_to "Menu 3", "#"
+  .filters
+    = simple_form_for :something do |f|
+      .row
+        .columns.small-4
+          label = "filter 1"
+          = f.input_field :filter, collection: 1..10
+        .columns.small-4
+          label = "filter 2"
+          = f.input_field :filter, collection: 1..10
+        .columns.small-4
+          label = "filter 3"
+          = f.input_field :filter, collection: 1..10
+      = f.button :submit, value:'Filtrer'
+  .content  class="tab1"
+    label style="text-align:center;margin-bottom:10px;" =  "Onglet 1"
+    a.product
+      =image_tag 'http://lorempizza.com/40/40'
+      .text_content
+        h3 Produit 1
+        p Ceci est le premier produit
+    a.product
+      =image_tag 'http://lorempizza.com/40/40'
+      .text_content
+        h3 Produit 2
+        p Ceci est le deuxième produit
+    a.product
+      =image_tag 'http://lorempizza.com/40/40'
+      .text_content
+        h3 Produit 3
+        p Ceci est le troisième produit
+  .content  class="tab2"
+    label style="text-align:center;margin-bottom:10px;" =  "Onglet 2"
+    a.product
+      =image_tag 'http://lorempizza.com/40/40'
+      .text_content
+        h3 Produit 1
+        p Ceci est le premier produit
+    a.product
+      =image_tag 'http://lorempizza.com/40/40'
+      .text_content
+        h3 Produit 2
+        p Ceci est le deuxième produit
+    a.product
+      =image_tag 'http://lorempizza.com/40/40'
+      .text_content
+        h3 Produit 3
+        p Ceci est le troisième produit
+  .content  class="tab3"
+    label style="text-align:center;margin-bottom:10px;" =  "Onglet 3"
+    a.product
+      =image_tag 'http://lorempizza.com/40/40'
+      .text_content
+        h3 Produit 1
+        p Ceci est le premier produit
+    a.product
+      =image_tag 'http://lorempizza.com/40/40'
+      .text_content
+        h3 Produit 2
+        p Ceci est le deuxième produit
+    a.product
+      =image_tag 'http://lorempizza.com/40/40'
+      .text_content
+        h3 Produit 3
+        p Ceci est le troisième produit</textarea></div><div class="columns small-12 medium-6 large-4"><h3>SCSS</h3><textarea>.tab_widget{
+  padding: 3%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid $tab-widget-border-color;
+  .tabs{
+    padding: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border: 1px solid $tab-widget-tabs-border-color;
+    background: $tab-widget-tabs-background;
+    ul {
+      width:100%;
+      margin:0;
+      li {
+        padding: 0;
+        a{
+          display:block;
+          text-align  : center;
+        }
+        &:hover{
+          background-color:$tab-widget-tabs-hover;
+        }
+      }
+      li:first-child {
+        border-top-left-radius: 10px;
+      }
+      li:last-child {
+        border-top-right-radius: 10px;
+      }
+    }
+  }
+  .filters{
+    padding: 10px 0 10px 0;
+    border-right: 1px solid $tab-widget-filter-border-color;
+    border-left: 1px solid $tab-widget-filter-border-color;
+    form{
+      select{
+        padding: 0;
+        height: 25px;
+      }
+      .button{
+        padding: 5px;
+        font-weight: bold;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom:0;
+      }
+    }
+  }
+  .content{
+    padding-top:10px;
+    border: 1px solid $tab-widget-content-border-color;
+    a.product{
+      width: 90%;
+      border-radius: 10px;
+      display: flex;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 10px;
+      margin-bottom:10px;
+      color:$tab-widget-content-product-link-color;
+      border: 1px solid $tab-widget-content-product-border-color;
+      img{
+        margin:10px 10px 0 0;
+        padding:5px;
+        max-height:40px;
+        background:$tab-widget-content-product-img-background;
+        border:1px solid $tab-widget-content-product-img-border-color;
+      }
+      &:hover{
+        background-color:$tab-widget-content-product-product-hover;
+      }
+    }
+  }
+}</textarea></div><div class="columns small-12 medium-6 large-4"><h3>JAVASCRIPT</h3><textarea>tab = $('.tab_widget')
+    tab.each ->
+      tab.children('.content').each ->
+        if !($(this).hasClass "tab1")
+          $(this).css "display", "none"
+
+$('.tab_widget').children('.tabs').children('ul').children('li').click (e) ->
+  e.preventDefault()
+  ref = $(this).index() + 1
+  $(this).parents('.tabs').siblings('.content').css "display", "none"
+  $(this).parents('.tabs').siblings(".content.tab" + ref).css "display", "block"</textarea></div></div><div class="row"><h2>Requirements</h2><div class="columns small-12 medium-6 large-4"><h3>Variables</h3><textarea>//TAB WIDGET
+$tab-widget-border-color:grey;
+$tab-widget-tabs-background:#ddd;
+$tab-widget-tabs-border-color:#ccc;
+$tab-widget-tabs-hover:grey;
+$tab-widget-filter-border-color:#ccc;
+$tab-widget-content-border-color:#ddd;
+$tab-widget-content-product-border-color:#ddd;
+$tab-widget-content-product-link-color:#333;
+$tab-widget-content-product-img-border-color:#ccc;
+$tab-widget-content-product-img-background:white;
+$tab-widget-content-product-product-hover:whitesmoke;</textarea></div><div class="columns small-12 medium-6 large-4"><h3>Mixins</h3><textarea></textarea></div><div class="columns small-12 medium-6 large-4"><h3>Animations</h3><textarea></textarea></div></div><div class="row"><div class="small-4 small-centered columns"><h3>Other requirements</h3><ul><li><a href="http://foundation.zurb.com/docs">Foundation</a></li></ul></div></div></div>
+    <script src="../assets/jquery/jquery7e76.js?body=1"></script>
+<script src="../assets/jquery7e76.js?body=1"></script>
+<script src="../assets/jquery_ujs7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.abide7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.accordion7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.alert7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.clearing7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.dropdown7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.interchange7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.joyride7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.magellan7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.offcanvas7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.orbit7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.reveal7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.slider7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.tab7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.tooltip7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.topbar7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.equalizer7e76.js?body=1"></script>
+<script src="../assets/foundation7e76.js?body=1"></script>
+<script src="../assets/handlebars7e76.js?body=1"></script>
+<script src="../assets/slick7e76.js?body=1"></script>
+<script src="../assets/handlebars.runtime7e76.js?body=1"></script>
+<script src="../assets/random_img_for_ex7e76.js?body=1"></script>
+<script src="../assets/tab_widget7e76.js?body=1"></script>
+<script src="../assets/smart_widget7e76.js?body=1"></script>
+<script src="../assets/ticker7e76.js?body=1"></script>
+<script src="../assets/multi_display7e76.js?body=1"></script>
+<script src="../assets/img_slider7e76.js?body=1"></script>
+<script src="../assets/templates/main/tab17e76.js?body=1"></script>
+<script src="../assets/templates/main/tab27e76.js?body=1"></script>
+<script src="../assets/templates/main/tab37e76.js?body=1"></script>
+<script src="../assets/application7e76.js?body=1"></script>
+  </body>
+
+<!-- Mirrored from localhost:3002/info/tab_widget by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jan 2015 18:12:14 GMT -->
+</html>

@@ -1,0 +1,14 @@
+HTTrack3.48-19 launched on Tue, 13 Jan 2015 18:30:37 at http://localhost:3001/directories
+(winhttrack http://localhost:3001/directories -O "/home/michael/websites/annuaire" -%v )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+18:31:49	Error: 	"Not Found" (404) at link localhost:3001/system/directories/eb177aa7-bc80-48bb-9b2e-d832d238f555/item.jpg (from localhost:3001/directories)
+18:32:03	Error: 	"Not Found" (404) at link localhost:3001/system/directories/9a9da35d-d281-4d02-9a65-41aa4f0a7f9a/item.jpg (from localhost:3001/directories?page=2)
+18:32:03	Error: 	"Not Found" (404) at link localhost:3001/images/flags/flag-en.jpg (from localhost:3001/directories/9a9da35d-d281-4d02-9a65-41aa4f0a7f9a)
+
+HTTrack Website Copier/3.48-19 mirror complete in 1 minutes 26 seconds : 105 links scanned, 101 files written (2352317 bytes overall) [2451766 bytes received at 28508 bytes/sec]
+(3 errors, 0 warnings, 0 messages)

@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body {
+      background-color: #FAFAFA;
+      color: #333;
+      margin: 0px;
+    }
+
+    body, p, ol, ul, td {
+      font-family: helvetica, verdana, arial, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      font-size: 11px;
+      white-space: pre-wrap;
+    }
+
+    pre.box {
+      border: 1px solid #EEE;
+      padding: 10px;
+      margin: 0px;
+      width: 958px;
+    }
+
+    header {
+      color: #F0F0F0;
+      background: #C52F24;
+      padding: 0.5em 1.5em;
+    }
+
+    h1 {
+      margin: 0.2em 0;
+      line-height: 1.1em;
+      font-size: 2em;
+    }
+
+    h2 {
+      color: #C52F24;
+      line-height: 25px;
+    }
+
+    .details {
+      border: 1px solid #D0D0D0;
+      border-radius: 4px;
+      margin: 1em 0px;
+      display: block;
+      width: 978px;
+    }
+
+    .summary {
+      padding: 8px 15px;
+      border-bottom: 1px solid #D0D0D0;
+      display: block;
+    }
+
+    .details pre {
+      margin: 5px;
+      border: none;
+    }
+
+    #container {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 1.5em;
+    }
+
+    .source * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .source {
+      border: 1px solid #D9D9D9;
+      background: #ECECEC;
+      width: 978px;
+    }
+
+    .source pre {
+      padding: 10px 0px;
+      border: none;
+    }
+
+    .source .data {
+      font-size: 80%;
+      overflow: auto;
+      background-color: #FFF;
+    }
+
+    .info {
+      padding: 0.5em;
+    }
+
+    .source .data .line_numbers {
+      background-color: #ECECEC;
+      color: #AAA;
+      padding: 1em .5em;
+      border-right: 1px solid #DDD;
+      text-align: right;
+    }
+
+    .line {
+      padding-left: 10px;
+    }
+
+    .line:hover {
+      background-color: #F6F6F6;
+    }
+
+    .line.active {
+      background-color: #FFCCCC;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    a { color: #980905; }
+    a:visited { color: #666; }
+    a.trace-frames { color: #666; }
+    a:hover { color: #C52F24; }
+    a.trace-frames.selected { color: #C52F24 }
+
+      #route_table {
+    margin: 0 auto 0;
+    border-collapse: collapse;
+  }
+
+  #route_table thead tr {
+    border-bottom: 2px solid #ddd;
+  }
+
+  #route_table thead tr.bottom {
+    border-bottom: none;
+  }
+
+  #route_table thead tr.bottom th {
+    padding: 10px 0;
+    line-height: 15px;
+  }
+
+  #route_table tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  #route_table tbody tr:nth-child(odd) {
+    background: #f2f2f2;
+  }
+
+  #route_table tbody.exact_matches,
+  #route_table tbody.fuzzy_matches {
+    background-color: LightGoldenRodYellow;
+    border-bottom: solid 2px SlateGrey;
+  }
+
+  #route_table tbody.exact_matches tr,
+  #route_table tbody.fuzzy_matches tr {
+    background: none;
+    border-bottom: none;
+  }
+
+  #route_table td {
+    padding: 4px 30px;
+  }
+
+  #path_search {
+    width: 80%;
+    font-size: inherit;
+  }
+
+  </style>
+
+  <script>
+    var toggle = function(id) {
+      var s = document.getElementById(id).style;
+      s.display = s.display == 'none' ? 'block' : 'none';
+      return false;
+    }
+    var show = function(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    var hide = function(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    var toggleTrace = function() {
+      return toggle('blame_trace');
+    }
+    var toggleSessionDump = function() {
+      return toggle('session_dump');
+    }
+    var toggleEnvDump = function() {
+      return toggle('env_dump');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>Routing Error</h1>
+</header>
+<div id="container">
+  <h2>No route matches [GET] &quot;/page/javascript&quot;</h2>
+
+  
+<p><code>Rails.root: /home/michael/RubymineProjects/templates_directory</code></p>
+
+<div id="traces">
+    <a href="#" onclick="hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);; return false;">Application Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);; return false;">Framework Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);; return false;">Full Trace</a> 
+
+    <div id="Application-Trace" style="display: block;">
+      <pre><code></code></pre>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+      <pre><code><a class="trace-frames" data-frame-id="0" href="#">actionpack (4.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;</a><br><a class="trace-frames" data-frame-id="1" href="#">actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;</a><br><a class="trace-frames" data-frame-id="2" href="#">railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app&#39;</a><br><a class="trace-frames" data-frame-id="3" href="#">railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call&#39;</a><br><a class="trace-frames" data-frame-id="4" href="#">activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;</a><br><a class="trace-frames" data-frame-id="5" href="#">activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged&#39;</a><br><a class="trace-frames" data-frame-id="6" href="#">activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged&#39;</a><br><a class="trace-frames" data-frame-id="7" href="#">railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call&#39;</a><br><a class="trace-frames" data-frame-id="8" href="#">actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;</a><br><a class="trace-frames" data-frame-id="9" href="#">rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call&#39;</a><br><a class="trace-frames" data-frame-id="10" href="#">rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call&#39;</a><br><a class="trace-frames" data-frame-id="11" href="#">activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;</a><br><a class="trace-frames" data-frame-id="12" href="#">rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call&#39;</a><br><a class="trace-frames" data-frame-id="13" href="#">actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call&#39;</a><br><a class="trace-frames" data-frame-id="14" href="#">rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call&#39;</a><br><a class="trace-frames" data-frame-id="15" href="#">railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call&#39;</a><br><a class="trace-frames" data-frame-id="16" href="#">railties (4.2.0.beta2) lib/rails/application.rb:161:in `call&#39;</a><br><a class="trace-frames" data-frame-id="17" href="#">rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call&#39;</a><br><a class="trace-frames" data-frame-id="18" href="#">rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call&#39;</a><br><a class="trace-frames" data-frame-id="19" href="#">rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service&#39;</a><br><a class="trace-frames" data-frame-id="20" href="#">/home/michael/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service&#39;</a><br><a class="trace-frames" data-frame-id="21" href="#">/home/michael/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run&#39;</a><br><a class="trace-frames" data-frame-id="22" href="#">/home/michael/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread&#39;</a><br></code></pre>
+    </div>
+    <div id="Full-Trace" style="display: none;">
+      <pre><code><a class="trace-frames" data-frame-id="0" href="#">actionpack (4.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;</a><br><a class="trace-frames" data-frame-id="1" href="#">actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;</a><br><a class="trace-frames" data-frame-id="2" href="#">railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app&#39;</a><br><a class="trace-frames" data-frame-id="3" href="#">railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call&#39;</a><br><a class="trace-frames" data-frame-id="4" href="#">activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;</a><br><a class="trace-frames" data-frame-id="5" href="#">activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged&#39;</a><br><a class="trace-frames" data-frame-id="6" href="#">activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged&#39;</a><br><a class="trace-frames" data-frame-id="7" href="#">railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call&#39;</a><br><a class="trace-frames" data-frame-id="8" href="#">actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;</a><br><a class="trace-frames" data-frame-id="9" href="#">rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call&#39;</a><br><a class="trace-frames" data-frame-id="10" href="#">rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call&#39;</a><br><a class="trace-frames" data-frame-id="11" href="#">activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;</a><br><a class="trace-frames" data-frame-id="12" href="#">rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call&#39;</a><br><a class="trace-frames" data-frame-id="13" href="#">actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call&#39;</a><br><a class="trace-frames" data-frame-id="14" href="#">rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call&#39;</a><br><a class="trace-frames" data-frame-id="15" href="#">railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call&#39;</a><br><a class="trace-frames" data-frame-id="16" href="#">railties (4.2.0.beta2) lib/rails/application.rb:161:in `call&#39;</a><br><a class="trace-frames" data-frame-id="17" href="#">rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call&#39;</a><br><a class="trace-frames" data-frame-id="18" href="#">rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call&#39;</a><br><a class="trace-frames" data-frame-id="19" href="#">rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service&#39;</a><br><a class="trace-frames" data-frame-id="20" href="#">/home/michael/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service&#39;</a><br><a class="trace-frames" data-frame-id="21" href="#">/home/michael/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run&#39;</a><br><a class="trace-frames" data-frame-id="22" href="#">/home/michael/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread&#39;</a><br></code></pre>
+    </div>
+
+  <script type="text/javascript">
+    var traceFrames = document.getElementsByClassName('trace-frames');
+    var selectedFrame, currentSource = document.getElementById('frame-source-0');
+
+    // Add click listeners for all stack frames
+    for (var i = 0; i < traceFrames.length; i++) {
+      traceFrames[i].addEventListener('click', function(e) {
+        e.preventDefault();
+        var target = e.target;
+        var frame_id = target.dataset.frameId;
+
+        if (selectedFrame) {
+          selectedFrame.className = selectedFrame.className.replace("selected", "");
+        }
+
+        target.className += " selected";
+        selectedFrame = target;
+
+        // Change the extracted source code
+        changeSourceExtract(frame_id);
+      });
+
+      function changeSourceExtract(frame_id) {
+        var el = document.getElementById('frame-source-' + frame_id);
+        if (currentSource && el) {
+          currentSource.className += " hidden";
+          el.className = el.className.replace(" hidden", "");
+          currentSource = el;
+        }
+      }
+    }
+  </script>
+</div>
+
+
+    <h2>
+      Routes
+    </h2>
+
+    <p>
+      Routes match in priority from top to bottom
+    </p>
+
+    
+<table id='route_table' class='route_table'>
+  <thead>
+    <tr>
+      <th>Helper</th>
+      <th>HTTP Verb</th>
+      <th>Path</th>
+      <th>Controller#Action</th>
+    </tr>
+    <tr class='bottom'>
+      <th>
+        <a data-route-helper="_path" href="#" title="Returns a relative path (without the http or domain)">Path</a> /
+        <a data-route-helper="_url" href="#" title="Returns an absolute url (with the http and domain)">Url</a>
+      </th>
+      <th>
+      </th>
+      <th>
+        <input id="search" name="path[]" placeholder="Path Match" type="search" />
+      </th>
+      <th>
+      </th>
+    </tr>
+  </thead>
+  <tbody class='exact_matches' id='exact_matches'>
+  </tbody>
+  <tbody class='fuzzy_matches' id='fuzzy_matches'>
+  </tbody>
+  <tbody>
+    <tr class='route_row' data-helper='path'>
+  <td data-route-name='page_index'>
+      page_index<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/index(.:format)' data-regexp='^\/page\/index(?:\.([^\/.?]+))?$'>
+    /page/index(.:format)
+  </td>
+  <td data-route-reqs='page#index'>
+    page#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_result'>
+      page_result<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/result(.:format)' data-regexp='^\/page\/result(?:\.([^\/.?]+))?$'>
+    /page/result(.:format)
+  </td>
+  <td data-route-reqs='page#result'>
+    page#result
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_new_acc'>
+      page_new_acc<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/new_acc(.:format)' data-regexp='^\/page\/new_acc(?:\.([^\/.?]+))?$'>
+    /page/new_acc(.:format)
+  </td>
+  <td data-route-reqs='page#new_acc'>
+    page#new_acc
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_search'>
+      page_search<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/search(.:format)' data-regexp='^\/page\/search(?:\.([^\/.?]+))?$'>
+    /page/search(.:format)
+  </td>
+  <td data-route-reqs='page#search'>
+    page#search
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_ask_rdv'>
+      page_ask_rdv<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/ask_rdv(.:format)' data-regexp='^\/page\/ask_rdv(?:\.([^\/.?]+))?$'>
+    /page/ask_rdv(.:format)
+  </td>
+  <td data-route-reqs='page#ask_rdv'>
+    page#ask_rdv
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_profil'>
+      page_profil<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/profil(.:format)' data-regexp='^\/page\/profil(?:\.([^\/.?]+))?$'>
+    /page/profil(.:format)
+  </td>
+  <td data-route-reqs='page#profil'>
+    page#profil
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_paramedic_result'>
+      page_paramedic_result<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/paramedic_result(.:format)' data-regexp='^\/page\/paramedic_result(?:\.([^\/.?]+))?$'>
+    /page/paramedic_result(.:format)
+  </td>
+  <td data-route-reqs='page#paramedic_result'>
+    page#paramedic_result
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_pharma_result'>
+      page_pharma_result<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/pharma_result(.:format)' data-regexp='^\/page\/pharma_result(?:\.([^\/.?]+))?$'>
+    /page/pharma_result(.:format)
+  </td>
+  <td data-route-reqs='page#pharma_result'>
+    page#pharma_result
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_product_para_result'>
+      page_product_para_result<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/product_para_result(.:format)' data-regexp='^\/page\/product_para_result(?:\.([^\/.?]+))?$'>
+    /page/product_para_result(.:format)
+  </td>
+  <td data-route-reqs='page#product_para_result'>
+    page#product_para_result
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_hair_color_main'>
+      page_hair_color_main<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/hair_color_main(.:format)' data-regexp='^\/page\/hair_color_main(?:\.([^\/.?]+))?$'>
+    /page/hair_color_main(.:format)
+  </td>
+  <td data-route-reqs='page#hair_color_main'>
+    page#hair_color_main
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_hair_contact'>
+      page_hair_contact<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/hair_contact(.:format)' data-regexp='^\/page\/hair_contact(?:\.([^\/.?]+))?$'>
+    /page/hair_contact(.:format)
+  </td>
+  <td data-route-reqs='page#hair_contact'>
+    page#hair_contact
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_hair_new'>
+      page_hair_new<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/hair_new(.:format)' data-regexp='^\/page\/hair_new(?:\.([^\/.?]+))?$'>
+    /page/hair_new(.:format)
+  </td>
+  <td data-route-reqs='page#hair_new'>
+    page#hair_new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_hair_service'>
+      page_hair_service<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/hair_service(.:format)' data-regexp='^\/page\/hair_service(?:\.([^\/.?]+))?$'>
+    /page/hair_service(.:format)
+  </td>
+  <td data-route-reqs='page#hair_service'>
+    page#hair_service
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_hair_result'>
+      page_hair_result<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/hair_result(.:format)' data-regexp='^\/page\/hair_result(?:\.([^\/.?]+))?$'>
+    /page/hair_result(.:format)
+  </td>
+  <td data-route-reqs='page#hair_result'>
+    page#hair_result
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_hair_main'>
+      page_hair_main<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/hair_main(.:format)' data-regexp='^\/page\/hair_main(?:\.([^\/.?]+))?$'>
+    /page/hair_main(.:format)
+  </td>
+  <td data-route-reqs='page#hair_main'>
+    page#hair_main
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_landing_karate'>
+      page_landing_karate<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/landing_karate(.:format)' data-regexp='^\/page\/landing_karate(?:\.([^\/.?]+))?$'>
+    /page/landing_karate(.:format)
+  </td>
+  <td data-route-reqs='page#landing_karate'>
+    page#landing_karate
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_landing_sport'>
+      page_landing_sport<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/landing_sport(.:format)' data-regexp='^\/page\/landing_sport(?:\.([^\/.?]+))?$'>
+    /page/landing_sport(.:format)
+  </td>
+  <td data-route-reqs='page#landing_sport'>
+    page#landing_sport
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_sport_result'>
+      page_sport_result<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/sport_result(.:format)' data-regexp='^\/page\/sport_result(?:\.([^\/.?]+))?$'>
+    /page/sport_result(.:format)
+  </td>
+  <td data-route-reqs='page#sport_result'>
+    page#sport_result
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_landing_martial'>
+      page_landing_martial<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/landing_martial(.:format)' data-regexp='^\/page\/landing_martial(?:\.([^\/.?]+))?$'>
+    /page/landing_martial(.:format)
+  </td>
+  <td data-route-reqs='page#landing_martial'>
+    page#landing_martial
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_sport_details'>
+      page_sport_details<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/sport_details(.:format)' data-regexp='^\/page\/sport_details(?:\.([^\/.?]+))?$'>
+    /page/sport_details(.:format)
+  </td>
+  <td data-route-reqs='page#sport_details'>
+    page#sport_details
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_sport_profil'>
+      page_sport_profil<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/sport_profil(.:format)' data-regexp='^\/page\/sport_profil(?:\.([^\/.?]+))?$'>
+    /page/sport_profil(.:format)
+  </td>
+  <td data-route-reqs='page#sport_profil'>
+    page#sport_profil
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_yoga_result'>
+      page_yoga_result<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/yoga_result(.:format)' data-regexp='^\/page\/yoga_result(?:\.([^\/.?]+))?$'>
+    /page/yoga_result(.:format)
+  </td>
+  <td data-route-reqs='page#yoga_result'>
+    page#yoga_result
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_landing_deco'>
+      page_landing_deco<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/landing_deco(.:format)' data-regexp='^\/page\/landing_deco(?:\.([^\/.?]+))?$'>
+    /page/landing_deco(.:format)
+  </td>
+  <td data-route-reqs='page#landing_deco'>
+    page#landing_deco
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_services_deco'>
+      page_services_deco<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/services_deco(.:format)' data-regexp='^\/page\/services_deco(?:\.([^\/.?]+))?$'>
+    /page/services_deco(.:format)
+  </td>
+  <td data-route-reqs='page#services_deco'>
+    page#services_deco
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_login_deco'>
+      page_login_deco<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/login_deco(.:format)' data-regexp='^\/page\/login_deco(?:\.([^\/.?]+))?$'>
+    /page/login_deco(.:format)
+  </td>
+  <td data-route-reqs='page#login_deco'>
+    page#login_deco
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_details_deco'>
+      page_details_deco<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/details_deco(.:format)' data-regexp='^\/page\/details_deco(?:\.([^\/.?]+))?$'>
+    /page/details_deco(.:format)
+  </td>
+  <td data-route-reqs='page#details_deco'>
+    page#details_deco
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_contact_deco'>
+      page_contact_deco<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/contact_deco(.:format)' data-regexp='^\/page\/contact_deco(?:\.([^\/.?]+))?$'>
+    /page/contact_deco(.:format)
+  </td>
+  <td data-route-reqs='page#contact_deco'>
+    page#contact_deco
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_order_deco'>
+      page_order_deco<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/order_deco(.:format)' data-regexp='^\/page\/order_deco(?:\.([^\/.?]+))?$'>
+    /page/order_deco(.:format)
+  </td>
+  <td data-route-reqs='page#order_deco'>
+    page#order_deco
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_landing_party'>
+      page_landing_party<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/landing_party(.:format)' data-regexp='^\/page\/landing_party(?:\.([^\/.?]+))?$'>
+    /page/landing_party(.:format)
+  </td>
+  <td data-route-reqs='page#landing_party'>
+    page#landing_party
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_party_result'>
+      page_party_result<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/party_result(.:format)' data-regexp='^\/page\/party_result(?:\.([^\/.?]+))?$'>
+    /page/party_result(.:format)
+  </td>
+  <td data-route-reqs='page#party_result'>
+    page#party_result
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_fashion_result'>
+      page_fashion_result<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/fashion_result(.:format)' data-regexp='^\/page\/fashion_result(?:\.([^\/.?]+))?$'>
+    /page/fashion_result(.:format)
+  </td>
+  <td data-route-reqs='page#fashion_result'>
+    page#fashion_result
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='page_fashion_landing'>
+      page_fashion_landing<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/page/fashion_landing(.:format)' data-regexp='^\/page\/fashion_landing(?:\.([^\/.?]+))?$'>
+    /page/fashion_landing(.:format)
+  </td>
+  <td data-route-reqs='page#fashion_landing'>
+    page#fashion_landing
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='root'>
+      root<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/' data-regexp='^\/$'>
+    /
+  </td>
+  <td data-route-reqs='page#homepage'>
+    page#homepage
+  </td>
+</tr>
+
+  </tbody>
+</table>
+
+<script type='text/javascript'>
+  // Iterates each element through a function
+  function each(elems, func) {
+    if (!elems instanceof Array) { elems = [elems]; }
+    for (var i = 0, len = elems.length; i < len; i++) {
+      func(elems[i]);
+    }
+  }
+
+  // Sets innerHTML for an element
+  function setContent(elem, text) {
+    elem.innerHTML = text;
+  }
+
+  // Enables path search functionality
+  function setupMatchPaths() {
+    // Check if the user input (sanitized as a path) matches the regexp data attribute
+    function checkExactMatch(section, elem, value) {
+      var string = sanitizePath(value),
+          regexp = elem.getAttribute("data-regexp");
+
+      showMatch(string, regexp, section, elem);
+    }
+
+    // Check if the route path data attribute contains the user input
+    function checkFuzzyMatch(section, elem, value) {
+      var string = elem.getAttribute("data-route-path"),
+          regexp = value;
+
+      showMatch(string, regexp, section, elem);
+    }
+
+    // Display the parent <tr> element in the appropriate section when there's a match
+    function showMatch(string, regexp, section, elem) {
+      if(string.match(RegExp(regexp))) {
+        section.appendChild(elem.parentNode.cloneNode(true));
+      }
+    }
+
+    // Check if there are any matched results in a section
+    function checkNoMatch(section, defaultText, noMatchText) {
+      if (section.innerHTML === defaultText) {
+        setContent(section, defaultText + noMatchText);
+      }
+    }
+
+    // Ensure path always starts with a slash "/" and remove params or fragments
+    function sanitizePath(path) {
+      var path = path.charAt(0) == '/' ? path : "/" + path;
+      return path.replace(/\#.*|\?.*/, '');
+    }
+
+    var regexpElems     = document.querySelectorAll('#route_table [data-regexp]'),
+        searchElem      = document.querySelector('#search'),
+        exactMatches    = document.querySelector('#exact_matches'),
+        fuzzyMatches    = document.querySelector('#fuzzy_matches');
+
+    // Remove matches when no search value is present
+    searchElem.onblur = function(e) {
+      if (searchElem.value === "") {
+        setContent(exactMatches, "");
+        setContent(fuzzyMatches, "");
+      }
+    }
+
+    // On key press perform a search for matching paths
+    searchElem.onkeyup = function(e){
+      var userInput         = searchElem.value,
+          defaultExactMatch = '<tr><th colspan="4">Paths Matching (' + escape(sanitizePath(userInput)) +'):</th></tr>',
+          defaultFuzzyMatch = '<tr><th colspan="4">Paths Containing (' + escape(userInput) +'):</th></tr>',
+          noExactMatch      = '<tr><th colspan="4">No Exact Matches Found</th></tr>',
+          noFuzzyMatch      = '<tr><th colspan="4">No Fuzzy Matches Found</th></tr>';
+
+      // Clear out results section
+      setContent(exactMatches, defaultExactMatch);
+      setContent(fuzzyMatches, defaultFuzzyMatch);
+
+      // Display exact matches and fuzzy matches
+      each(regexpElems, function(elem) {
+        checkExactMatch(exactMatches, elem, userInput);
+        checkFuzzyMatch(fuzzyMatches, elem, userInput);
+      })
+
+      // Display 'No Matches' message when no matches are found
+      checkNoMatch(exactMatches, defaultExactMatch, noExactMatch);
+      checkNoMatch(fuzzyMatches, defaultFuzzyMatch, noFuzzyMatch);
+    }
+  }
+
+  // Enables functionality to toggle between `_path` and `_url` helper suffixes
+  function setupRouteToggleHelperLinks() {
+
+    // Sets content for each element
+    function setValOn(elems, val) {
+      each(elems, function(elem) {
+        setContent(elem, val);
+      });
+    }
+
+    // Sets onClick event for each element
+    function onClick(elems, func) {
+      each(elems, function(elem) {
+        elem.onclick = func;
+      });
+    }
+
+    var toggleLinks = document.querySelectorAll('#route_table [data-route-helper]');
+    onClick(toggleLinks, function(){
+      var helperTxt   = this.getAttribute("data-route-helper"),
+          helperElems = document.querySelectorAll('[data-route-name] span.helper');
+
+      setValOn(helperElems, helperTxt);
+    });
+  }
+
+  setupMatchPaths();
+  setupRouteToggleHelperLinks();
+</script>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from localhost:3002/info/main_menu by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jan 2015 18:12:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>foundation-rails</title>
+
+    <link href="../assets/application7e76.css?body=1" media="screen" rel="stylesheet" />
+    <script src="../assets/vendor/modernizr7e76.js?body=1"></script>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="HiwMQXneRp0FbPOUpLtT+9u52wqJpF+oVvT/DHaZFTw=" name="csrf-token" />
+  </head>
+
+  <body>
+
+    <div class="info"><div class="fallback"><a href="../index.html">retour au menu</a></div><h1>Info : main menu</h1><div class="row"><h2>Sources</h2><div class="columns small-12 medium-6 large-4"><h3>HTML(slim)</h3><textarea>.main_menu
+ .up-menu
+   /Below : define the number of menus included (here : 3)
+   ul class="small-block-grid-3"
+     li
+       .sub-menu
+         //content
+     li
+       .sub-menu
+         //content
+     li
+       .sub-menu
+         //content</textarea></div><div class="columns small-12 medium-6 large-4"><h3>SCSS</h3><textarea>.main_menu{
+  .up-menu{
+    ul{
+      li{
+        a{
+          display: block;
+          text-align:center;
+          color:#333;
+          border: $up-menu-a-border;
+        }
+        .sub-menu{
+          display:none;
+          position: absolute;
+          width: 100%;
+          height: $sub-menu-height;
+          border: $sub-menu-border;
+          left: 0;
+          background:$sub-menu-background;
+          z-index:1000;
+        }
+        &:hover{
+          margin-bottom:$sub-menu-height;
+          // Pushing the bottom to let space for the menu
+          @include animation(0, $sub-menu-animation-duration, push);
+          .sub-menu{
+            display:block;
+            @include animation(0, $sub-menu-animation-duration, unroll);
+          }
+          a{
+            background:$up-menu-a-hover-background;
+          }
+        }
+      }
+    }
+  }
+}</textarea></div><div class="columns small-12 medium-6 large-4"><h3>JAVASCRIPT</h3><textarea></textarea></div></div><div class="row"><h2>Requirements</h2><div class="columns small-12 medium-6 large-4"><h3>Variables</h3><textarea>//MAIN MENU
+$up-menu-a-border:1px solid #ccc;
+$up-menu-a-hover-background:#ccc;
+$sub-menu-height:300px;
+$sub-menu-border:1px solid #ddd;
+$sub-menu-background:yellow;
+$sub-menu-animation-duration:1s;</textarea></div><div class="columns small-12 medium-6 large-4"><h3>Mixins</h3><textarea>@mixin keyframe($animation_name) {
+  @-webkit-keyframes  {
+    @content;
+  }
+
+  @-moz-keyframes  {
+    @content;
+  }
+
+  @-o-keyframes  {
+    @content;
+  }
+
+  @keyframes  {
+    @content;
+  }
+}
+@mixin animation ($delay, $duration, $animation) {
+  -webkit-animation-delay: $delay;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-name: $animation;
+  -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+  -moz-animation-delay: $delay;
+  -moz-animation-duration: $duration;
+  -moz-animation-name: $animation;
+  -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+  -o-animation-delay: $delay;
+  -o-animation-duration: $duration;
+  -o-animation-name: $animation;
+  -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}</textarea></div><div class="columns small-12 medium-6 large-4"><h3>Animations</h3><textarea>//Animations disponibles
+
+@include keyframe(opacity)
+{
+  0%   {opacity:0}
+  100% {opacity:1}
+}
+
+@include keyframe(unroll)
+{
+  0%   {height:0}
+  100% {height:$sub-menu-height}
+}
+
+@include keyframe(push)
+{
+  0%   {margin-bottom:0}
+  100% {margin-bottom:$sub-menu-height}
+}
+
+@include keyframe(unroll2)
+{
+  0%   {width:0}
+  100% {width:100%}
+}</textarea></div></div><div class="row"><div class="small-4 small-centered columns"><h3>Other requirements</h3><ul><li><a href="http://foundation.zurb.com/docs">Foundation</a></li></ul></div></div></div>
+    <script src="../assets/jquery/jquery7e76.js?body=1"></script>
+<script src="../assets/jquery7e76.js?body=1"></script>
+<script src="../assets/jquery_ujs7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.abide7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.accordion7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.alert7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.clearing7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.dropdown7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.interchange7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.joyride7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.magellan7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.offcanvas7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.orbit7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.reveal7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.slider7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.tab7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.tooltip7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.topbar7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.equalizer7e76.js?body=1"></script>
+<script src="../assets/foundation7e76.js?body=1"></script>
+<script src="../assets/handlebars7e76.js?body=1"></script>
+<script src="../assets/slick7e76.js?body=1"></script>
+<script src="../assets/handlebars.runtime7e76.js?body=1"></script>
+<script src="../assets/random_img_for_ex7e76.js?body=1"></script>
+<script src="../assets/tab_widget7e76.js?body=1"></script>
+<script src="../assets/smart_widget7e76.js?body=1"></script>
+<script src="../assets/ticker7e76.js?body=1"></script>
+<script src="../assets/multi_display7e76.js?body=1"></script>
+<script src="../assets/img_slider7e76.js?body=1"></script>
+<script src="../assets/templates/main/tab17e76.js?body=1"></script>
+<script src="../assets/templates/main/tab27e76.js?body=1"></script>
+<script src="../assets/templates/main/tab37e76.js?body=1"></script>
+<script src="../assets/application7e76.js?body=1"></script>
+  </body>
+
+<!-- Mirrored from localhost:3002/info/main_menu by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jan 2015 18:12:14 GMT -->
+</html>

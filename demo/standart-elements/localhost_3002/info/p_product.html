@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from localhost:3002/info/p_product by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jan 2015 18:12:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>foundation-rails</title>
+
+    <link href="../assets/application7e76.css?body=1" media="screen" rel="stylesheet" />
+    <script src="../assets/vendor/modernizr7e76.js?body=1"></script>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="HiwMQXneRp0FbPOUpLtT+9u52wqJpF+oVvT/DHaZFTw=" name="csrf-token" />
+  </head>
+
+  <body>
+
+    <div class="info"><div class="fallback"><a href="../index.html">retour au menu</a></div><h1>Info : main menu</h1><div class="row"><h2>Sources</h2><div class="columns small-12 medium-6 large-4"><h3>HTML(slim)</h3><textarea>.p_product
+  .bar_info
+    .logo = image_tag 'http://lorempizza.com/60/60'
+    h2.selling_type Type de vente
+    span.selling_type_info Informations sur le type de vente
+  .shape
+  .title
+    h2.product_name Nom du produit
+    span.ref référence du produit
+  .row.custom_foundation_row
+    .columns.medium-7.show-for-medium-up
+      .media_product
+        =render_cell :slider, :img_slider
+    .columns.small-12.medium-5.custom_foundation_column
+      .small_details
+        .block
+          p Ceci est une description de l'offre Ceci est une description de l'offre Ceci est une description de l'offre Ceci est une description de l'offre Ceci est une description de l'offre
+        .block
+          ul
+            li
+              .row
+                .columns.small-6
+                  label = "label n°1"
+                .columns.small-6
+                  span = "info n°1"
+            li
+              .row
+                .columns.small-6
+                  label = "label n°2"
+                .columns.small-6
+                  span = "info n°2"
+            li
+              .row
+                .columns.small-6
+                  label = "label n°3"
+                .columns.small-6
+                  span = "info n°3"
+        .block
+          .row
+            .columns.small-6
+              .fa.fa-users style="margin-top:10px;margin-bottom:10px;padding-left:5px;font-size:28px;display:inline-block;"
+              span style="font-size:28px;display:inline-block;padding-left:10px;" Helper 1
+            .columns.small-6
+              .fa.fa-cloud style="margin-top:10px;margin-bottom:10px;padding-left:5px;font-size:28px;display:inline-block;"
+              span style="padding-left:5px;font-size:28px;display:inline-block;padding-left:10px;" Helper 2
+  .large_details
+    =render_cell :widget, :tab_widget</textarea></div><div class="columns small-12 medium-6 large-4"><h3>SCSS</h3><textarea>.p_product{
+  .bar_info{
+    background: #eeeeee;
+    border-bottom: 5px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    overflow: hidden;
+    .logo, .selling_type, .selling_type_info{
+      display:inline-block;
+      vertical-align: middle;
+    }
+    .logo{
+      padding: 10px 0 10px 25px;
+      img{
+        box-shadow: 0 0 10px;
+      }
+    }
+    .selling_type{
+      padding-left:20px;
+    }
+    .selling_type_info{
+      float: right;
+      padding: 10px 20px 10px 20px;
+    }
+  }
+  .shape{
+    margin-left: 10%;
+    width:0;
+    height:0;
+    border-top:10px solid #ddd;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+  }
+  .title{
+    padding-left: 5%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    h2{
+      font-size: 24px;
+      font-weight: bold;
+    }
+    margin-bottom:10px;
+  }
+  .media_product{
+
+  }
+  .small_details{
+    .block{
+      border-bottom:2px solid #ddd;
+      width:100%;
+      max-width:100%;
+      overflow:hidden;
+      p{
+        padding-left: 2%;
+      }
+      ul{
+        list-style:none;
+        li{
+          label{
+            color:#4d4d4d;
+          }
+          span{
+            display:inline-block;
+            &:before{
+              content:":";
+              color:#4d4d4d;
+              display:inline-block;
+              padding-right:5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //foundation customisation
+  .custom_foundation_column{
+    @include grid-column($collapse:true,$float:right);
+  }
+  .custom_foundation_row{
+    @include grid-row($behavior: nest)
+  }
+}</textarea></div><div class="columns small-12 medium-6 large-4"><h3>JAVASCRIPT</h3><textarea></textarea></div></div><div class="row"><h2>Requirements</h2><div class="columns small-12 medium-6 large-4"><h3>Variables</h3><textarea></textarea></div><div class="columns small-12 medium-6 large-4"><h3>Mixins</h3><textarea></textarea></div><div class="columns small-12 medium-6 large-4"><h3>Animations</h3><textarea></textarea></div></div><div class="row"><div class="small-4 small-centered columns"><h3>Other requirements</h3><ul><li><a href="http://foundation.zurb.com/docs">Foundation</a></li><li><a href="../example/img_slider.html">Slider image</a></li><li><a href="../example/tab_widget.html">Tab widget</a></li></ul></div></div></div>
+    <script src="../assets/jquery/jquery7e76.js?body=1"></script>
+<script src="../assets/jquery7e76.js?body=1"></script>
+<script src="../assets/jquery_ujs7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.abide7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.accordion7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.alert7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.clearing7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.dropdown7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.interchange7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.joyride7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.magellan7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.offcanvas7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.orbit7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.reveal7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.slider7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.tab7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.tooltip7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.topbar7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.equalizer7e76.js?body=1"></script>
+<script src="../assets/foundation7e76.js?body=1"></script>
+<script src="../assets/handlebars7e76.js?body=1"></script>
+<script src="../assets/slick7e76.js?body=1"></script>
+<script src="../assets/handlebars.runtime7e76.js?body=1"></script>
+<script src="../assets/random_img_for_ex7e76.js?body=1"></script>
+<script src="../assets/tab_widget7e76.js?body=1"></script>
+<script src="../assets/smart_widget7e76.js?body=1"></script>
+<script src="../assets/ticker7e76.js?body=1"></script>
+<script src="../assets/multi_display7e76.js?body=1"></script>
+<script src="../assets/img_slider7e76.js?body=1"></script>
+<script src="../assets/templates/main/tab17e76.js?body=1"></script>
+<script src="../assets/templates/main/tab27e76.js?body=1"></script>
+<script src="../assets/templates/main/tab37e76.js?body=1"></script>
+<script src="../assets/application7e76.js?body=1"></script>
+  </body>
+
+<!-- Mirrored from localhost:3002/info/p_product by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jan 2015 18:12:14 GMT -->
+</html>

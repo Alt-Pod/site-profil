@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from localhost:3002/info/ticker by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jan 2015 18:12:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>foundation-rails</title>
+
+    <link href="../assets/application7e76.css?body=1" media="screen" rel="stylesheet" />
+    <script src="../assets/vendor/modernizr7e76.js?body=1"></script>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="HiwMQXneRp0FbPOUpLtT+9u52wqJpF+oVvT/DHaZFTw=" name="csrf-token" />
+  </head>
+
+  <body>
+
+    <div class="info"><div class="fallback"><a href="../index.html">retour au menu</a></div><h1>Info : ticker</h1><div class="row"><h2>Sources</h2><div class="columns small-12 medium-6 large-4"><h3>HTML(slim)</h3><textarea>/Une liste suffit
+.ticker
+  ul
+    li Premier élément
+    li Deuxième élément
+    li Troisième élément
+    li Quatrième élément
+    li Cinquième élément
+    li Sixième élément
+    li Septième élément</textarea></div><div class="columns small-12 medium-6 large-4"><h3>SCSS</h3><textarea>.ticker{
+  height:200px;
+  overflow:hidden;
+  border: 1px solid #ddd;
+  ul{
+    list-style:none;
+    margin:0;
+    li{
+      padding: 10px 20px 10px 20px;
+      border-top: 1px solid #ddd;
+    }
+  }
+}</textarea></div><div class="columns small-12 medium-6 large-4"><h3>JAVASCRIPT(coffeescript)</h3><textarea>ticker_animated = (obj, duration = 15000) ->
+  height_container = obj.height()
+  height_el = obj.children('ul').height()
+  if height_container < height_el
+    obj.children('ul').css 'margin-top', height_container
+    margin = - height_el
+    obj.children('ul').animate
+      marginTop:margin
+    ,
+      queue: true
+      easing:'linear'
+      duration: duration
+      complete: ->
+        ticker_animated(obj)
+
+$(document).ready ->
+  ticker_animated($('.ticker'))</textarea></div></div></div>
+    <script src="../assets/jquery/jquery7e76.js?body=1"></script>
+<script src="../assets/jquery7e76.js?body=1"></script>
+<script src="../assets/jquery_ujs7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.abide7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.accordion7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.alert7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.clearing7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.dropdown7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.interchange7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.joyride7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.magellan7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.offcanvas7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.orbit7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.reveal7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.slider7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.tab7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.tooltip7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.topbar7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.equalizer7e76.js?body=1"></script>
+<script src="../assets/foundation7e76.js?body=1"></script>
+<script src="../assets/handlebars7e76.js?body=1"></script>
+<script src="../assets/slick7e76.js?body=1"></script>
+<script src="../assets/handlebars.runtime7e76.js?body=1"></script>
+<script src="../assets/random_img_for_ex7e76.js?body=1"></script>
+<script src="../assets/tab_widget7e76.js?body=1"></script>
+<script src="../assets/smart_widget7e76.js?body=1"></script>
+<script src="../assets/ticker7e76.js?body=1"></script>
+<script src="../assets/multi_display7e76.js?body=1"></script>
+<script src="../assets/img_slider7e76.js?body=1"></script>
+<script src="../assets/templates/main/tab17e76.js?body=1"></script>
+<script src="../assets/templates/main/tab27e76.js?body=1"></script>
+<script src="../assets/templates/main/tab37e76.js?body=1"></script>
+<script src="../assets/application7e76.js?body=1"></script>
+  </body>
+
+<!-- Mirrored from localhost:3002/info/ticker by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jan 2015 18:12:14 GMT -->
+</html>

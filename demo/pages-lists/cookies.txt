@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+localhost:3005	TRUE	/	FALSE	1999999999	request_method	GET
+localhost:3005	TRUE	/	FALSE	1999999999	_agritamwin_pages_session	Zm9MMFREM2tBUHNxWHF3UjZxMW0xdjFPbm5acXpEcEI4VzJybnNRMXhTNjV4b0NmYkVsUHB4UnRQUEJna3dZVU8zWUZhbG9veVUxRjRXTE1wbGdhNG9nU0ZQUGkxajJaMmIrTTVzTXBaVmlDaDY4NDYyaVY0ajJOMmxNSWdVK213NktuUmxwaG45clRJVkw4UmpXK2hRPT0tLUhtNWpDUEFPZ3d2Y09ZcXZlaEFjQkE9PQ%3D%3D--e74e8d88fe150eed718481ffb60bbadb50edbf19
+

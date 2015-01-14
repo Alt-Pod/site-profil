@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from localhost:3002/info/smart_widget by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jan 2015 18:12:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>foundation-rails</title>
+
+    <link href="../assets/application7e76.css?body=1" media="screen" rel="stylesheet" />
+    <script src="../assets/vendor/modernizr7e76.js?body=1"></script>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="HiwMQXneRp0FbPOUpLtT+9u52wqJpF+oVvT/DHaZFTw=" name="csrf-token" />
+  </head>
+
+  <body>
+
+    <div class="info"><div class="fallback"><a href="../index.html">retour au menu</a></div><h1>Info : smart widget</h1><div class="row"><h2>Sources</h2><div class="columns small-12 medium-6 large-4"><h3>HTML(slim)</h3><textarea>.smart_widget
+  .head
+    h3 Smart Widget Title
+    =link_to "#"
+      .fa.fa-minus-square.icon
+  .body
+    h4 Content goes here
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit.</textarea></div><div class="columns small-12 medium-6 large-4"><h3>SCSS</h3><textarea>.smart_widget{
+  border:1px solid $smart-widget-border-color;
+  margin-bottom:15px;
+  .head{
+    background:$smart-widget-head-background;
+    border-bottom:1px solid $smart-widget-head-border-color;;
+    h3{
+      max-width:80%;
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 0 5px 3%;
+      overflow:hidden;
+      margin:0;
+    }
+    a{
+      display: inline-block;
+      vertical-align: top;
+      max-width:9%;
+      float:right;
+      padding: 0.6em 0 0.6em 0;
+      margin-right:10px;
+      .icon{
+        font-size:1.4em;
+        color:$smart-widget-head-icon-color;
+      }
+      &:hover{
+        .icon{
+          color: $smart-widget-head-icon-hover-color;
+        }
+      }
+    }
+  }
+  //Animation management below
+  .body{
+    overflow: hidden;
+//    @include animation(0, $smart-widget-animation-duration, opacity);
+    padding:1% 3% 1% 3%;
+    h4{
+      @include animation(0, $smart-widget-animation-duration, unroll3);
+    }
+  }
+  .body.hidden{
+    h4{
+      @include animation(0, $smart-widget-animation-duration, unroll3-reversed);
+    }
+//    @include animation(0, $smart-widget-animation-duration, opacity-reversed);
+  }
+}</textarea></div><div class="columns small-12 medium-6 large-4"><h3>JAVASCRIPT</h3><textarea>$(document).ready ->
+  button = $('.smart_widget .head a')
+  button.click (e) ->
+    e.preventDefault()
+    $(this).parents('.head').siblings('.body').toggleClass 'hidden'</textarea></div></div><div class="row"><h2>Requirements</h2><div class="columns small-12 medium-6 large-4"><h3>Variables</h3><textarea>//SMART WIDGET
+$smart-widget-border-color:grey;
+$smart-widget-head-background:#ddd;
+$smart-widget-head-border-color:grey;
+$smart-widget-head-icon-color:grey;
+$smart-widget-head-icon-hover-color:#6D6D6D;
+$smart-widget-animation-duration:0.5s;
+$smart-widget-animation-unroll2-limit:300px;</textarea></div><div class="columns small-12 medium-6 large-4"><h3>Mixins</h3><textarea>@mixin keyframe($animation_name) {
+  @-webkit-keyframes  {
+    @content;
+  }
+
+  @-moz-keyframes  {
+    @content;
+  }
+
+  @-o-keyframes  {
+    @content;
+  }
+
+  @keyframes  {
+    @content;
+  }
+}
+@mixin animation ($delay, $duration, $animation) {
+  -webkit-animation-delay: $delay;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-name: $animation;
+  -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+  -moz-animation-delay: $delay;
+  -moz-animation-duration: $duration;
+  -moz-animation-name: $animation;
+  -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+  -o-animation-delay: $delay;
+  -o-animation-duration: $duration;
+  -o-animation-name: $animation;
+  -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}</textarea></div><div class="columns small-12 medium-6 large-4"><h3>Animations</h3><textarea>@include keyframe(opacity)
+{
+  0%   {opacity:0}
+  100% {opacity:1}
+}
+
+@include keyframe(opacity-reversed)
+{
+  0%   {opacity:1}
+  100% {opacity:0;height:0;}
+}
+
+@include keyframe(unroll3)
+{
+  0%   {margin-top:- $smart-widget-animation-unroll2-limit}
+  100% {margin-top:0}
+}
+
+@include keyframe(unroll3-reversed)
+{
+  0%   {margin-top:0}
+  100% {margin-top:- $smart-widget-animation-unroll2-limit}
+}</textarea></div></div></div>
+    <script src="../assets/jquery/jquery7e76.js?body=1"></script>
+<script src="../assets/jquery7e76.js?body=1"></script>
+<script src="../assets/jquery_ujs7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.abide7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.accordion7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.alert7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.clearing7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.dropdown7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.interchange7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.joyride7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.magellan7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.offcanvas7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.orbit7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.reveal7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.slider7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.tab7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.tooltip7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.topbar7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.equalizer7e76.js?body=1"></script>
+<script src="../assets/foundation7e76.js?body=1"></script>
+<script src="../assets/handlebars7e76.js?body=1"></script>
+<script src="../assets/slick7e76.js?body=1"></script>
+<script src="../assets/handlebars.runtime7e76.js?body=1"></script>
+<script src="../assets/random_img_for_ex7e76.js?body=1"></script>
+<script src="../assets/tab_widget7e76.js?body=1"></script>
+<script src="../assets/smart_widget7e76.js?body=1"></script>
+<script src="../assets/ticker7e76.js?body=1"></script>
+<script src="../assets/multi_display7e76.js?body=1"></script>
+<script src="../assets/img_slider7e76.js?body=1"></script>
+<script src="../assets/templates/main/tab17e76.js?body=1"></script>
+<script src="../assets/templates/main/tab27e76.js?body=1"></script>
+<script src="../assets/templates/main/tab37e76.js?body=1"></script>
+<script src="../assets/application7e76.js?body=1"></script>
+  </body>
+
+<!-- Mirrored from localhost:3002/info/smart_widget by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jan 2015 18:12:14 GMT -->
+</html>

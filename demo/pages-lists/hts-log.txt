@@ -1,0 +1,13 @@
+HTTrack3.48-19 launched on Tue, 13 Jan 2015 18:24:18 at http://localhost:3005/
+(winhttrack http://localhost:3005/ -O "/home/michael/websites/pages-lists" -%v )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+18:26:55	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 0): localhost:3005/assets/jquery.js?body=1
+18:27:45	Error: 	"Not Found" (404) at link localhost:3005/page/random.png (from localhost:3005/page/promo_provider)
+
+HTTrack Website Copier/3.48-19 mirror complete in 3 minutes 27 seconds : 97 links scanned, 95 files written (5974274 bytes overall) [6012803 bytes received at 29047 bytes/sec]
+(1 errors, 1 warnings, 0 messages)

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from localhost:3002/info/img_slider by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jan 2015 18:12:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>foundation-rails</title>
+
+    <link href="../assets/application7e76.css?body=1" media="screen" rel="stylesheet" />
+    <script src="../assets/vendor/modernizr7e76.js?body=1"></script>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="HiwMQXneRp0FbPOUpLtT+9u52wqJpF+oVvT/DHaZFTw=" name="csrf-token" />
+  </head>
+
+  <body>
+
+    <div class="info"><div class="fallback"><a href="../index.html">retour au menu</a></div><h1>Info : slider image</h1><div class="row"><h2>Sources</h2><div class="columns small-12 medium-6 large-4"><h3>HTML(slim)</h3><textarea>.img_slider-1
+  .content
+    =image_tag "http://lorempizza.com/300/200"
+  .content
+    =image_tag "http://lorempizza.com/300/200"
+  .content
+    =image_tag "http://lorempizza.com/300/200"
+  .content
+    =image_tag "http://lorempizza.com/300/200"
+  .content
+    =image_tag "http://lorempizza.com/300/200"
+  .content
+    =image_tag "http://lorempizza.com/300/200"
+.img_slider-2
+  .content
+    =image_tag "http://lorempizza.com/300/200"
+  .content
+    =image_tag "http://lorempizza.com/300/200"
+  .content
+    =image_tag "http://lorempizza.com/300/200"
+  .content
+    =image_tag "http://lorempizza.com/300/200"
+  .content
+    =image_tag "http://lorempizza.com/300/200"
+  .content
+    =image_tag "http://lorempizza.com/300/200"</textarea></div><div class="columns small-12 medium-6 large-4"><h3>SCSS</h3><textarea>.img_slider-1{
+  img{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+  }
+  .slick-prev{
+    left:0;
+    &:before{
+      color:#333;
+    }
+    &:hover, &:focus{
+      background-color:initial;
+      &:before{
+        color:black;
+      }
+    }
+  }
+  .slick-next{
+    right:0;
+    &:before{
+      color:#333;
+    }
+    &:hover, &:focus{
+      background-color:initial;
+      &:before{
+        color:black;
+      }
+    }
+  }
+
+}
+.img_slider-2{
+  img{
+    padding:0 15px 0 15px;
+  }
+  .slick-prev{
+    &:before{
+      color:#333;
+    }
+    &:hover, &:focus{
+      background-color:initial;
+      &:before{
+        color:black;
+      }
+    }
+  }
+  .slick-next{
+    &:before{
+      color:#333;
+    }
+    &:hover, &:focus{
+      background-color:initial;
+      &:before{
+        color:black;
+      }
+    }
+  }
+}</textarea></div><div class="columns small-12 medium-6 large-4"><h3>JAVASCRIPT</h3><textarea>$(document).ready ->
+  $(".img_slider-1").slick
+    lazyLoad: 'ondemand'
+    speed: 500
+    draggable:false
+  $(".img_slider-2").slick
+    lazyLoad: 'ondemand'
+    slidesToShow: 3
+    speed: 500
+    draggable:false
+
+  first = $('.img_slider-1')
+  second = $('.img_slider-2')
+
+  first.on "click", "button.slick-prev", ->
+    second.children('button.slick-prev').trigger 'click'
+    return
+  second.on "click", "button.slick-prev", ->
+    first.children('button.slick-prev').trigger 'click'
+    return
+  first.on "click", "button.slick-next", ->
+    second.children('button.slick-next').trigger 'click'
+    return
+  second.on "click", "button.slick-next", ->
+    first.children('button.slick-next').trigger 'click'
+    return</textarea></div></div><div class="row"><h2>Requirements</h2><div class="columns small-12 medium-6 large-4"><h3>Variables</h3><textarea></textarea></div><div class="columns small-12 medium-6 large-4"><h3>Mixins</h3><textarea></textarea></div><div class="columns small-12 medium-6 large-4"><h3>Animations</h3><textarea></textarea></div></div><div class="row"><div class="small-4 small-centered columns"><h3>Other requirements</h3><ul><li><a href="http://kenwheeler.github.io/slick/">Slick</a></li></ul></div></div></div>
+    <script src="../assets/jquery/jquery7e76.js?body=1"></script>
+<script src="../assets/jquery7e76.js?body=1"></script>
+<script src="../assets/jquery_ujs7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.abide7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.accordion7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.alert7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.clearing7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.dropdown7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.interchange7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.joyride7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.magellan7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.offcanvas7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.orbit7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.reveal7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.slider7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.tab7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.tooltip7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.topbar7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.equalizer7e76.js?body=1"></script>
+<script src="../assets/foundation7e76.js?body=1"></script>
+<script src="../assets/handlebars7e76.js?body=1"></script>
+<script src="../assets/slick7e76.js?body=1"></script>
+<script src="../assets/handlebars.runtime7e76.js?body=1"></script>
+<script src="../assets/random_img_for_ex7e76.js?body=1"></script>
+<script src="../assets/tab_widget7e76.js?body=1"></script>
+<script src="../assets/smart_widget7e76.js?body=1"></script>
+<script src="../assets/ticker7e76.js?body=1"></script>
+<script src="../assets/multi_display7e76.js?body=1"></script>
+<script src="../assets/img_slider7e76.js?body=1"></script>
+<script src="../assets/templates/main/tab17e76.js?body=1"></script>
+<script src="../assets/templates/main/tab27e76.js?body=1"></script>
+<script src="../assets/templates/main/tab37e76.js?body=1"></script>
+<script src="../assets/application7e76.js?body=1"></script>
+  </body>
+
+<!-- Mirrored from localhost:3002/info/img_slider by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jan 2015 18:12:14 GMT -->
+</html>

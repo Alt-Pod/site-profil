@@ -255,3 +255,12 @@ header #old_site:hover{
 	border-bottom-left-radius: 5px;
 	margin-bottom:30px;
 }
+
+.link_in_text{
+	text-decoration: underline;
+	opacity:0.9;
+}
+
+.link_in_text:hover{
+	opacity:1;
+}

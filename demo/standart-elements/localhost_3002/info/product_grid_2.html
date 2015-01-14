@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from localhost:3002/info/product_grid_2 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jan 2015 18:12:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>foundation-rails</title>
+
+    <link href="../assets/application7e76.css?body=1" media="screen" rel="stylesheet" />
+    <script src="../assets/vendor/modernizr7e76.js?body=1"></script>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="HiwMQXneRp0FbPOUpLtT+9u52wqJpF+oVvT/DHaZFTw=" name="csrf-token" />
+  </head>
+
+  <body>
+
+    <div class="info"><div class="fallback"><a href="../index.html">retour au menu</a></div><h1>Info : Grille des produits</h1><div class="row"><h2>Sources</h2><div class="columns small-12 medium-6 large-4"><h3>HTML(slim)</h3><textarea>.control_block_product
+  ul.small-block-grid-5
+    li
+      =link_to '#'
+        .icon.fa.fa-th
+    li
+      =link_to '#'
+        .icon.fa.fa-th-large
+    li
+      =link_to '#'
+        .icon.fa.fa-th-list
+    li
+      =link_to '#'
+        .icon.fa.fa-list
+    li
+      =link_to '#'
+        .icon.fa.fa-align-justify
+.mod_product
+    .row.custom_foundation_row
+      .columns.small-2.pic
+        =image_tag 'http://lorempixel.com/400/300'
+      .columns.small-3.info-1
+        h2.title Titre
+        h3.subtitle Sous-Titre
+        p.info Ceci est une description
+      .columns.small-2.info-2
+        h2.title_2 List 1
+        ul.col1_el
+          li Element 1
+          li Element 2
+          li Element 3
+          li Element 4
+          li Element 5
+      .columns.small-2.info-3
+        h2.title_3 List 2
+        ul.col2_el
+          li Element 1
+          li Element 2
+          li Element 3
+          li Element 4
+          li Element 5
+      .columns.small-3.coord
+        span.email john@doe.com
+        span.adress 5 rue de la république
+        span.city Tanger
+        span.country Maroc
+        span.tel +212 6 23 41 73 28
+.mod_product
+    .row.custom_foundation_row
+      .columns.small-2.pic
+        =image_tag 'http://lorempixel.com/400/300'
+      .columns.small-3.info-1
+        h2.title Titre
+        h3.subtitle Sous-Titre
+        p.info Ceci est une description
+      .columns.small-2.info-2
+        h2.title_2 List 1
+        ul.col1_el
+          li Element 1
+          li Element 2
+          li Element 3
+          li Element 4
+          li Element 5
+      .columns.small-2.info-3
+        h2.title_3 List 2
+        ul.col2_el
+          li Element 1
+          li Element 2
+          li Element 3
+          li Element 4
+          li Element 5
+      .columns.small-3.coord
+        span.email john@doe.com
+        span.adress 5 rue de la république
+        span.city Tanger
+        span.country Maroc
+        span.tel +212 6 23 41 73 28
+.mod_product
+    .row.custom_foundation_row
+      .columns.small-2.pic
+        =image_tag 'http://lorempixel.com/400/300'
+      .columns.small-3.info-1
+        h2.title Titre
+        h3.subtitle Sous-Titre
+        p.info Ceci est une description
+      .columns.small-2.info-2
+        h2.title_2 List 1
+        ul.col1_el
+          li Element 1
+          li Element 2
+          li Element 3
+          li Element 4
+          li Element 5
+      .columns.small-2.info-3
+        h2.title_3 List 2
+        ul.col2_el
+          li Element 1
+          li Element 2
+          li Element 3
+          li Element 4
+          li Element 5
+      .columns.small-3.coord
+        span.email john@doe.com
+        span.adress 5 rue de la république
+        span.city Tanger
+        span.country Maroc
+        span.tel +212 6 23 41 73 28</textarea></div><div class="columns small-12 medium-6 large-4"><h3>SCSS</h3><textarea>.control_block_product{
+  width:200px;
+  display:block;
+  margin-right:auto;
+  margin-left:auto;
+  border-radius:5px;
+  background:whitesmoke;
+  border:1px solid #ddd;
+  padding:10px;
+  a{
+    color:#333;
+    padding:3px;
+  }
+  li{
+    padding-bottom:0;
+  }
+  a:hover{
+    border:1px solid #ccc;
+    background:#ddd;
+  }
+}
+.mod_product{
+  margin-top:20px;
+  background:whitesmoke;
+  border:1px solid #ddd;
+  span{
+    display:block;
+    width:100%;
+  }
+  .custom_foundation_row{
+    @include grid-row($behavior: nest)
+  }
+  .custom_foundation_column{
+    @include grid-column($collapse:true,$float:left);
+  }
+}
+
+.small_mod_product{
+  background:whitesmoke;
+  border:1px solid #ddd;
+  margin-top:20px;
+  padding:10px;
+  h2{
+    font-size:2rem;
+    margin:0;
+  }
+  h3{
+    font-size:1.35rem;
+    margin:0;
+  }
+  p{
+    margin:0;
+  }
+  .pic{
+    img{
+      height:200px;
+      display: block;
+      margin-left:auto;
+      margin-right:auto;
+    }
+  }
+}
+.medium_mod_product{
+  background:whitesmoke;
+  border:1px solid #ddd;
+  margin-top:20px;
+  padding:15px;
+  h2{
+    font-size:2.2rem;
+    margin:0;
+  }
+  h3{
+    font-size:1.55rem;
+    margin:0;
+  }
+  p{
+    margin:0;
+  }
+  .pic {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+.thin_mod_product{
+  background:whitesmoke;
+  border:1px solid #ddd;
+  margin-top:20px;
+  padding:5px;
+  height:130px;
+  span{
+    display:block;
+  }
+  .pic{
+    img{
+      height:120px;
+    }
+  }
+  h2{
+    font-size:2.2rem;
+    margin:0;
+  }
+  h3{
+    font-size:1.55rem;
+    margin:0;
+  }
+  p{
+    margin:0;
+  }
+  ul{
+    font-size:0.7rem;
+  }
+  .title_2{
+    font-size:1.3rem;
+  }
+  .title_3{
+    font-size:1.3rem;
+  }
+}
+.thinner_mod_product{
+  background:whitesmoke;
+  border:1px solid #ddd;
+  margin-top:20px;
+  padding:5px;
+  height:70px;
+  span{
+    display:block;
+  }
+  .pic{
+    img{
+      height:60px;
+    }
+  }
+  h2{
+    font-size:0.7rem;
+    margin:0;
+  }
+  h3{
+    font-size:1.25rem;
+    margin:0;
+  }
+  p{
+    display:none;
+  }
+  ul{
+    display:none;
+  }
+  .title_2{
+    font-size:1.25rem;
+  }
+  .title_3{
+    font-size:1.3rem;
+  }
+  span.adress, span.city, span.country{
+    display:none;
+  }
+}</textarea></div><div class="columns small-12 medium-6 large-4"><h3>JAVASCRIPT</h3><textarea>reset_default = (ul,menu, obj) ->
+  ul.removeClass 'small-block-grid-3'
+  ul.removeClass 'small-block-grid-2'
+  obj.removeClass 'small_mod_product'
+  obj.removeClass 'medium_mod_product'
+  obj.removeClass 'thin_mod_product'
+  obj.removeClass 'mod_product'
+  obj.removeClass 'thinner_mod_product'
+  obj.children('.row').children('.columns').css 'display','block'
+  obj.children('.row').children('.columns.pic').addClass 'small-2'
+  obj.children('.row').children('.columns.info-1').addClass 'small-3'
+  obj.children('.row').children('.columns.info-2').addClass 'small-2'
+  obj.children('.row').children('.columns.info-3').addClass 'small-2'
+  obj.children('.row').children('.columns.coord').addClass 'small-3'
+
+multi_grid = (ul,menu, obj) ->
+
+  menu.children('ul').children('li').eq(0).click (e) ->
+    e.preventDefault()
+    reset_default(ul,menu, obj)
+    ul.addClass 'small-block-grid-3'
+    obj.addClass 'small_mod_product'
+    obj.children('.row').children('.columns').removeClass 'small-2'
+    obj.children('.row').children('.columns').removeClass 'small-3'
+    obj.children('.row').children('.columns').css 'display','none'
+    obj.children('.row').children('.columns.pic').css 'display','block'
+    obj.children('.row').children('.columns.info-1').css 'display','block'
+
+  menu.children('ul').children('li').eq(1).click (e) ->
+    e.preventDefault()
+    reset_default(ul,menu, obj)
+    ul.addClass 'small-block-grid-2'
+    obj.addClass 'medium_mod_product'
+    obj.children('.row').children('.columns').removeClass 'small-2'
+    obj.children('.row').children('.columns').removeClass 'small-3'
+    obj.children('.row').children('.columns').css 'display','none'
+    obj.children('.row').children('.columns.pic').css 'display','block'
+    obj.children('.row').children('.columns.info-1').css 'display','block'
+    obj.children('.row').children('.columns.info-2').css 'display','block'
+
+  menu.children('ul').children('li').eq(2).click (e) ->
+    e.preventDefault()
+    reset_default(ul,menu, obj)
+    obj.addClass 'mod_product'
+
+  menu.children('ul').children('li').eq(3).click (e) ->
+    e.preventDefault()
+    reset_default(ul,menu, obj)
+    obj.addClass 'thin_mod_product'
+  menu.children('ul').children('li').eq(4).click (e) ->
+    e.preventDefault()
+    reset_default(ul,menu, obj)
+    obj.addClass 'thinner_mod_product'
+$(document).ready ->
+  multi_grid($('.list-product'), $('.control_block_product'), $('.mod_product'))</textarea></div></div><div class="row"><div class="small-4 small-centered columns"><h3>Other requirements</h3><ul><li><a href="http://foundation.zurb.com/docs">Foundation</a></li><li><a href="http://fortawesome.github.io/Font-Awesome/icons/">FontAwesome</a></li></ul></div></div></div>
+    <script src="../assets/jquery/jquery7e76.js?body=1"></script>
+<script src="../assets/jquery7e76.js?body=1"></script>
+<script src="../assets/jquery_ujs7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.abide7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.accordion7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.alert7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.clearing7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.dropdown7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.interchange7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.joyride7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.magellan7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.offcanvas7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.orbit7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.reveal7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.slider7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.tab7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.tooltip7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.topbar7e76.js?body=1"></script>
+<script src="../assets/foundation/foundation.equalizer7e76.js?body=1"></script>
+<script src="../assets/foundation7e76.js?body=1"></script>
+<script src="../assets/handlebars7e76.js?body=1"></script>
+<script src="../assets/slick7e76.js?body=1"></script>
+<script src="../assets/handlebars.runtime7e76.js?body=1"></script>
+<script src="../assets/random_img_for_ex7e76.js?body=1"></script>
+<script src="../assets/tab_widget7e76.js?body=1"></script>
+<script src="../assets/smart_widget7e76.js?body=1"></script>
+<script src="../assets/ticker7e76.js?body=1"></script>
+<script src="../assets/multi_display7e76.js?body=1"></script>
+<script src="../assets/img_slider7e76.js?body=1"></script>
+<script src="../assets/templates/main/tab17e76.js?body=1"></script>
+<script src="../assets/templates/main/tab27e76.js?body=1"></script>
+<script src="../assets/templates/main/tab37e76.js?body=1"></script>
+<script src="../assets/application7e76.js?body=1"></script>
+  </body>
+
+<!-- Mirrored from localhost:3002/info/product_grid_2 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jan 2015 18:12:14 GMT -->
+</html>
