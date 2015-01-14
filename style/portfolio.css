@@ -3,9 +3,10 @@
 }
 
 .core.portfolio .entitled{
-	max-width:750px;
+	max-width:1000px;
 	display:block;
 	margin:0 auto;
+	text-align: justify;
 }
 
 .core.portfolio .entitled h2{
@@ -29,47 +30,57 @@
 .core.portfolio .entitled p{
 	text-align: justify;
 	font-size:1rem;
-
 }
+
 .core.portfolio .block_container{
-	max-width: calc(12% + 918px);
-	margin: 0 auto;
+	text-align: center;
 }
 
-.core.portfolio .block{
+.core.portfolio .block_container .block{
+	width:29%;
 	display:inline-block;
 	vertical-align: middle;
-	max-width:300px;
-	min-height:225px;
-	box-shadow: 2px 2px 7px grey;
-	background:whitesmoke;
-	border-radius:3px;
 	margin:10px 2%;
-	border:3px solid #ccc;
-	padding-bottom:15px;
+	border-radius:5px;
+	overflow:hidden;
 }
 
-.core.portfolio .block:hover{
-	box-shadow: 5px 5px 15px grey;
-}
-
-.core.portfolio .block a{
-	display:block;
+.core.portfolio .block_container .block a{
 	width:100%;
-}
-
-.core.portfolio .block a span{
 	display:block;
-	width:94%;
-	padding:5px 5%;
-	text-align: center;
-	font-size:1.100rem;
-	height: 43px;
-	text-align: center;
-	padding-top:7px;
 }
 
-.core.portfolio .block a img{
-	width:300px;
-	height: 150px;
+.core.portfolio .block_container .block:hover span{
+	display:block !important;
+	position:absolute;
+	color:white;
+	text-align: center;
+	border-radius:5px;
+    -webkit-animation: menu 0.2s; 
+    animation: menu 0.2s;
 }
+
+.core.portfolio .block_container .block:hover span .title{
+	display:inline-block;
+	vertical-align: middle;
+	font-size:1.3rem;
+	font-weight:bold;
+	max-width: 80%;
+}
+
+.core.portfolio .block_container .block:hover span .icon{
+	margin-right:5px;
+}
+
+.core.portfolio .block_container .block:hover span .inline{
+	display:inline-block;
+	vertical-align: middle;
+	width:1px;
+	height:100%;
+}
+
+.core.portfolio .block_container .block img{
+	width:100%;
+	max-height:300px;
+}
+
