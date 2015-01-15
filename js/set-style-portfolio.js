@@ -1,5 +1,3 @@
-page = $(".core.portfolio");
-
 function set_style_portfolio(p) {
 	span = p.children('.block_container').children('.block').children('a').children('span');
 	span.css('background', 'rgba(87,154,197,1)');
@@ -14,9 +12,9 @@ function set_style_portfolio(p) {
 }
 
 window.onresize = function() {
-    set_style_portfolio(page)
+    set_style_portfolio($(".core.portfolio"))
 };
 
 window.onload = function() {
-	set_style_portfolio(page)
+	set_style_portfolio($(".core.portfolio"))
 };
