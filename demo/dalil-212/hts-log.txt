@@ -1,0 +1,20 @@
+HTTrack3.48-19 launched on Thu, 15 Jan 2015 10:28:43 at http://localhost:3000/
+(winhttrack http://localhost:3000/ -O "/home/michael/websites/dalil-212" -%v )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:33:26	Warning: 	file not stored in cache due to bogus state (incomplete type with OK  (200), size 0): localhost:3000/assets/jquery-10c6c7e09c05901741027faf5d80dd84.js?body=1
+10:38:43	Error: 	"Not Found " (404) at link localhost:3000/wps/skins/html/SKIN_NET_TITLE/images/texte.swf (from localhost:3000/p/profil1)
+10:38:43	Error: 	"Not Found " (404) at link localhost:3000/wps/skins/html/SKIN_NET_TITLE/images/texte_ar.swf (from localhost:3000/p/profil1)
+10:38:43	Error: 	"Not Found " (404) at link localhost:3000/wps/PA_1_G_18O/chartsrender/js/swfobject.js (from localhost:3000/p/profil1)
+10:38:43	Error: 	"Not Found " (404) at link localhost:3000/wps/PA_1_G_18O/presentation/css/calendar/default-calendar.css (from localhost:3000/p/profil1)
+10:38:43	Error: 	"Not Found " (404) at link localhost:3000/wps/PA_1_G_18O/presentation/templates/tmp2/fr_FR/css/default-manageable.css (from localhost:3000/p/profil1)
+10:38:43	Error: 	"Not Found " (404) at link localhost:3000/wps/PA_1_G_18O/js/layout-common.js (from localhost:3000/p/profil1)
+10:38:43	Error: 	"Not Found " (404) at link localhost:3000/wps/PA_1_G_18O/js/calendar_fr.js (from localhost:3000/p/profil1)
+10:38:43	Error: 	"Not Found " (404) at link localhost:3000/wps/PA_1_G_18O/js/key-events.js (from localhost:3000/p/profil1)
+
+HTTrack Website Copier/3.48-19 mirror complete in 10 minutes 0 seconds : 108 links scanned, 99 files written (15026411 bytes overall) [15289330 bytes received at 25482 bytes/sec], 4.3 requests per connection
+(8 errors, 1 warnings, 0 messages)
