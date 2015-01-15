@@ -17,4 +17,6 @@ window.onresize = function() {
     set_style_portfolio(page)
 };
 
-set_style_portfolio(page)
+window.onload = function() {
+	set_style_portfolio(page)
+};

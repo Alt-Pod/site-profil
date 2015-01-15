@@ -1,0 +1,24 @@
+.core.actual_sit .title{
+	display:table;
+	margin:0 auto;
+}
+
+.core.actual_sit .title h2, .core.actual_sit .title .shape{
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.core.actual_sit .title h2{
+}
+
+.core.actual_sit .title .shape{
+	padding-left:3%;
+}
+
+.core.actual_sit .title .shape:before{
+	content:"";
+	width:50px;
+	height:50px;
+	background:green;
+	border-radius:50px;
+}
