@@ -56,8 +56,8 @@
 	color:white;
 	text-align: center;
 	border-radius:5px;
-    -webkit-animation: menu 0.7s; 
-    animation: menu 0.7s;
+    -webkit-animation: menu 0.75s; 
+    animation: menu 0.75s;
 }
 
 .core.portfolio .block_container .block:hover span .title{
