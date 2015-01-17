@@ -2,6 +2,10 @@
 	header .menu ul {
 		width:99%;
 	}
+	.core.actual_sit .title h2{
+		font-size: 1.2rem;
+		padding:15px 5px;
+	}
 }
 @media only screen and (max-width:1050px){
 	#old_site{
@@ -36,5 +40,5 @@
 	}
 }
 @media only screen and (max-width:850px){
-	
+
 }
