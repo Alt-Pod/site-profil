@@ -5,14 +5,15 @@
 	text-align: center;
 }
 
-.core.actual_sit .title h2, .core.actual_sit .title .shape{
-	display:inline-block;
-	vertical-align:middle;
+.core.actual_sit .title h2{
+	display:inline;
+	width:inherit;
+	margin:0 auto;
+	padding:15px;
+	background:rgba(129,247,159,0.4);
+	border-radius:7px;
 }
 
-.core.actual_sit .title h2{
-	width:100%;
-}
 
 .core.actual_sit .title .shape{
 	padding-right:1%;
