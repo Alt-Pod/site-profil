@@ -3,6 +3,7 @@
 	margin:0 auto;
 	width:100%;
 	text-align: center;
+	padding:15px 0;
 }
 
 .core.actual_sit .title h2{
@@ -10,7 +11,7 @@
 	width:inherit;
 	margin:0 auto;
 	padding:15px;
-	background:rgba(129,247,159,0.4);
+	background:rgba(66, 209, 103, 0.4);;
 	border-radius:7px;
 }
 
