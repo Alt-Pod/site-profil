@@ -23,7 +23,8 @@
 	font-size: 1.3rem;
 	font-family: "OpenSans";
 	display:block;
-	margin:15px auto;
+	margin:0 auto;
+	padding:15px 0;
 	text-align: center;
 }
 
@@ -53,11 +54,14 @@
 .core.portfolio .block_container .block:hover span{
 	display:block !important;
 	position:absolute;
-	color:white;
+	color:rgba(87,154,197,1);
 	text-align: center;
 	border-radius:5px;
+	overflow:hidden;
+	border:1px solid #579AC5;
     -webkit-animation: menu 0.75s; 
     animation: menu 0.75s;
+    animation-fill-mode: forwards;  
 }
 
 .core.portfolio .block_container .block:hover span .title{
@@ -81,6 +85,9 @@
 
 .core.portfolio .block_container .block img{
 	width:100%;
+	max-width:500px;
 	max-height:300px;
+	display:block;
+	margin:0 auto;
 }
 

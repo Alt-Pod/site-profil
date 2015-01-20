@@ -1,6 +1,6 @@
 function set_style_portfolio(p) {
 	span = p.children('.block_container').children('.block').children('a').children('span');
-	span.css('background', 'rgba(87,154,197,1)');
+	span.css('background', 'rgba(224,224,224,1)');
 
 	p.children('.block_container').each(function() {
 		$(this).children('.block').each(function() {

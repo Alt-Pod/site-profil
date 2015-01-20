@@ -35,6 +35,13 @@
 	color: #579AC5;
 }
 
+.core.actual_sit .article .organizer{
+	width:47%;
+	display:inline-block;
+	vertical-align: top;
+	padding:0 1%;
+}
+
 .core.actual_sit .article h4{
 	font-size: 1.3rem;
 	font-family: "OpenSans";

@@ -26,11 +26,11 @@
 }
 
 @-webkit-keyframes menu {
-    0% {max-width:0;}
-    100% {max-width:30%;}
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 @keyframes menu {
-    0% {max-width:0;}
-    100% {max-width:30%;}
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
