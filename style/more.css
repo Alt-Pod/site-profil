@@ -1,3 +1,21 @@
 .core.more h2{
+	font-size: 1.6rem;
+	font-family: "OpenSans";
+	color: #579AC5;
 	margin:0;
+	padding:12px 0;
+}
+
+.core.more h3{
+	font-size: 1.3rem;
+	font-family: "OpenSans";
+	margin-left: 3%;
+}
+
+.core.more p{
+	font-size:1rem;
+	margin-left: calc(3% + 7px);
+}
+.core.more ul li{
+	font-size:1rem;
 }
