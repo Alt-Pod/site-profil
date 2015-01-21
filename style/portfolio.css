@@ -54,11 +54,12 @@
 .core.portfolio .block_container .block:hover span{
 	display:block !important;
 	position:absolute;
-	color:rgba(87,154,197,1);
+	color:white;
+	text-shadow:1px 1px 7px black;
 	text-align: center;
 	border-radius:5px;
 	overflow:hidden;
-	border:1px solid #579AC5;
+	opacity:1;
     -webkit-animation: menu 0.75s; 
     animation: menu 0.75s;
     animation-fill-mode: forwards;  
