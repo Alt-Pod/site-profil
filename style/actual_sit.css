@@ -4,6 +4,8 @@
 	width:100%;
 	text-align: center;
 	padding:15px 0;
+	background: rgba(66, 209, 103, 0.4);
+	border-radius: 7px;
 }
 
 .core.actual_sit .title h2{
@@ -11,8 +13,6 @@
 	width: inherit;
 	margin: 0 auto;
 	padding: 10px 30px;
-	background: rgba(66, 209, 103, 0.4);
-	border-radius: 7px;
 }
 
 
